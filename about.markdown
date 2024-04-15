@@ -1,8 +1,16 @@
 ---
-layout: page
+layout: splash
 title: About
 permalink: /about/
 ---
+
+<style type="text/css">
+  h1 {
+    margin: 2em 0 1em 0;
+  }
+</style>
+
+# About Me
 
 With over 12 years of expertise in software and hardware development across a wide range of applications including desktop, web, mobile, IoT solutions, electronics, and robotics, I have consistently delivered high-quality solutions that yield tangible results. From developing intricate systems to streamlining processes, my work has contributed to increased efficiency and productivity for clients.
 
