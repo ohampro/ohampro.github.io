@@ -1,0 +1,25 @@
+.row {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+}
+
+.column {
+    flex: auto;
+    flex-direction: column !important;
+}
+
+.unlist {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.ms-3 {
+    margin-left: 1rem !important;
+}

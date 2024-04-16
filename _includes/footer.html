@@ -1,0 +1,9 @@
+
+
+<div class="row">
+    <div class="page__footer-copyright row column">
+        <a href="mailto: {{ site.email }}">{{ site.email }}</a>
+        <div >&copy; {{ site.time | date: '%Y' }} <a href="mailto: {{ site.email }}">{{ site.name | default: site.title }}</a>. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+    </div>
+    {% include footer/contact_info.html %}
+</div>

@@ -28,8 +28,13 @@ description: >- # this means to ignore newlines until "baseurl:"
   It also means changes are welcome.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ohamhpr.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: ohamhpr
+
+youtube_username: mohammadhaghighipoor3044
+linkedin_username:  ohamhpr
 github_username:  ohamhpr
+twitter_username: ohamhpr
+stack_overflow_username:  ohamhpr
+instagram_username:  ohamhpr
 
 # Build settings
 theme: minimal-mistakes-jekyll
