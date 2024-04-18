@@ -28,6 +28,10 @@
 .footer_contact_info {
     font-size: clamp(0.6875em, 1.2vw, 0.6875em);
 
+    @media (max-width: 600px) {
+        padding-top: 10px;
+    }
+
     .footer_social {
         @extend .ms-3;
     
