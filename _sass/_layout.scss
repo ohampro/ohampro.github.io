@@ -1,6 +1,7 @@
 .row {
     display: flex;
-    flex-direction: row !important;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between !important;
 }
 
@@ -22,4 +23,21 @@
 
 .ms-3 {
     margin-left: 1rem !important;
+}
+
+.footer_contact_info {
+    font-size: clamp(0.6875em, 1.2vw, 0.6875em);
+
+    .footer_social {
+        @extend .ms-3;
+    
+        @media (max-width: 600px) {
+            flex-basis: 20%; // Switch to vertical layout on smaller screens
+            margin-left: 0rem !important;
+        }
+    }
+
+    .footer_email_address{
+        color: khaki;
+    }
 }
