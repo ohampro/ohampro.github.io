@@ -45,3 +45,33 @@
         color: khaki;
     }
 }
+
+.footer_menu {
+    @extend .row;
+
+    width: 100%;
+    border-bottom: 1px solid;
+    padding-bottom: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+
+    .footer_column {
+        @extend .column;
+
+        font-size: medium;
+    
+        h5 {
+            margin-top: 0;
+            margin-bottom: .5rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+    
+        .nav {
+            @extend .unlist;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
