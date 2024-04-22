@@ -29,6 +29,23 @@
     padding-top: 1rem !important;
 }
 
+// Fix mmistakes feature_row text-align in type=right
+.feature__item--right {
+    text-align: left !important;
+}
+
+.archive__item-excerpt {
+    color: #818D71;
+}
+
+.page__content {
+    color: #818D71;
+}
+
+.archive__item-title {
+    color: #bdb783;
+}
+
 .footer_contact_info {
     font-size: clamp(0.6875em, 1.2vw, 0.6875em);
 
