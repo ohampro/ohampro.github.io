@@ -1,0 +1,34 @@
+{%- capture display -%}
+    {%- if include.index > include.maxVisibleItems -%}inVisibleItem d-none{%- endif %}
+{%- endcapture %}
+
+<div id="{{ include.id }}" class="py-3 {{ display }}">
+    {% if include.title %}
+        {% if include.content.size > 0 %}
+            <a class="link-underline link-body-emphasis link-underline-opacity-75-hover link-offset-3-hover link-underline-opacity-0"
+                href="{{ include.url }}">
+                <h3>{{ include.title }}</h3>
+            </a>
+        {% else %}
+            <h3>{{ include.title }}</h3>
+        {% endif %}
+    {% endif %}
+
+    {% if include.subtitle %}
+        <h4>{{ include.subtitle }}</h4>
+    {% endif %}
+
+    {% if include.muted %}
+        <p class="text-muted">{{ include.muted }}</p>
+    {% endif %}
+
+    <p>
+        {{ include.excerpt }}
+        {% if include.content.size > 0 %}
+            <a class="link-dark1 link-success link-offset-2 link-opacity-50-hover " 
+                href="{{ include.url }}"> 
+                find more
+            </a>
+        {% endif %}
+    </p>
+</div>

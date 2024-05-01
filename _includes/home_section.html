@@ -1,0 +1,89 @@
+{% capture xyz %}
+    {% if include.maxVisibleItems == nil %}
+        {% assign maxVisibleItems = 3 %}
+    {% else %}    
+        {% assign maxVisibleItems = include.maxVisibleItems %}
+    {% endif %}
+{% endcapture %}
+
+{% capture titleClass -%}
+    {%- if include.titleAlign == 'top' -%}
+        align-self-top
+    {%- else -%}
+        align-self-center
+    {%- endif %}
+{%- endcapture %}
+
+<section id="{{ include.id }}" class="p-3 {{ include.stripColor }}">
+    <div class="mt-4 row {% unless include.deleyed-attention == true %}deleyed-attention content-blur{% endunless %}">
+        <div class="col-3 {{titleClass}} text-muted">
+            <h3>{{ include.title }}</h3>
+        </div>
+
+        <div class="col-7 offset-0">
+            {% assign collection = site.collections | where: "label", include.type | first %}
+            {% if include.select == nil %}
+                {% assign itemSize = collection.docs.size %}
+                
+                {% for doc in collection.docs %}
+                    {%- capture docItemId -%}
+                        docItemId_{{include.type}}_{{ forloop.index }}
+                    {%- endcapture %}
+
+                    {% include minimal_view.html 
+                        id = docItemId
+                        url = doc.permalink
+                        title = doc.title
+                        subtitle = doc.subtitle
+                        muted = doc.muted
+                        excerpt = doc.excerpt
+                        content = doc.content
+                        index = forloop.index
+                        maxVisibleItems = maxVisibleItems
+                    %}
+
+                {% endfor %}
+            {% else %}
+                {% assign select = include.select | replace: ' ', '' | split: ',' %}
+                {% assign itemSize = select.size %}
+
+                {% for basename in select %}
+                    {% assign index = forloop.index %}
+                    {%- capture docItemId -%}
+                        docItemId_{{include.type}}_{{ index }}
+                    {%- endcapture %}
+
+                    {% for doc in collection.docs %}
+                        {% assign docBasename = doc.path | split:'/' | last | split: '.' | first %}          
+
+                        {% if docBasename == basename %}
+
+                            {% include minimal_view.html 
+                                id = docItemId
+                                url = doc.permalink
+                                title = doc.title
+                                subtitle = doc.subtitle
+                                muted = doc.muted
+                                excerpt = doc.excerpt
+                                content = doc.content
+                                index = index
+                                maxVisibleItems = maxVisibleItems
+                            %}
+                        {% endif %}
+
+                    {% endfor %}
+                    
+                {% endfor %}
+            {% endif %}
+        </div>
+    
+        <div class="row text-end">
+            <a  id="displayMore_{{ include.type }}"
+                class="display-more-items link-success {% if itemSize <= maxVisibleItems %}d-none{% endif %}" 
+                href="#" data-target-item="{{ include.id }}"
+                onclick="return displayMoreItems()">
+                Display more
+            </a>
+        </div>
+    </div>
+</section>
