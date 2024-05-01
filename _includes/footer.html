@@ -1,9 +1,78 @@
 
+<div class="container">
+    <footer class="py-5">
+      {% if site.footer_menu %}
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Discover Me</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Learn & Grow</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Explore & Engage</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Subscribe to my newsletter</h5>
+              <p>Monthly digest of what's new and exciting from me.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+  
+      {% endif %}
+      
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p class="text-start">&copy; {{ site.time | date: '%Y' }} 
+            <a class="link-dark link-offset-2 link-underline-opacity-0"
+               href="mailto: {{ site.email }}">{{ site.name | default: site.title }}</a>. 
+                {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} 
+            <a class="link-dark link-offset-2 link-underline-opacity-25"
+               href="https://jekyllrb.com" target="_blank" rel="nofollow">Jekyll</a> &amp; 
+            <a class="link-dark link-offset-2 link-underline-opacity-25 ps"
+               href="https://getbootstrap.com/" target="_blank" rel="nofollow">Bootstrap</a>.
+            <br/><a class="link-dark link-offset-2 link-underline-opacity-25"
+              href="mailto: {{ site.email }}">Email: {{ site.email }}</a>
+            <br/><small class="ps">Updated: April 26, 2024</small>
+        </p>
 
-<div class="row">
-    <div class="page__footer-copyright row column">
-        <div>Last Updated: April 18, 2024</div>
-        <div >&copy; {{ site.time | date: '%Y' }} <a href="mailto: {{ site.email }}">{{ site.name | default: site.title }}</a>. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" target="_blank" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" target="_blank" rel="nofollow">Minimal Mistakes</a>.</div>
-    </div>
-    {% include footer/contact_info.html %}
-</div>
+        <ul class="list-unstyled d-flex justify-content-end fs-4">
+          <li class="ms-3"><a class="link-body-emphasis" href="https://www.youtube.com/@{{ site.youtube_username }}" target="_blank"><i class="bi-youtube" role="img" aria-label="Youtube"></i></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank"><i class="bi-linkedin" role="img" aria-label="Linkedin"></i></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="https://github.com/{{ site.github_username }}" target="_blank"><i class="bi-github" role="img" aria-label="GitHub"></i></a></li>
+          <li class="ms-3"><a class="link-body-emphasis d-none" href="https://stackoverflow.com/users/2965104/{{ site.stack_overflow_username }}" target="_blank"><i class="bi-stack-overflow" role="img" aria-label="Stack overflow"></i></a></li>
+          <li class="ms-3"><a class="link-body-emphasis d-none" href="https://twitter.com/{{ site.twitter_username }}" target="_blank"><i class="bi-twitter" role="img" aria-label="Twitter"></i></a></li>
+          <li class="ms-3"><a class="link-body-emphasis d-none" href="https://www.instagram.com/{{ site.instagram_username }}" target="_blank"><i class="bi-instagram" role="img" aria-label="Instagram"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>

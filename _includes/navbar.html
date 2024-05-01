@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container-fluid bd-gutter">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a href="{{ site.url }}" class="navbar-brand d-flex">
+            <img src="{{ site.avatar_url }}"
+                class="rounded-circle d-inline-block me-2" width="48" height="48">
+            <span class="d-none d-lg-inline lh-sm my-auto">
+                <span class="fw-medium">{{ site.title }}</span>
+                <small id="brand-subtitle" class="{% if page.url == '/' %}d-none{% else %}brand-subtitle{% endif %}">
+                    {{ site.subtitle }}
+                </small>
+            </span>
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+        </div>
+    </div>
+</nav>
