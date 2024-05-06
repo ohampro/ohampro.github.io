@@ -40,6 +40,15 @@
         {% include home_scripts.html %}
     {% endif %}
 
+    <!-- Parallax Effect Javascript: -->
+    <script>
+        const parallaxList = document.querySelectorAll('.parallax');
+        const parallaxListMap = [...parallaxList].map(parallaxEl => {
+            parallaxEl.style.backgroundImage = 'url(' + parallaxEl.getAttribute("data-prlx-bg") + ')';
+            parallaxEl.style.minHeight = (parallaxEl.getAttribute("data-prlx-min-h") ?? '100') + 'vh';
+        })
+    </script>
+
 </body>
 
 </html>
