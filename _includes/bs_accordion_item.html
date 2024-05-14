@@ -1,0 +1,11 @@
+<div class="accordion-item">
+    <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#{{ include.id }}" aria-expanded="true" aria-controls="{{ include.id }}">
+                    {{ include.header }} 
+            </button>
+    </h2>
+    <div class="accordion-collapse collapse" id="{{ include.id }}" data-bs-parent="#{{ include.parent }}">
+            <div class="accordion-body">{% include {{include.body}} %}</div>
+    </div>
+</div>
