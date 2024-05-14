@@ -50,3 +50,21 @@
 // // Utilities
 // @import "bootstrap/utilities/api";
 // // scss-docs-end import-stack
+
+// $bs-accordion-btn-bg: rgb(255, 0, 0);
+
+.accordion-button{
+    background-color: oldlace;
+}
+
+.accordion-body{
+    background-color: $oh_back_color;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: oldlace;
+}

@@ -1,0 +1,63 @@
+$oh_back_color: linen;
+$oh_alternate_color: burlywood;
+$oh_text_color: #333;
+
+// ------------------------------------------
+
+html:not([data-scroll='10']) {
+
+    nav {
+        -top: -50;
+    }
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 16px/1.8 "Lato", sans-serif;
+    font-family: CallunaLghtRegular, Georgia, serif;
+}
+
+p{
+    font-size: 16px;
+    // line-height: 1.5;
+}
+
+body{
+    background-color: $oh_back_color !important;
+    color: $oh_text_color !important;
+}
+
+main {
+    @extend .min-vh-50;
+}
+
+nav{
+    background-color: $oh_back_color;
+}
+
+section {
+    scroll-margin-top: 5rem;
+}
+
+hr {
+    width: 75%;
+    margin: auto;
+    background-color: $oh_back_color;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+h4, h5, h6 {
+    font-weight: bold;
+}
+
+figcaption{
+    text-align: center;
+}
+
+figcaption[sample] small::after {
+    content: " - sample";
+}

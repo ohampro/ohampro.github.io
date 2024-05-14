@@ -1,4 +1,4 @@
-<script>
+
     var prevScrollpos = window.pageYOffset;
 
     var deleyed_attentions = document.getElementsByClassName('deleyed-attention');
@@ -46,9 +46,9 @@
         prevScrollpos = currentScrollPos;
     }
 
-</script>
 
-<script>        
+    
+
     function displayMoreItems(){
         let btnLink = event.target;
 
@@ -84,9 +84,9 @@
         btnLink.classList.add('d-none');
     }
 
-</script>
 
-<script>
+    
+
     // load data: it a simple case,s o yet to make a page state though.
     for (var i = 0; i < sessionStorage.length; i++){
         let key = sessionStorage.key(i);
@@ -103,4 +103,3 @@
         }
     }
 
-</script>

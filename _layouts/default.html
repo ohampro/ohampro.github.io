@@ -36,18 +36,15 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    {% if page.layout == 'default' %}
-        {% include home_scripts.html %}
+    {% if page.url == '/' %}
+        <script src="/assets/js/home_scripts.js"></script>
     {% endif %}
 
-    <!-- Parallax Effect Javascript: -->
-    <script>
-        const parallaxList = document.querySelectorAll('.parallax');
-        const parallaxListMap = [...parallaxList].map(parallaxEl => {
-            parallaxEl.style.backgroundImage = 'url(' + parallaxEl.getAttribute("data-prlx-bg") + ')';
-            parallaxEl.style.minHeight = (parallaxEl.getAttribute("data-prlx-min-h") ?? '100') + 'vh';
-        })
-    </script>
+    <script src="/assets/js/parallax.js"></script>
+    
+    <script src="/assets/js/popover.js"></script>
+    
+    <script src="/assets/js/bootstrap_scripts.js"></script>
 
 </body>
 

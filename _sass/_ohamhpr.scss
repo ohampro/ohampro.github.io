@@ -1,9 +1,11 @@
+@import 'elements';
+
 .bg-linen {
-    background-color: linen;
+    background-color: $oh_back_color;
 }
 
 .bg-burlywood {
-    background-color: burlywood;
+    background-color: $oh_alternate_color;
 }
 
 .min-vh-50{
@@ -21,27 +23,31 @@
 
 //-------------------
 
-html:not([data-scroll='10']) {
+.content-padding {
+    padding: 3% 5% 3% 5%;
+}
 
-    nav {
-        -top: -50;
+.content {
+    @extend .content-padding;
+
+    width: 100%;
+    // background-color: #FFF;
+    background-color: $oh_back_color;
+}
+
+.content > p:first-of-type {
+    margin-top: 2.25rem;
+    // margin-bottom: 2.25rem;
+}
+
+.info {
+    width: 100%;
+    // background-color: #F4F6F7;
+    background-color: $oh_alternate_color;
+
+    img {
+        max-width: 100%;
     }
-}
-
-body{
-    @extend .bg-linen;
-}
-
-nav{
-    @extend .bg-linen;
-}
-
-section {
-    scroll-margin-top: 5rem;
-}
-
-main {
-    @extend .min-vh-50;
 }
 
 .content-blur {
@@ -96,6 +102,10 @@ main {
 @media only screen and (min-width: 40em) {
     .w-md-50{
         width: 50% !important;
+    }
+
+    .content-padding {
+        padding: 3% 25% 3% 25%;
     }
 }
 
