@@ -14,8 +14,8 @@ html:not([data-scroll='10']) {
 body, html {
     height: 100%;
     margin: 0;
-    font: 400 16px/1.8 "Lato", sans-serif;
-    font-family: CallunaLghtRegular, Georgia, serif;
+    // font: 400 16px/1.8 "Lato", sans-serif;
+    font-family: system-ui; //CallunaLghtRegular, Georgia, serif;
 }
 
 p{
