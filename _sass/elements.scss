@@ -70,3 +70,8 @@ figcaption{
 figcaption[sample] small::after {
     content: " - sample";
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
