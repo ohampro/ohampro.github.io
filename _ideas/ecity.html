@@ -238,7 +238,7 @@ excerpt: "Awarded an honorary diploma for achieving the top position in the Conc
         <p>
                 Lacking access to tools for drawing schematic diagrams, I practiced extensively to hand-draw all the designs.
         </p>
-        <figure>
+        <figure class="w-50">
                 <img class="w-100" src="/assets/images/ecity/main/17.jpg">
                 <figcaption>Hand-drawn Schematic Diagramming - One of Many</figcaption>
         </figure>
@@ -257,12 +257,63 @@ excerpt: "Awarded an honorary diploma for achieving the top position in the Conc
 
         <h3>Main Controller Unit</h3>
         <p>
-                This unit offers essential services utilized by the Base Module, it enables users to manually configure 
-                the module, expands connectivity with other devices, and facilitates external access via telephone line or 
-                wireless radio channel.
+                This unit offers essential services utilized by the Base Module, 
+                enabling users to manually configure the module and expand connectivity with other devices. 
+                It also facilitates external access, providing connectivity options through telephone lines or 
+                wireless radio channels. This ensures that users can monitor and control the system remotely, 
+                enhancing the overall flexibility and functionality of the network.
         </p>
 </section>
 
-<div class="w-100 text-center mb-2 fw-medium">Schematic Diagrams - Main Controller - A Few of Many</div>
-{% assign mainImages = "ecity/infra/mainImages1.html, ecity/infra/mainImages2.html, ecity/infra/mainImages3.html" | split: ", " %}
-{% include carousel.html items=mainImages %}
+<section>
+        <div class="w-100 text-center mb-2 fw-medium">Schematic Diagrams - Main Controller - A Few of Many</div>
+        {% assign mainImages = "ecity/infra/main-images1.html, ecity/infra/main-images2.html, ecity/infra/main-images3.html" | split: ", " %}
+        {% include carousel.html items=mainImages name="main" %}
+</section>
+
+<hr class="w-50 mt-5">
+
+<section id="detailed-design-2" class="content">
+        <h3>Internal Network</h3>
+        <p>
+                the internal network was designed to facilitate efficient communication between devices through 
+                a shared bus system. Each device communicated by sending and receiving messages over this bus, 
+                listening for relevant data, detecting it, and executing the necessary actions. 
+                The bus operation was managed by shift registers, essential for controlling the data flow. 
+                Data transmission involved converting parallel data to serial format using a parallel-to-serial 
+                converter and then sending it over the bus. At the receiving end, a serial-to-parallel converter 
+                transformed the serial data back into parallel format for processing. 
+                This method ensured seamless and orderly communication between devices, 
+                leveraging a straightforward yet powerful approach to network design.
+        </p>
+</section>
+<section>
+        <div class="w-100 text-center mb-2 fw-medium">Schematic Diagrams - Internal Network - A Few of Many</div>
+        {% assign networkImages = "ecity/infra/network-images1.html, ecity/infra/network-images2.html" | split: ", " %}
+        {% include carousel.html items=networkImages name="network" %}
+</section>
+
+<hr class="w-50 mt-5">
+
+<section id="detailed-design-3" class="content">
+        <h3>Power Management System</h3>
+        <p>
+                The Power Management System is designed to optimize energy usage and ensure continuous operation. 
+                It measures energy consumption in real-time, providing valuable data for efficient power management. 
+                In the event of a power outage or fluctuation, the system automatically switches to backup batteries, 
+                maintaining uninterrupted functionality. This capability ensures that critical operations continue 
+                seamlessly, enhancing the reliability and resilience of the overall system.
+        </p>
+        <a href="#schematics_power" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="schematics_power">
+                Display Schematic Diagrams
+        </a>
+</section>
+<section>
+        <div class="collapse mb-5" id="schematics_power">
+                <div class="w-100 text-center mb-2 fw-medium">Schematic Diagrams - Power Management System - A Few of Many</div>
+                {% include ecity/energy/power-images1.html %}
+        </div>
+</section>
+
+<hr class="w-50 mt-5">
+
