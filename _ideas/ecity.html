@@ -254,6 +254,9 @@ excerpt: "Awarded an honorary diploma for achieving the top position in the Conc
                 I went through cycles of identifying the real issue, brainstorming innovative solutions, 
                 critically evaluating them, and designing the final implementation.
         </p>
+        <p class="text-muted text-center">
+                <i>In the interest of brevity and clarity, certain details have been omitted.</i>
+        </p>
 
         <h3>Main Controller Unit</h3>
         <p>
@@ -286,11 +289,16 @@ excerpt: "Awarded an honorary diploma for achieving the top position in the Conc
                 This method ensured seamless and orderly communication between devices, 
                 leveraging a straightforward yet powerful approach to network design.
         </p>
+        <a href="#schematics_network" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="schematics_network">
+                Display Schematic Diagrams
+        </a>
 </section>
 <section>
-        <div class="w-100 text-center mb-2 fw-medium">Schematic Diagrams - Internal Network - A Few of Many</div>
-        {% assign networkImages = "ecity/infra/network-images1.html, ecity/infra/network-images2.html" | split: ", " %}
-        {% include carousel.html items=networkImages name="network" %}
+        <div class="collapse mb-5" id="schematics_network">
+                <div class="w-100 text-center mb-2 fw-medium">Schematic Diagrams - Internal Network - A Few of Many</div>
+                {% assign networkImages = "ecity/infra/network-images1.html, ecity/infra/network-images2.html" | split: ", " %}
+                {% include carousel.html items=networkImages name="network" %}
+        </div>
 </section>
 
 <hr class="w-50 mt-5">
@@ -316,4 +324,69 @@ excerpt: "Awarded an honorary diploma for achieving the top position in the Conc
 </section>
 
 <hr class="w-50 mt-5">
+
+<section id="detailed-design-4" class="content">
+        <h3>Water Management Syetem</h3>
+        <p>
+                It measures water consumption in real-time, providing crucial data for effective water management. 
+                The system can automatically switch to water storage tanks when necessary, ensuring a steady supply. 
+                To avoid water wastage, it employs a 3-pipe solution, enabling precise control over water flow. 
+                Additionally, it offers fast hot water preparation, ensuring immediate availability and reducing energy 
+                consumption. These features collectively enhance water conservation, reliability, and overall 
+                efficiency of the system.
+        </p>
+        <a href="#schematics_water" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="schematics_water">
+                Display Schematic Diagrams
+        </a>
+</section>
+<section>
+        <div class="collapse mb-5" id="schematics_water">
+                <div class="w-100 text-center mb-2 fw-medium">Schematic Diagrams - Water Management System - A Few of Many</div>
+                {% assign waterImages = "ecity/water/water-images1.html, ecity/water/water-images2.html" | split: ", " %}
+                {% include carousel.html items=waterImages name="water" %}
+        </div>
+</section>
+
+<hr class="w-50 mt-5">
+
+<section id="detailed-design-5" class="content">
+        <h3>Intercom System</h3>
+        <p>
+                The Intercom System is designed for seamless internal communication, 
+                utilizing a simple yet effective 4-line shared bus. It features a dial pad both at the 
+                door and inside the apartment, enabling easy internal calls. Additionally, 
+                the system includes a voice channel, allowing for clear and direct voice communication 
+                between different points within the building.
+        </p>
+        <a href="#schematics_intercom" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="schematics_intercom">
+                Display Schematic Diagrams
+        </a>
+</section>
+<section>
+        <div class="collapse mb-5" id="schematics_intercom">
+                <div class="w-100 text-center mb-2 fw-medium">Schematic Diagrams - Intercom System - A Few of Many</div>
+                {% include ecity/infra/intercom-images1.html %}
+        </div>
+</section>
+
+<hr class="w-50 mt-5">
+
+<section id="detailed-design-6" class="content">
+        <h3>Antenna Rotator</h3>
+        <p>
+                The Antenna Rotator is designed to optimize signal reception by precisely adjusting 
+                the orientation of the antenna, enhancing signal strength and clarity. 
+                It provides automated rotation to ensure the best possible alignment with broadcast signals, 
+                and allows for remote control of the rotator.
+        </p>
+        <a href="#schematics_intercom" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="schematics_intercom">
+                Display Mechanical Diagrams
+        </a>
+</section>
+<section>
+        <div class="collapse mb-5" id="schematics_intercom">
+                <div class="w-100 text-center mb-2 fw-medium">Antenna Rotator - Mechanical Parts - A Few of Many</div>
+                {% include ecity/infra/rotator-images.html %}
+        </div>
+</section>
 
