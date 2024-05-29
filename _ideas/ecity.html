@@ -98,13 +98,8 @@ excerpt: "Awarded an honorary diploma for achieving the top position in the Conc
                 Drawing from this wealth of data, several key insights shaped the direction of the project.
         </p>
         
+        {% if site.user == 'mhp' %}
         <div class="accordion" id="accordionExample">
-                
-                {% include bs_accordion_item.html 
-                        header="Energy Efficiency" 
-                        id="collapse1" 
-                        parent="accordionExample"
-                        body="ecity/energy.html"%}
 
                 {% include bs_accordion_item.html 
                         header="Water Management" 
@@ -112,6 +107,11 @@ excerpt: "Awarded an honorary diploma for achieving the top position in the Conc
                         parent="accordionExample"
                         body="ecity/water_management.html"%}
 
+                {% include bs_accordion_item.html 
+                        header="Energy Efficiency" 
+                        id="collapse1" 
+                        parent="accordionExample"
+                        body="ecity/energy.html"%}
                         
                 {% include bs_accordion_item.html 
                         header="Infrastructure Development" 
@@ -119,7 +119,27 @@ excerpt: "Awarded an honorary diploma for achieving the top position in the Conc
                         parent="accordionExample"
                         body="ecity/infra.html"%}
         </div>
+        {% endif %}
         
+        <a href="#discovery_water" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="discovery_water">
+                Water Management
+        </a>
+        <div class="collapse mb-5" id="discovery_water">
+                <div class="card bg-linen card-body">
+                        {% include ecity/water_management.html %}
+                </div>
+        </div>
+
+        <br>
+
+        <a href="#discovery_energy" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="discovery_energy">
+                Energy Efficiency
+        </a>
+        <div class="collapse mb-5" id="discovery_energy">
+                <div class="card bg-linen card-body">
+                        {% include ecity/energy.html %}
+                </div>
+        </div>
 </section>
 
 <hr/>
@@ -141,30 +161,37 @@ excerpt: "Awarded an honorary diploma for achieving the top position in the Conc
         <h5>Design Overview</h5>
         <h2></h2>
         <p>
-        The idea is to interconnect various points in the city to monitor, analyize, and control energy and water consumption.
+        The main idea is to interconnect various points in the city to monitor, analyize, and control energy and water consumption.
         To achieve this, I designed a modular unit that can connect with similar units to form the network needed to reach the goal.
         </p>
+
+        <h3>Key Services and Solutions</h3>
+        <p>
+
+        </p>
+        <ul>
+                <li>Manual Access</li>
+                <li>Tel Line Access</li>
+                <li>Wireless Access</li>
+                <li>Remote Control System</li>
+                <li>Automatic Control</li>
+                <li>Smart Meters</li>
+                <li>Water Management System with Storage Tanks</li>
+                <li>Power Management System featuring Power Backup</li>
+                <li>Heat Exchange System in Buildings</li>
+                <li>Advanced Doorbell</li>
+                <li>Stop Request Button in Buses</li>
+                <li>Advanced Appartement Intercom</li>
+                <li>Antenna Rotator</li>
+                <li>Extendable Internal Network</li>
+        </ul>
 
         <h3>Base Module</h3>
         <p>
                 This supports certain services selected for the initial design and can connect to other 
                 modules using either the telephone line or its own wireless radio channel.
         </p>
-        <p>List of services includes:</p>
-        <ul>
-                <li>Manual Access</li>
-                <li>Tel Line Access</li>
-                <li>Wireless Access</li>
-                <li>Extendable Internal Network</li>
-                <li>Remote Control System</li>
-                <li>Automatic Control</li>
-                <li>Smart Meters</li>
-                <li>Water Management System with Storage Tanks</li>
-                <li>Power Management System featuring Power Backup</li>
-                <li>Advanced Doorbell</li>
-                <li>Advanced Appartement Intercom</li>
-                <li>Antenna Rotator</li>
-        </ul>
+        
         <figure>
                 <img class="w-100" src="/assets/images/base-module.png">
                 <figcaption>Base Module Diagram</figcaption>
@@ -268,7 +295,7 @@ excerpt: "Awarded an honorary diploma for achieving the top position in the Conc
         {% include carousel.html items=mainImages name="main" %}
 </section>
 
-<hr class="w-50 mt-5">
+<hr class="w-50">
 
 <section id="detailed-design-2" class="content">
         <h3>Internal Network</h3>
@@ -295,7 +322,7 @@ excerpt: "Awarded an honorary diploma for achieving the top position in the Conc
         </div>
 </section>
 
-<hr class="w-50 mt-5">
+<hr class="w-50">
 
 <section id="detailed-design-3" class="content">
         <h3>Power Management System</h3>
@@ -317,7 +344,7 @@ excerpt: "Awarded an honorary diploma for achieving the top position in the Conc
         </div>
 </section>
 
-<hr class="w-50 mt-5">
+<hr class="w-50">
 
 <section id="detailed-design-4" class="content">
         <h3>Water Management Syetem</h3>
@@ -341,7 +368,7 @@ excerpt: "Awarded an honorary diploma for achieving the top position in the Conc
         </div>
 </section>
 
-<hr class="w-50 mt-5">
+<hr class="w-50">
 
 <section id="detailed-design-5" class="content">
         <h3>Intercom System</h3>
@@ -363,7 +390,7 @@ excerpt: "Awarded an honorary diploma for achieving the top position in the Conc
         </div>
 </section>
 
-<hr class="w-50 mt-5">
+<hr class="w-50">
 
 <section id="detailed-design-6" class="content">
         <h3>Antenna Rotator</h3>
@@ -384,6 +411,42 @@ excerpt: "Awarded an honorary diploma for achieving the top position in the Conc
         </div>
 </section>
 
+<hr class="w-50">
+
+<section id="detailed-design-7" class="content">
+        <h3>Stop Request Button in Buses</h3>
+        <p>
+                The Stop Request Button can improve fuel efficiency in public transportation systems 
+                by minimizing unnecessary idling, providing data for route optimization, 
+                and promoting smoother driving patterns. The system was meticulously designed with 
+                key factors such as passenger experience, seamless integration into vehicles, and an intuitive 
+                interface with audible and visual alerts for both driver and passenger. 
+                It includes a prominently placed button for easy passenger access, self-diagnostic capabilities, 
+                and mechanisms to prevent accidental activations.
+        </p>
+        <a href="#schematics_stop_button" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="schematics_stop_button">
+                Display Diagrams
+        </a>
+</section>
+<section>
+        <div class="collapse mb-5" id="schematics_stop_button">
+                <div class="w-100 text-center mb-2 fw-medium">Stop Request Button - An Overview</div>
+                {% include ecity/infra/stop-button-images.html %}
+        </div>
+</section>
+
+<hr class="w-50">
+
+<section id="detailed-design-8" class="content">
+        <h3>Heat Exchange System</h3>
+        <p>
+                This system recovers heat from outgoing stale air and transfers it to incoming fresh air, 
+                significantly reducing the energy required to maintain comfortable indoor temperatures. Similarly, 
+                hot water used in bathrooms and washing sinks often goes to waste as it drains away. 
+                To address these issues, I proposed two similar designs using copper thermal exchangers.
+        </p>
+</section>
+
 <hr/>
 
 <section id="evolution" class="content">
@@ -396,8 +459,8 @@ excerpt: "Awarded an honorary diploma for achieving the top position in the Conc
         </p>
         <p>
                 Read more about <a href="/projects/sepam/">SPAM System</a>, 
-                a comprehensive Student Portal, and the <a href="/projects/home_controller/">Remote Controller Module</a>, 
-                a device for remotely controlling home appliances via telephone.
+                a comprehensive Student Portal, and the <a href="/projects/ivr/">Interactive Voice Response (IVR) Controller</a>, 
+                a device for remotely controlling home appliances via telephone as well as enabling internal calling without an agent.
         </p>
 </section>
 

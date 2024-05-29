@@ -5,11 +5,19 @@ function onThumbnailBookClick (){
 
     let parent = event.target.parentElement;
 
-    let srcTitle = parent.getElementsByTagName('figcaption').first ?? 
-        parent.getElementsByClassName('title').first ?? parent;
+    let figcaptions = parent.getElementsByTagName('figcaption');
+    let srcTitle = parent;
+    if (figcaptions.length > 0){
+        srcTitle = figcaptions[0];
+    }else{
+        let titles = parent.getElementsByClassName('title');
+        if (titles.length > 0){
+            srcTitle = titles[0];
+        }
+    }
 
     let titleEl = document.getElementById('thumbnailBookDialogTitle');
-    titleEl.textContent = srcTitle.innerText;
+    titleEl.textContent = srcTitle.innerText ?? srcTitle.textContent;
 }
 
 function setupImage(img){
