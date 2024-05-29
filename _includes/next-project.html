@@ -1,0 +1,18 @@
+{% if page.nextProject %}
+    {% for collection in site.collections %}
+        {% for doc in collection.docs %}
+            {% assign docBasename = doc.path | split:'/' | last | split: '.' | first %}          
+
+            {% if docBasename == page.nextProject %}
+                <hr class="my-5">
+                <div class="w-100 text-center">
+                    <small class="text-muted">Next Project</small><br>
+                    <a href="{{ doc.permalink }}" role="button" class="btn btn-outline-primary">
+                        {{ doc.title }}
+                    </a>
+                </div>
+            {% endif %}
+
+        {% endfor %}
+    {% endfor %}
+{% endif %}
