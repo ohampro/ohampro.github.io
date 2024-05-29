@@ -54,10 +54,24 @@ h4, h5, h6 {
     font-weight: bold;
 }
 
+p + hr{
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
+
+h3:has(+p), h5:has(+p), p + h3, p + h5{
+    margin-top: 3rem !important;
+}
+
 figcaption{
     text-align: center;
 }
 
 figcaption[sample] small::after {
     content: " - sample";
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
