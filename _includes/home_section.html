@@ -15,12 +15,14 @@
 {%- endcapture %}
 
 <section id="{{ include.id }}" class="p-3 {{ include.stripColor }}">
-    <div class="mt-4 row {% unless include.deleyed-attention == true %}deleyed-attention content-blur{% endunless %}">
+    <div class="mt-4 row {% if include.deleyed-attention == false %}{% else %}deleyed-attention content-blur{% endif %}">
+        {% if include.title %}
         <div class="col-3 {{titleClass}} text-muted">
             <h3>{{ include.title }}</h3>
         </div>
+        {% endif %}
 
-        <div class="col-7 offset-0">
+        <div class="{% if include.title %}col-7{% else %}col{% endif %} offset-0">
             {% assign collection = site.collections | where: "label", include.type | first %}
             {% if include.select == nil %}
                 {% assign itemSize = collection.docs.size %}
