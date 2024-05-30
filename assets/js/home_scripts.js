@@ -18,7 +18,7 @@
         }
 
         //
-        if (currentScrollPos == 0){
+        if (currentScrollPos == 0 || prevScrollpos > 0){
             document.getElementById("brand-subtitle").className = "d-none";
 
             Array.prototype.forEach.call(deleyed_attentions, (element)=>{
@@ -88,7 +88,7 @@
     
 
     // load data: it a simple case,s o yet to make a page state though.
-    for (var i = 0; i < sessionStorage.length; i++){
+    for (let i = 0; i < sessionStorage.length; i++){
         let key = sessionStorage.key(i);
         let value = sessionStorage.getItem(key);
         //
