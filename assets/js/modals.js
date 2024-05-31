@@ -1,12 +1,56 @@
+var thumbnailBookDialogMatchingImages = [];
+var thumbnailBookDialogIndex = 0;
+
 // Add dialog to images
 function onThumbnailBookClick (){
     let imgEl = document.getElementById('thumbnailBookDialogImg');
-    imgEl.src = event.target.src;
+    let src = event.target.getAttribute('src');
+    imgEl.src = src;
 
-    let parent = event.target.parentElement;
+    // set title:
+    setThumbnailBookDialogTitleBy(event.target);
+
+    // find gallery:
+    let parentPath = src.substring(0, src.lastIndexOf('/'));
+
+    let gallery = event.target.closest('.gallery');
+    const images = gallery ? gallery.querySelectorAll('img') : [];
+    thumbnailBookDialogMatchingImages = [];
+
+    let index = 0;
+    let i = 0;
+
+    for (let img of images){
+        if (img.hasAttribute('modalOff')){
+            continue;
+        }
+
+        const imgSrc = img.getAttribute('src');
+        if (imgSrc.startsWith(parentPath)) {
+            if (imgSrc === src){
+                index = i;
+            }
+
+            thumbnailBookDialogMatchingImages.push(img);
+            i++;
+        }
+    }
+
+    if (thumbnailBookDialogMatchingImages.length == 0){
+        document.getElementById('btnThumbnailBookDialogPrev').classList.add('d-none');
+        document.getElementById('btnThumbnailBookDialogNext').classList.add('d-none');
+    }else{
+        document.getElementById('btnThumbnailBookDialogPrev').classList.remove('d-none');
+        document.getElementById('btnThumbnailBookDialogNext').classList.remove('d-none');
+    }
+}
+
+function setThumbnailBookDialogTitleBy(img){
+    let parent = img.parentElement ?? img;
 
     let figcaptions = parent.getElementsByTagName('figcaption');
     let srcTitle = parent;
+
     if (figcaptions.length > 0){
         srcTitle = figcaptions[0];
     }else{
@@ -33,3 +77,26 @@ const imgs = [...imgList].map(imgEl => {
         setupImage(imgEl);
     }
 });
+
+function toggleFullscreen(){
+    let modal = document.getElementById('thumbnailBookDialog');
+    modal.firstElementChild.classList.toggle('modal-fullscreen');
+}
+
+function thumbnailBookDialogPrev(){
+    let imgEl = document.getElementById('thumbnailBookDialogImg');
+
+    thumbnailBookDialogIndex = Math.max(thumbnailBookDialogIndex-1, 0);
+    let img = thumbnailBookDialogMatchingImages[thumbnailBookDialogIndex];
+    setThumbnailBookDialogTitleBy(img);
+    imgEl.src = img.getAttribute('src');
+}
+
+function thumbnailBookDialogNext(){
+    let imgEl = document.getElementById('thumbnailBookDialogImg');
+
+    thumbnailBookDialogIndex = Math.min(thumbnailBookDialogIndex+1, thumbnailBookDialogMatchingImages.length-1);
+    let img = thumbnailBookDialogMatchingImages[thumbnailBookDialogIndex];
+    setThumbnailBookDialogTitleBy(img);
+    imgEl.src = img.getAttribute('src');
+}

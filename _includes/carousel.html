@@ -1,6 +1,6 @@
 {% assign carouselName = "carousel" | append: include.name %}
 <div id="{{carouselName}}" class="carousel slide" data-bs-ride="true" data-bs-wrap="false">
-    <div class="carousel-inner">
+    <div class="carousel-inner gallery">
         {% for item in include.items %}
             <div class="carousel-item {% if forloop.first %}active{% endif %}">
                 {% include {{item}} %}
