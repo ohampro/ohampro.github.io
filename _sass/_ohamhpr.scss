@@ -130,3 +130,18 @@
         color: blue !important;
     }
 }
+
+.modal-fullscreen{
+
+    .bi-fullscreen{
+        display: none;
+    }
+
+    .bi-fullscreen-exit{
+        display: block;
+    }
+}
+
+.bi-fullscreen-exit{
+    display: none;
+}
