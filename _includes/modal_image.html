@@ -1,21 +1,21 @@
 <div class="modal fade" id="thumbnailBookDialog" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header d-flex flex-wrap">
                 <h1 id="thumbnailBookDialogTitle" class="modal-title fs-5" id="exampleModalToggleLabel2"></h1>
-                <div class="ms-auto">
-                    <button id="btnThumbnailBookDialogPrev" type="button" class="btn mb-1" onclick="thumbnailBookDialogPrev()" >
+                <div class="ms-auto d-flex flex-nowrap">
+                    <button id="btnThumbnailBookDialogPrev" type="button" class="btn" onclick="thumbnailBookDialogPrev()" >
                         <i class="bi bi-arrow-left-circle-fill"></i>
                     </button>
-                    <button id="btnThumbnailBookDialogNext" type="button" class="btn mb-1" onclick="thumbnailBookDialogNext()" >
+                    <button id="btnThumbnailBookDialogNext" type="button" class="btn" onclick="thumbnailBookDialogNext()" >
                         <i class="bi bi-arrow-right-circle-fill"></i>
                     </button>
 
-                    <button type="button" class="btn btn-sm mb-1" onclick="toggleFullscreen()" >
+                    <button type="button" class="btn btn-sm" onclick="toggleFullscreen()" >
                         <i class="bi bi-fullscreen"></i>
                         <i class="bi bi-fullscreen-exit"></i>
                     </button>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close m-0" style="height: auto;" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
             </div>
             <div class="modal-body text-center">
