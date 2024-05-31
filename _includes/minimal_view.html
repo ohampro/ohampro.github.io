@@ -25,7 +25,7 @@
     <p>
         {{ include.excerpt }}
         {% if include.content.size > 0 %}
-            <a class="link-dark1 {% if include.content contains 'under_construction_message' %}text-muted link-dark link-underline-opacity-10{% else %}link-success fw-bold{% endif %} link-offset-2 link-opacity-50-hover" 
+            <a class="link-dark1 {% if include.content contains 'under_construction_message' %}text-muted link-dark link-underline-opacity-10{% else %}link-primary fw-bold{% endif %} link-offset-2 link-opacity-50-hover" 
                 href="{{ include.url }}"> 
                 find more
             </a>

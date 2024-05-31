@@ -1,6 +1,6 @@
-$oh_back_color: linen;
-$oh_alternate_color: burlywood;
-$oh_text_color: #333;
+$oh_back_color: #f9f9f9; //linen;
+$oh_alternate_color: #ededed; //burlywood;
+$oh_text_color: #252B33;
 
 // ------------------------------------------
 
@@ -46,12 +46,9 @@ hr {
     background-color: $oh_back_color;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
-}
-
-h4, h5, h6 {
-    font-weight: bold;
+    color: #222222;
 }
 
 p + hr{
