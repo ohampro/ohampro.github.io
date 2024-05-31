@@ -17,9 +17,12 @@
             scroll_direction = scroll_direction_down;
         }
 
+        let navbar = document.getElementsByClassName("navbar")[0];
+
         //
-        if (currentScrollPos == 0 || prevScrollpos > 0){
+        if (currentScrollPos == 0){
             document.getElementById("brand-subtitle").className = "d-none";
+            navbar.classList.remove('shadow-sm');
 
             Array.prototype.forEach.call(deleyed_attentions, (element)=>{
                 element.classList.add("content-blur");
@@ -36,7 +39,8 @@
             } else {        
                 //document.getElementById("navbar").style.top = "-50px";
                 document.getElementById("brand-subtitle").className = "show-brand-subtitle";
-                
+                navbar.classList.add('shadow-sm');
+
                 for (element of deleyed_attentions){
                     element.classList.remove("content-blur");
                 };
