@@ -33,6 +33,10 @@
     width: 100%;
     // background-color: #FFF;
     background-color: $oh_back_color;
+
+    h3:has(+p), h5:has(+p), p + h3, p + h5{
+        margin-top: 3rem !important;
+    }
 }
 
 .content > p:first-of-type {
