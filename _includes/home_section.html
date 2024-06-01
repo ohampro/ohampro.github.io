@@ -23,58 +23,66 @@
         {% endif %}
 
         <div class="{% if include.title %}col-7{% else %}col{% endif %} offset-0">
-            {% assign collection = site.collections | where: "label", include.type | first %}
-            {% assign alldocs = collection.docs | map: "path" | join: ', ' %}
-            {% assign fullSelect = alldocs | replace: '.html', '' | replace: collection.relative_directory, '' | replace: '/', '' %}
-
-            {% capture selectString -%}
-                {%- if include.select == nil -%}
-                    {{fullSelect}}
-                {%- else -%}
-                    {{include.select}}
-                {%- endif -%}
-            {%- endcapture -%}
+            {% assign typeSelectArray = include.type | replace: ' ', '' | split: ',' %}
             
-            {% assign select = selectString | replace: ' ', '' | split: ',' %}
-            {% assign itemSize = select.size %}
+            {% for typeString in typeSelectArray %}
+            {% for collection in site.collections %}
+                {% if typeString == collection.label %}
 
-            {% for basename in select %}
-                {% assign index = forloop.index %}
-                {%- capture docItemId -%}
-                    docItemId_{{collection.label}}_{{ index }}
-                {%- endcapture %}
+                    {% assign collection = site.collections | where: "label", include.type | first %}
+                    {% assign alldocs = collection.docs | map: "path" | join: ', ' %}
+                    {% assign fullSelect = alldocs | replace: '.html', '' | replace: collection.relative_directory, '' | replace: '/', '' %}
 
-                {% for doc in collection.docs %}
-                    {% assign docBasename = doc.path | split:'/' | last | split: '.' | first %}          
+                    {% capture selectString -%}
+                        {%- if include.select == nil -%}
+                            {{fullSelect}}
+                        {%- else -%}
+                            {{include.select}}
+                        {%- endif -%}
+                    {%- endcapture -%}
+                    
+                    {% assign select = selectString | replace: ' ', '' | split: ',' %}
+                    {% assign itemSize = select.size %}
 
-                    {% if docBasename == basename %}
+                    {% for basename in select %}
+                        {% assign index = forloop.index %}
+                        {%- capture docItemId -%}
+                            docItemId_{{collection.label}}_{{ index }}
+                        {%- endcapture %}
 
-                        {% capture cardBorder -%}
-                            {%- if include.cardBorder -%}
-                                {{include.cardBorder}}
-                            {%- else -%}
-                                {{doc.cardBorder}}
-                            {%- endif -%}
-                        {%- endcapture -%}
-                        
-                        {% include minimal_view.html 
-                            id = docItemId
-                            url = doc.permalink
-                            title = doc.title
-                            subtitle = doc.subtitle
-                            muted = doc.muted
-                            excerpt = doc.excerpt
-                            content = doc.content
-                            equalHeight = include.equalHeight
-                            cardBorder = cardBorder
-                            badge = doc.badge
-                            index = index
-                            maxVisibleItems = maxVisibleItems
-                        %}
-                    {% endif %}
+                        {% for doc in collection.docs %}
+                            {% assign docBasename = doc.path | split:'/' | last | split: '.' | first %}          
 
-                {% endfor %}
-                
+                            {% if docBasename == basename %}
+
+                                {% capture cardBorder -%}
+                                    {%- if include.cardBorder -%}
+                                        {{include.cardBorder}}
+                                    {%- else -%}
+                                        {{doc.cardBorder}}
+                                    {%- endif -%}
+                                {%- endcapture -%}
+                                
+                                {% include minimal_view.html 
+                                    id = docItemId
+                                    url = doc.permalink
+                                    title = doc.title
+                                    subtitle = doc.subtitle
+                                    muted = doc.muted
+                                    excerpt = doc.excerpt
+                                    content = doc.content
+                                    equalHeight = include.equalHeight
+                                    cardBorder = cardBorder
+                                    badge = doc.badge
+                                    index = index
+                                    maxVisibleItems = maxVisibleItems
+                                %}
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+
+                {% endif %}
+            {% endfor %}
             {% endfor %}
         </div>
     
