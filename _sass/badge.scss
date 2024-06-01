@@ -1,0 +1,47 @@
+[data-badge]{
+//   border-radius: 1rem;
+//   position : relative;
+
+    .badge-container{
+        // background: $oh_back_color;
+        border-radius: var(--bs-border-radius);
+        position: relative;
+    }
+}
+
+[data-badge]::before{
+    position: absolute;
+    content: '';
+    
+    width: 0;
+	height: 0;
+	border-top: 0.71rem solid #283593;
+	border-right: 0.71rem solid transparent;
+    top:2.22rem;
+    right:-0.76rem;
+
+    // background: #283593;
+    // height: 1.25rem;
+    // width: 1.25rem;
+    // top:1.6rem;
+    // right:-0.5rem;
+    // transform : rotate(45deg);
+}
+
+[data-badge]::after{
+    position: absolute;
+    content: attr(data-badge);
+    top: 0.53rem;
+    right: -0.76rem;
+    padding: 0.1rem;
+    width: 6.5rem;
+    background: #3949ab;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 4px 4px 15px rgba(26, 35, 126, 0.2);
+    
+    border-radius: 0.2rem 0 0 0.2rem;
+    height: 1.69rem;
+    font-size: 14px;
+}

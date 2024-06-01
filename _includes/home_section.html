@@ -32,6 +32,14 @@
                         docItemId_{{include.type}}_{{ forloop.index }}
                     {%- endcapture %}
 
+                    {% capture cardBorder -%}
+                        {%- if include.cardBorder -%}
+                            {{include.cardBorder}}
+                        {%- else -%}
+                            {{doc.cardBorder}}
+                        {%- endif -%}
+                    {%- endcapture -%}
+
                     {% include minimal_view.html 
                         id = docItemId
                         url = doc.permalink
@@ -40,6 +48,9 @@
                         muted = doc.muted
                         excerpt = doc.excerpt
                         content = doc.content
+                        equalHeight = include.equalHeight
+                        cardBorder = cardBorder
+                        badge = doc.badge
                         index = forloop.index
                         maxVisibleItems = maxVisibleItems
                     %}
@@ -60,6 +71,14 @@
 
                         {% if docBasename == basename %}
 
+                            {% capture cardBorder -%}
+                                {%- if include.cardBorder -%}
+                                    {{include.cardBorder}}
+                                {%- else -%}
+                                    {{doc.cardBorder}}
+                                {%- endif -%}
+                            {%- endcapture -%}
+                            
                             {% include minimal_view.html 
                                 id = docItemId
                                 url = doc.permalink
@@ -68,6 +87,9 @@
                                 muted = doc.muted
                                 excerpt = doc.excerpt
                                 content = doc.content
+                                equalHeight = include.equalHeight
+                                cardBorder = cardBorder
+                                badge = doc.badge
                                 index = index
                                 maxVisibleItems = maxVisibleItems
                             %}
