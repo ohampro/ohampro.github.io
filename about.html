@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 <section class="text-start">
-    <div class="py-5">
+    <div class="py-5 mx-5">
         <h2>About Me</h2>
         <p>
             With over 12 years of expertise in software and hardware development across a wide range of applications 
@@ -28,15 +28,17 @@ permalink: /about/
 </section>
 
 <section class="text-start">
-    <h2 id="work_experiences">Work Experiences</h2>
-
-    {% include home_section.html 
-        id = 'section_work_experiences'
-        stripColorIGNORED = 'bg-burlywood'
-        type = 'experiences'
-        deleyed-attention = false
-        maxVisibleItems = 1000
-        cardBorder = 'secondary'
-        select = "fidasys, resertrac, tva, nrdc, douran, selakteb, kankash, self_emp"
-    %}
+    <div class="py-5 mx-5">
+        <h2 id="work_experiences">Work Experiences</h2>
+        
+        {% include home_section.html 
+            id = 'section_work_experiences'
+            stripColorIGNORED = 'bg-burlywood'
+            type = 'experiences'
+            deleyed-attention = false
+            maxVisibleItems = 1000
+            cardBorder = 'secondary'
+            select = "fidasys, resertrac, tva, nrdc, douran, selakteb, kankash, self_emp"
+        %}
+    </div>
 </section>
