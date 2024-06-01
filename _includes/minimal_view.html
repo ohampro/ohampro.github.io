@@ -2,33 +2,43 @@
     {%- if include.index > include.maxVisibleItems -%}inVisibleItem d-none{%- endif %}
 {%- endcapture %}
 
-<div id="{{ include.id }}" class="py-3 {{ display }}">
-    {% if include.title %}
-        {% if include.content.size > 0 %}
-            <a class="link-underline link-body-emphasis link-underline-opacity-75-hover link-offset-3-hover link-underline-opacity-0"
-                href="{{ include.url }}">
-                <h3>{{ include.title }}</h3>
-            </a>
-        {% else %}
-            <h3>{{ include.title }}</h3>
+<div class="card bg-transparent mb-3 {% if include.equalHeight %}card-equal-height{% endif %} {% if include.cardBorder.size > 0 %}border-{{ include.cardBorder }}{% else %}border-0{% endif %} " 
+
+    {% if include.badge %}data-badge="{{ include.badge }}"{% endif %}>
+
+    <img src="{{ include.image }}" class="card-img-top" alt="">
+    <div id="{{ include.id }}" class="py-3 {{ display }} card-body badge-container">
+        {% if include.title %}
+            {% if include.content.size > 0 %}
+                <a class="link-underline link-body-emphasis link-underline-opacity-75-hover link-offset-3-hover link-underline-opacity-0"
+                    href="{{ include.url }}">
+                    <h3 class="card-title">{{ include.title }}</h3>
+                </a>
+            {% else %}
+                <h3 class="card-title">{{ include.title }}</h3>
+            {% endif %}
         {% endif %}
-    {% endif %}
 
-    {% if include.subtitle %}
-        <h4>{{ include.subtitle }}</h4>
-    {% endif %}
-
-    {% if include.muted %}
-        <p class="text-muted">{{ include.muted }}</p>
-    {% endif %}
-
-    <p>
-        {{ include.excerpt }}
-        {% if include.content.size > 0 %}
-            <a class="link-dark1 {% if include.content contains 'under_construction_message' %}text-muted link-dark link-underline-opacity-10{% else %}link-primary fw-bold{% endif %} link-offset-2 link-opacity-50-hover" 
-                href="{{ include.url }}"> 
-                find more
-            </a>
+        {% if include.subtitle %}
+            <h4 class="card-subtitle text-body-secondary">{{ include.subtitle }}</h4>
         {% endif %}
-    </p>
+
+        {% if include.muted %}
+            <p class="text-muted">{{ include.muted }}</p>
+        {% endif %}
+
+        <p class="card-text">
+            {{ include.excerpt }}
+        </p>
+
+        <div class="text-end">
+            {% if include.content.size > 0 %}
+                <a class="card-link position-end card-body-action {% if include.content contains 'under_construction_message' %}text-muted link-dark link-underline-opacity-10{% else %}link-primary fw-bold{% endif %} link-offset-2 link-opacity-50-hover" 
+                    href="{{ include.url }}"> 
+                    find more
+                </a>  
+            {% endif %}
+        </div>
+        
+    </div>
 </div>

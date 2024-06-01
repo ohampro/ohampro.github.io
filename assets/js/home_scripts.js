@@ -107,3 +107,25 @@
         }
     }
 
+
+    function setEqualHeight() {
+        const cards = document.querySelectorAll('.card-equal-height');
+        let maxHeight = 0;
+        // Reset height to auto to recalculate heights
+        cards.forEach(card => {
+            card.style.height = 'auto';
+        });
+        // Find the maximum height
+        cards.forEach(card => {
+            if (card.offsetHeight > maxHeight) {
+                maxHeight = card.offsetHeight;
+            }
+        });
+        // Set all cards to the maximum height
+        cards.forEach(card => {
+            card.style.height = maxHeight + 'px';
+        });
+    }
+
+    window.onload = setEqualHeight;
+    window.onresize = setEqualHeight
