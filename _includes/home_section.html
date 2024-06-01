@@ -14,7 +14,7 @@
     {%- endif %}
 {%- endcapture %}
 
-<section id="{{ include.id }}" class="p-3 {{ include.stripColor }}">
+<section id="{{ include.id }}" class="{{ include.stripColor }}">
     <div class="mt-4 row {% if include.deleyed-attention == false %}{% else %}deleyed-attention content-blur{% endif %}">
         {% if include.title %}
         <div class="col-3 {{titleClass}} text-muted">
