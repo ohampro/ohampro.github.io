@@ -29,7 +29,7 @@
                 
                 {% for doc in collection.docs %}
                     {%- capture docItemId -%}
-                        docItemId_{{include.type}}_{{ forloop.index }}
+                        docItemId_{{collection.label}}_{{ forloop.index }}
                     {%- endcapture %}
 
                     {% capture cardBorder -%}
@@ -63,7 +63,7 @@
                 {% for basename in select %}
                     {% assign index = forloop.index %}
                     {%- capture docItemId -%}
-                        docItemId_{{include.type}}_{{ index }}
+                        docItemId_{{collection.label}}_{{ index }}
                     {%- endcapture %}
 
                     {% for doc in collection.docs %}
@@ -102,7 +102,7 @@
         </div>
     
         <div class="row text-end">
-            <a  id="displayMore_{{ include.type }}"
+            <a  id="displayMore_{{ collection.label }}"
                 class="display-more-items link-success {% if itemSize <= maxVisibleItems %}d-none{% endif %}" 
                 href="#" data-target-item="{{ include.id }}"
                 onclick="return displayMoreItems()">
