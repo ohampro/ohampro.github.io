@@ -24,12 +24,10 @@
 
         <div class="{% if include.title %}col-7{% else %}col{% endif %} offset-0">
             {% assign typeSelectArray = include.type | replace: ' ', '' | split: ',' %}
-            
-            {% for typeString in typeSelectArray %}
-            {% for collection in site.collections %}
-                {% if typeString == collection.label %}
+            {% assign collectionId = typeSelectArray | join: '' %}
+            {% assign collections = site.collections | where_exp: 'col', "typeSelectArray contains col.label"  %}
 
-                    {% assign collection = site.collections | where: "label", include.type | first %}
+            {% for collection in collections %}
                     {% assign alldocs = collection.docs | map: "path" | join: ', ' %}
                     {% assign fullSelect = alldocs | replace: '.html', '' | replace: collection.relative_directory, '' | replace: '/', '' %}
 
@@ -47,7 +45,7 @@
                     {% for basename in select %}
                         {% assign index = forloop.index %}
                         {%- capture docItemId -%}
-                            docItemId_{{collection.label}}_{{ index }}
+                            docItemId_{{collectionId}}_{{ index }}
                         {%- endcapture %}
 
                         {% for doc in collection.docs %}
@@ -80,14 +78,11 @@
                             {% endif %}
                         {% endfor %}
                     {% endfor %}
-
-                {% endif %}
-            {% endfor %}
             {% endfor %}
         </div>
     
         <div class="row text-end">
-            <a  id="displayMore_{{ collection.label }}"
+            <a  id="displayMore_{{ collectionId }}"
                 class="display-more-items link-success {% if itemSize <= maxVisibleItems %}d-none{% endif %}" 
                 href="#" data-target-item="{{ include.id }}"
                 onclick="return displayMoreItems()">
