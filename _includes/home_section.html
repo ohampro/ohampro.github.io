@@ -33,16 +33,19 @@
                 {% assign allDocs = allDocs | push: docX %}
             {% endfor %}
             {% endfor %}
-
-            {% assign allDocs = allDocs | sort: "order" %}
-
-            {% for g in allDocs %}
-                <p>{{g.path}}</p>
-            {% endfor %}
             
             {% capture selectString -%}
                 {%- if include.select == nil -%}
-                    {{ allDocs | map: "path" | join: ',' }}
+                    {%- assign unordered = allDocs | map: "path" -%}
+                    {%- assign ordered = "" | split: "" -%}
+                    {%- for docOrder in site.docsOrder -%}
+                        {%- if unordered contains docOrder -%}
+                            {%- assign ordered = ordered | push: docOrder -%}
+                        {%- endif -%}
+                    {%- endfor -%}
+
+                    {{ ordered | join: ',' }}
+
                 {%- else -%}
                     {{include.select}}
                 {%- endif -%}

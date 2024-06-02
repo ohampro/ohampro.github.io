@@ -89,3 +89,22 @@ defaults:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+docsOrder:
+    - _ideas/vertical-city.html
+    - _projects/shop_floor_meeting.html
+    - _projects/sensors_mgm.html
+    - _ideas/smart-city.html
+    - _projects/concrete_curbing_machine.html
+    - _projects/sepam.html
+    - _projects/course_selection_kiosk.html
+    - _projects/ivr.html
+    - _ideas/ecity.html
+    - _experiences/fidasys.html
+    - _experiences/resertrac.html
+    - _experiences/nrdc.html
+    - _experiences/tva.html
+    - _experiences/douran.html
+    - _experiences/selakteb.html
+    - _experiences/kankash.html
+    - _experiences/self_emp.html
