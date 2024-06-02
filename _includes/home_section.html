@@ -28,8 +28,7 @@
             {% assign collections = site.collections | where_exp: 'col', "typeSelectArray contains col.label"  %}
 
             {% for collection in collections %}
-                    {% assign alldocs = collection.docs | map: "path" | join: ', ' %}
-                    {% assign fullSelect = alldocs | replace: '.html', '' | replace: collection.relative_directory, '' | replace: '/', '' %}
+                    {% assign fullSelect = collection.docs | map: "path" | join: ',' %}
 
                     {% capture selectString -%}
                         {%- if include.select == nil -%}
@@ -51,7 +50,7 @@
                         {% for doc in collection.docs %}
                             {% assign docBasename = doc.path | split:'/' | last | split: '.' | first %}          
 
-                            {% if docBasename == basename %}
+                            {% if docBasename == basename or doc.path == basename %}
 
                                 {% capture cardBorder -%}
                                     {%- if include.cardBorder -%}
