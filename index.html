@@ -5,6 +5,7 @@ layout: default
 {% include about.html %}
 
 <div class="row my-5 mx-md-5 p-4">
+    <div class="d-flex w-100 justify-content-center fs-4">Significant Works</div>
     <div class="col-lg">
         {% include home_section.html 
             id = 'section_innovations'
@@ -50,6 +51,18 @@ layout: default
 <div class="collapse mb-5" id="portfolio_list">
     <hr class="mt-5">
     {% include portfolio_list.html %}
+    
+    <hr class="mt-5">
+
+    <div class="row mt-4 gy-4">
+        <div class="col"></div>
+        <div class="col-md-4 text-center">
+            <a href="/about#work_experiences" role="button" class="btn btn-outline-primary w-50">
+                Work Experiences <i class="bi bi-box-arrow-up-right small ms-1"></i>
+            </a>
+        </div>
+        <div class="col"></div>
+    </div>
 </div>
 <!-- skills -->
 
