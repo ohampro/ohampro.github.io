@@ -56,10 +56,6 @@ p + hr{
     margin-bottom: 3rem !important;
 }
 
-h3:has(+p), h5:has(+p), p + h3, p + h5{
-    margin-top: 3rem !important;
-}
-
 figcaption{
     text-align: center;
 }
