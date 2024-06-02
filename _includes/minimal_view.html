@@ -3,11 +3,11 @@
 {%- endcapture %}
 
 <div class="card bg-transparent mb-3 {% if include.equalHeight %}card-equal-height{% endif %} {% if include.cardBorder.size > 0 %}border-{{ include.cardBorder }}{% else %}border-0{% endif %} " 
-
-    {% if include.badge %}data-badge="{{ include.badge }}"{% endif %}>
+    {% if include.badge %}data-badge="{{ include.badge }}"{% endif %} 
+    {% if include.badgeColor %}style="--badge-color: {{ include.badgeColor }};"{% endif %}>
 
     <img src="{{ include.image }}" class="card-img-top" alt="">
-    <div id="{{ include.id }}" class="py-3 {{ display }} card-body badge-container">
+    <div id="{{ include.id }}" class="py-3 {{ display }} card-body">
         {% if include.title %}
             {% if include.content.size > 0 %}
                 <a class="link-underline link-body-emphasis link-underline-opacity-75-hover link-offset-3-hover link-underline-opacity-0"
