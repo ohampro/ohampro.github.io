@@ -1,31 +1,19 @@
 [data-badge]{
+    --badge-color: #3949ab;
+    --badge-color-darken: hsl(from var(--badge-color) h s calc(l - 10));
 //   border-radius: 1rem;
 //   position : relative;
-
-    .badge-container{
-        // background: $oh_back_color;
-        border-radius: var(--bs-border-radius);
-        position: relative;
-    }
 }
 
 [data-badge]::before{
     position: absolute;
     content: '';
-    
     width: 0;
 	height: 0;
-	border-top: 0.71rem solid #283593;
+	border-top: 0.71rem solid var(--badge-color-darken);
 	border-right: 0.71rem solid transparent;
     top:2.22rem;
     right:-0.76rem;
-
-    // background: #283593;
-    // height: 1.25rem;
-    // width: 1.25rem;
-    // top:1.6rem;
-    // right:-0.5rem;
-    // transform : rotate(45deg);
 }
 
 [data-badge]::after{
@@ -35,7 +23,7 @@
     right: -0.76rem;
     padding: 0.1rem;
     width: 6.5rem;
-    background: #3949ab;
+    background: var(--badge-color);
     color: white;
     text-align: center;
     font-family: 'Roboto', sans-serif;
