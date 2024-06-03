@@ -12,7 +12,7 @@
     {%- endif -%}
 {%- endcapture -%}
 
-<div class="card bg-transparent mb-3 {% if include.equalHeight %}card-equal-height{% endif %} {% if include.cardBorder.size > 0 %}border-{{ include.cardBorder }}{% else %}border-0{% endif %} " 
+<div class="card bg-transparent {% if include.equalHeight %}card-equal-height{% endif %} {% if include.cardBorder.size > 0 %}border-{{ include.cardBorder }}{% else %}border-0{% endif %} " 
     {% if include.badge %}data-badge="{{ include.badge }}"{% endif %} 
     {% if bagdeStyle %}style="{{ bagdeStyle }}"{% endif %}>
 

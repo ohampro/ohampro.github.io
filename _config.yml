@@ -58,17 +58,17 @@ defaults:
       path: ""
       type: "ideas"
     values:
-      layout: single
+      layout: default
   - scope:
       path: ""
       type: "projects"
     values:
-      layout: single
+      layout: default
   - scope:
       path: ""
       type: "experiences"
     values:
-      layout: single
+      layout: default
   
 # Exclude from processing.
 # The following items will not be processed, by default.

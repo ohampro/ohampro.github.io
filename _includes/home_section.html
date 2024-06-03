@@ -15,7 +15,7 @@
 {%- endcapture %}
 
 <section id="{{ include.id }}" class="{{ include.stripColor }}">
-    <div class="mt-4 row {% if include.deleyed-attention == false %}{% else %}deleyed-attention content-blur{% endif %}">
+    <div class="row {% if include.deleyed-attention == false %}{% else %}deleyed-attention content-blur{% endif %}">
         {% if include.title %}
         <div class="col-3 {{titleClass}} text-muted">
             <h3>{{ include.title }}</h3>
@@ -72,22 +72,24 @@
                             {%- endif -%}
                         {%- endcapture -%}
                         
-                        {% include minimal_view.html 
-                            id = docItemId
-                            url = doc.permalink
-                            title = doc.title
-                            subtitle = doc.subtitle
-                            muted = doc.muted
-                            excerpt = doc.excerpt
-                            content = doc.content
-                            equalHeight = include.equalHeight
-                            cardBorder = cardBorder
-                            badge = doc.badge
-                            badgeColor = doc.badgeColor
-                            badgeTextColor = doc.badgeTextColor
-                            index = index
-                            maxVisibleItems = maxVisibleItems
-                        %}
+                        <div class="mb-3">
+                            {% include minimal_view.html 
+                                id = docItemId
+                                url = doc.permalink
+                                title = doc.title
+                                subtitle = doc.subtitle
+                                muted = doc.muted
+                                excerpt = doc.excerpt
+                                content = doc.content
+                                equalHeight = include.equalHeight
+                                cardBorder = cardBorder
+                                badge = doc.badge
+                                badgeColor = doc.badgeColor
+                                badgeTextColor = doc.badgeTextColor
+                                index = index
+                                maxVisibleItems = maxVisibleItems
+                            %}
+                        </div>
                     {% endif %}
                 {% endfor %}
             {% endfor %}

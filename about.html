@@ -1,51 +1,60 @@
 ---
-layout: single
+layout: default
 title: About
 permalink: /about/
 ---
 
 <section class="text-start">
-    <div class="py-5 mx-5">
-        <h2>About Me</h2>
-        <p>
-            With over 12 years of expertise in software and hardware development across a wide range of applications 
-            including desktop, web, mobile, IoT solutions, electronics, and robotics, I have consistently delivered 
-            high-quality solutions that yield tangible results. From developing intricate systems to streamlining processes, 
-            my work has contributed to increased efficiency and productivity for clients.
-        </p>
-        <p>
-            I am deeply committed to continuous learning and collaboration, working closely with cross-functional teams 
-            to deliver solutions that exceed expectations. Embracing critical thinking, simplicity, and a customer-centric 
-            approach, I ensure that each solution not only meets technical requirements but also resonates with end-users, 
-            enhancing their experience and driving business success.
-        </p>
-        <p>
-            Fueled by a passion for various sciences, I thrive on devising innovative solutions that effectively address 
-            complex business challenges. Whether you're tackling a challenging technical problem or seeking 
-            innovative solutions, let's connect and synergize our efforts for a better future.
-        </p>
+    <div class="row px-3 py-5">
+        <div class="col"></div>
+        <div class="col-lg-8">
+            <h2>About Me</h2>
+            <p>
+                With over 12 years of expertise in software and hardware development across a wide range of applications 
+                including desktop, web, mobile, IoT solutions, electronics, and robotics, I have consistently delivered 
+                high-quality solutions that yield tangible results. From developing intricate systems to streamlining processes, 
+                my work has contributed to increased efficiency and productivity for clients.
+            </p>
+            <p>
+                I am deeply committed to continuous learning and collaboration, working closely with cross-functional teams 
+                to deliver solutions that exceed expectations. Embracing critical thinking, simplicity, and a customer-centric 
+                approach, I ensure that each solution not only meets technical requirements but also resonates with end-users, 
+                enhancing their experience and driving business success.
+            </p>
+            <p>
+                Fueled by a passion for various sciences, I thrive on devising innovative solutions that effectively address 
+                complex business challenges. Whether you're tackling a challenging technical problem or seeking 
+                innovative solutions, let's connect and synergize our efforts for a better future.
+            </p>
+        </div>
+        <div class="col"></div>
     </div>
 </section>
 
-<section class="text-start">
-    <h2 id="work_experiences" class="mb-0 mx-5">Work Experiences</h2>
-    <div class="mx-4">
-        {% include home_section.html 
-            id = 'section_work_experiences'
-            stripColorIGNORED = 'bg-burlywood'
-            type = 'experiences'
-            deleyed-attention = false
-            maxVisibleItems = 1000
-            cardBorder = 'secondary'
-        %}
+<section id="work_experiences" class="text-start bg-alternate-3">
+    <div class="row px-3 pt-5 mb-4">
+        <div class="col"></div>
+        <div class="col-lg-8">
+            <h2 class="mb-3">Work Experiences</h2>
+                {% include home_section.html 
+                    id = 'section_work_experiences'
+                    type = 'experiences'
+                    deleyed-attention = false
+                    maxVisibleItems = 1000
+                    cardBorder = 'secondary'
+                %}
+        </div>
+        <div class="col"></div>
     </div>
 </section>
+
+<hr>
 
 <section>
-    <div class="row mt-4 gy-4">
+    <div class="row pt-4">
         <div class="col"></div>
-        <div class="col-md-4 text-center">
-            <a href="/" class="outline-primary w-50">
+        <div class="col-md-3 text-center">
+            <a href="/" class="outline-primary w-100">
                 Discover more in the Portfolio
             </a>
         </div>

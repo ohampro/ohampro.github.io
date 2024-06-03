@@ -2,67 +2,118 @@
 layout: default
 ---
 
-{% include about.html %}
+<section>
+    <div class="pt-4 px-3">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-lg-6">
+                {% include home_about.html %}
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+</section>
 
-<div class="row my-5 mx-md-5 p-4">
-    <div class="d-flex w-100 justify-content-center fs-4">Significant Works</div>
-    <div class="col-lg">
-        {% include home_section.html 
-            id = 'section_innovations'
-            stripColor1 = 'bg-burlywood'
-            type = "ideas"
-            equalHeight = true
-            cardBorder = 'primary'
-            select = "ecity, smart-city, vertical-city"
-        %}
+<section class="my-5 bg-alternate-1" id="section_significant_works">
+    <div class="pt-5 px-3">
+        <div class="row">
+            <div class="d-flex w-100 justify-content-center fs-4 pb-4">Significant Works</div>
+            <div class="col-lg">
+                {% include home_section.html 
+                    id = 'section_innovations'
+                    stripColor1 = 'bg-burlywood'
+                    type = "ideas"
+                    equalHeight = true
+                    cardBorder = 'primary'
+                    select = "ecity, smart-city, vertical-city"
+                %}
+            </div>
+            <div class="col-lg">
+                {% include home_section.html 
+                    id = 'section_projects'
+                    type = 'projects'
+                    equalHeight = true
+                    cardBorder = 'secondary'
+                    select = "shop_floor_meeting, sensors_mgm, course_selection_kiosk"
+                %}
+            </div>
+        </div>
     </div>
-    <div class="col-lg">
-        {% include home_section.html 
-            id = 'section_projects'
-            type = 'projects'
-            equalHeight = true
-            cardBorder = 'secondary'
-            select = "shop_floor_meeting, sensors_mgm, course_selection_kiosk"
-        %}
-    </div>
-</div>
+</section>
 
 <hr>
 
 <section>
-    <div class="row mt-4 gy-4">
-        <div class="col"></div>
-        <div class="col-md-4  text-center">
-            <a href="#portfolio_list" role="button" class="btn btn-primary w-50" 
-                data-bs-toggle="collapse" aria-expanded="false" aria-controls="portfolio_list">
-                All Projects
-            </a>
-        </div>
-
-        <div class="col-md-4 text-center">
-            <a href="/about#work_experiences" role="button" class="btn btn-outline-primary w-50">
-                Work Experiences <i class="bi bi-box-arrow-up-right small ms-1"></i>
-            </a>
-        </div>
-        <div class="col"></div>
-    </div>
-</section>
-
-<section>
-    <div class="collapse mb-5" id="portfolio_list">
-        <hr class="mt-5">
-        {% include portfolio_list.html %}
-        
-        <hr class="mt-5">
-
-        <div class="row mt-4 gy-4">
+    <div class="pt-5 px-3">
+        <div class="row gy-4">
             <div class="col"></div>
-            <div class="col-md-4 text-center">
-                <a href="/about#work_experiences" role="button" class="btn btn-outline-primary w-50">
+            <div class="col-md-3 text-center">
+                <a href="#portfolio_list" onclick="scrollToProjects()" role="button" class="btn btn-primary w-100" 
+                    data-bs-toggle="collapse" aria-expanded="false" aria-controls="portfolio_list">
+                    All Projects
+                </a>
+            </div>
+
+            <div class="col-md-3 text-center">
+                <a href="/about#work_experiences" role="button" class="btn btn-outline-primary w-100">
                     Work Experiences <i class="bi bi-box-arrow-up-right small ms-1"></i>
                 </a>
             </div>
             <div class="col"></div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="collapse" id="portfolio_list">
+        <div class="pt-4 px-3 mb-5">
+            <hr class="w-50">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-lg-6 text-center">
+                    <p class="mt-5 fs-4">
+                        Over the years, I've gained invaluable insights from a wide range of projects, 
+                        both successful and challenging. These varied experiences have shaped my approach and 
+                        strengthened my commitment to creating projects that genuinely matter and make a difference. 
+                        Here is a chronological list of the projects I've contributed to.
+                    </p>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+
+        <div class="pt-4 px-3 mb-5 bg-alternate-2">
+            
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-lg-6">
+                    
+                    {% include home_section.html 
+                        id = 'section_projects'
+                        type = 'projects, ideas'
+                        deleyed-attention = false
+                        maxVisibleItems = 1000
+                        cardBorder = 'secondary'
+                    %}
+                    
+                </div>
+                <div class="col"></div>
+            </div>
+                        
+        </div>
+
+        <hr class="pt-4">
+
+        <div class="pt-4 px-3">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-md-3 text-center">
+                    <a href="/about#work_experiences" role="button" class="btn btn-outline-primary w-100">
+                        Work Experiences <i class="bi bi-box-arrow-up-right small ms-1"></i>
+                    </a>
+                </div>
+                <div class="col"></div>
+            </div>
         </div>
     </div>
 </section>

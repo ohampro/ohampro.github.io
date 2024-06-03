@@ -129,3 +129,20 @@
 
     window.onload = setEqualHeight;
     window.onresize = setEqualHeight
+
+    function delay(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    async function scrollToProjects(){
+        const portfolio_list = document.getElementById('portfolio_list');
+        if (portfolio_list.classList.contains('show')){
+            return;
+        }
+        //
+        const targetId = event.target.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+
+        await delay(400);
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
