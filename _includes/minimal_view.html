@@ -2,9 +2,19 @@
     {%- if include.index > include.maxVisibleItems -%}inVisibleItem d-none{%- endif %}
 {%- endcapture %}
 
+{%- capture bagdeStyle -%}
+    {%- if include.badgeColor and include.badgeTextColor -%}
+        --badge-color: {{include.badgeColor}}; --badge-text-color: {{include.badgeTextColor}};
+    {%- elsif include.badgeColor -%}
+        --badge-color: {{include.badgeColor}};
+    {%- elsif include.badgeTextColor -%}
+        --badge-text-color: {{include.badgeTextColor}};
+    {%- endif -%}
+{%- endcapture -%}
+
 <div class="card bg-transparent mb-3 {% if include.equalHeight %}card-equal-height{% endif %} {% if include.cardBorder.size > 0 %}border-{{ include.cardBorder }}{% else %}border-0{% endif %} " 
     {% if include.badge %}data-badge="{{ include.badge }}"{% endif %} 
-    {% if include.badgeColor %}style="--badge-color: {{ include.badgeColor }};"{% endif %}>
+    {% if bagdeStyle %}style="{{ bagdeStyle }}"{% endif %}>
 
     <img src="{{ include.image }}" class="card-img-top" alt="">
     <div id="{{ include.id }}" class="py-3 {{ display }} card-body">

@@ -1,6 +1,9 @@
 [data-badge]{
     --badge-color: #3949ab;
+    --badge-text-color: #f9f9f9;
     --badge-color-darken: hsl(from var(--badge-color) h s calc(l - 10));
+    --badge-color-inverted: hsl(from var(--badge-color) h s calc((180 - l)));
+
 //   border-radius: 1rem;
 //   position : relative;
 }
@@ -24,7 +27,7 @@
     padding: 0.1rem;
     width: 6.5rem;
     background: var(--badge-color);
-    color: white;
+    color: var(--badge-text-color);
     text-align: center;
     font-family: 'Roboto', sans-serif;
     box-shadow: 4px 4px 15px rgba(26, 35, 126, 0.2);
