@@ -12,6 +12,11 @@
 
         gtag('config', 'G-FEFJ7Y2LE5');
 
+        if (window.location.search && window.location.search.length > 0){
+            console.log(window.location.search);
+            gtag('event', 'link', {'search' : window.location.search,});
+        }
+
         document.addEventListener('click', function(event){
             let vtext = event.target.src ?? event.target.href ?? event.target.innerText;
             if (vtext.length > 0 && "A, IMG, BUTTON".indexOf(event.target.tagName) > -1){
