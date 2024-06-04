@@ -1,3 +1,7 @@
-<div class="center-main fw-meduim fs-4 text-success under_construction_message">
-    {{ site.under_construction_message }}
+<div class="under_construction_message">
+    <div class="px-3 d-flex align-items-center" {% if include.center == false %}{% else %}style="min-height: 60vh;"{% endif %}>
+        <div class="fw-meduim fs-4 text-success text-center flex-fill">
+            {{ site.under_construction_message }}
+        </div>
+    </div>
 </div>
