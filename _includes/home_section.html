@@ -1,10 +1,4 @@
-{% capture xyz %}
-    {% if include.maxVisibleItems == nil %}
-        {% assign maxVisibleItems = 3 %}
-    {% else %}    
-        {% assign maxVisibleItems = include.maxVisibleItems %}
-    {% endif %}
-{% endcapture %}
+{% assign maxVisibleItems = include.maxVisibleItems | default: 3 %}
 
 {% capture titleClass -%}
     {%- if include.titleAlign == 'top' -%}
@@ -64,13 +58,7 @@
 
                     {% if docBasename == basename or doc.path == basename %}
 
-                        {% capture cardBorder -%}
-                            {%- if include.cardBorder -%}
-                                {{include.cardBorder}}
-                            {%- else -%}
-                                {{doc.cardBorder}}
-                            {%- endif -%}
-                        {%- endcapture -%}
+                        {%- assign cardBorder = include.cardBorder | default: doc.cardBorder -%}
                         
                         <div class="mb-4">
                             {% include minimal_view.html 
@@ -98,7 +86,7 @@
         {% assign itemSize = select.size %}
         <div class="row text-end">
             <a  id="displayMore_{{ collectionId }}"
-                class="display-more-items link-success {% if itemSize <= maxVisibleItems %}d-none{% endif %}" 
+                class="display-more-items mb-3 link-success {% if itemSize <= maxVisibleItems %}d-none{% endif %}" 
                 href="#" data-target-item="{{ include.id }}"
                 onclick="return displayMoreItems()">
                 Display more
