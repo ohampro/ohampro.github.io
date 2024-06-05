@@ -165,10 +165,11 @@
     left: 0;
     width: 100%;
 
-    svg{
-        width: inherit;
-        fill: $oh_back_color;
-    }
+    
+}
+.section-shape-fill{
+    width: 100%;
+    fill: $oh_back_color;
 }
 
 .rotate-180{
