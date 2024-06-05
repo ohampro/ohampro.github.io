@@ -158,3 +158,19 @@
     bottom: 10px;
     right: 10px;
 }
+
+
+.section-shape{
+    overflow: hidden;
+    left: 0;
+    width: 100%;
+
+    svg{
+        width: inherit;
+        fill: $oh_back_color;
+    }
+}
+
+.rotate-180{
+    transform: rotate(180deg); 
+}
