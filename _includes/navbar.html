@@ -5,16 +5,18 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <a href="{{ site.url }}" class="navbar-brand d-flex">
-            <img src="{{ site.avatar_url }}"
-                class="rounded-circle d-inline-block me-2" width="48" height="48">
-            <span class="d-none d-lg-inline lh-sm my-auto">
-                <span class="fw-medium">{{ site.title }}</span>
-                <small id="brand-subtitle" class="{% if page.url == '/' %}d-none{% else %}brand-subtitle{% endif %}">
-                    {{ site.subtitle }}
-                </small>
-            </span>
-        </a>
+        <div class="navbar-brand d-flex">
+            <img src="{{ site.avatar_url }}" noTitle data-modal-class="w-50"
+                class="rounded-circle d-inline-block me-2" width="52" height="52">
+            <a href="{{ site.url }}" class="link-underline link-underline-opacity-0 link-dark">
+                <span class="d-none d-lg-inline lh-sm my-auto">
+                    <span class="fw-medium">{{ site.title }}</span>
+                    <small id="brand-subtitle" class="{% if page.url == '/' %}d-none{% else %}brand-subtitle{% endif %}">
+                        {{ site.subtitle }}
+                    </small>
+                </span>
+            </a>
+        </div>
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <div class="navbar-nav ml-auto">

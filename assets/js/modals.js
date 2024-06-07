@@ -7,9 +7,16 @@ function onThumbnailBookClick (){
     let src = event.target.getAttribute('src');
     imgEl.src = src;
 
+    // apply size:
+    imgEl.className = 'w-100'; // default
+    let modalClass = event.target.getAttribute('data-modal-class');
+    if (modalClass){
+        imgEl.className = modalClass;
+    }
+
     // set title:
     setThumbnailBookDialogTitleBy(event.target);
-
+    
     // find gallery:
     let parentPath = src.substring(0, src.lastIndexOf('/'));
 
@@ -46,6 +53,13 @@ function onThumbnailBookClick (){
 }
 
 function setThumbnailBookDialogTitleBy(img){
+    let titleEl = document.getElementById('thumbnailBookDialogTitle');
+    titleEl.textContent = '';
+
+    if (img.hasAttribute('noTitle')){
+        return;
+    }
+
     let parent = img.parentElement ?? img;
 
     let figcaptions = parent.getElementsByTagName('figcaption');
@@ -60,7 +74,6 @@ function setThumbnailBookDialogTitleBy(img){
         }
     }
 
-    let titleEl = document.getElementById('thumbnailBookDialogTitle');
     titleEl.textContent = srcTitle.innerText ?? srcTitle.textContent;
 }
 
