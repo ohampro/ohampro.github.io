@@ -91,8 +91,8 @@ defaults:
 #   - vendor/ruby/
 
 docsOrder:
-    - _projects/dispatch_info.html
-    - _ideas/vertical-city.html
+    - _projects/rt_dispatch.html
+    - _ideas/neoterra-cities.html
     - _projects/shop_floor_meeting.html
     - _projects/limousine_reservation.html
     - _projects/driver_assistance_center.html
