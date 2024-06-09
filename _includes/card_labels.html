@@ -1,0 +1,13 @@
+{% if include.labels.size > 0 %}
+    <p class="card-text">
+        {% assign labelsArr = include.labels | split: ', ' %}
+        {% for label in labelsArr %}
+            {% assign sLabel = label | strip | strip_newlines %}
+            {% if sLabel.size > 0 %}
+                <a role="button" class="btn btn-label btn-outline-secondary m-0 py-0 px-1" 
+                    href="/projects/?with={{label}}">{{ sLabel }}
+                </a>
+            {% endif %}
+        {% endfor %}
+    </p>
+{% endif %}

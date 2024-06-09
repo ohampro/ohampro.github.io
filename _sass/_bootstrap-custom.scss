@@ -68,3 +68,9 @@
 .accordion-button:not(.collapsed){
     background-color: oldlace;
 }
+
+.btn-label{
+    --bs-btn-padding-y: .25rem;
+    --bs-btn-padding-x: .5rem; 
+    --bs-btn-font-size: .75rem;
+}
