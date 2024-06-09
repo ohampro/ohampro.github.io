@@ -43,12 +43,12 @@ function onThumbnailBookClick (){
         }
     }
 
-    if (thumbnailBookDialogMatchingImages.length == 0){
-        document.getElementById('btnThumbnailBookDialogPrev').classList.add('d-none');
-        document.getElementById('btnThumbnailBookDialogNext').classList.add('d-none');
-    }else{
+    if (thumbnailBookDialogMatchingImages.length > 1){
         document.getElementById('btnThumbnailBookDialogPrev').classList.remove('d-none');
         document.getElementById('btnThumbnailBookDialogNext').classList.remove('d-none');
+    }else{
+        document.getElementById('btnThumbnailBookDialogPrev').classList.add('d-none');
+        document.getElementById('btnThumbnailBookDialogNext').classList.add('d-none');
     }
 }
 
