@@ -84,3 +84,7 @@
             
         }
     }
+
+    if (window.onCardLabelClick == undefined){
+        window.onCardLabelClick = function(){};
+    } 
