@@ -1,0 +1,91 @@
+---
+layout: default
+title: "Projets"
+---
+
+<div class="pt-4 px-3 mb-5 bg-alternate-2">
+            
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-lg-6">
+            
+            <p id="notFound" class="d-none text-center">
+                Not found!<br>
+            </p>
+
+            {% include home_section.html 
+                id = 'section_projects'
+                type = 'projects, ideas'
+                deleyed-attention = false
+                maxVisibleItems = 1000
+                cardBorder = 'secondary'
+                class = 'mv-docItem d-none'
+            %}
+            
+            <p id="showAllItems" class="text-center">
+                <a id="showAllItemsLink" href="/projects" class="text-center">
+                    Show all projects
+                </a>
+            </p>
+        </div>
+        <div class="col"></div>
+    </div>
+                
+</div>
+
+
+<script>
+    const params = new Proxy(new URLSearchParams(window.location.search), {
+        get: (searchParams, prop) => searchParams.get(prop),
+    });
+
+    let docItems = document.getElementsByClassName('mv-docItem');
+
+    if (params.with == undefined || params.with.length == 0){
+        showAllItems();
+
+    }else{
+        let found = false;
+        for (let item of docItems){
+            let dataLabels = item.querySelectorAll('[data-labels]');
+            const aElements = item.querySelectorAll('a[href]:not(:empty):not(:has(*))');
+
+            if (dataLabels.length > 0){
+                let itemLabels = dataLabels[0].getAttribute('data-labels');
+                
+                if (itemLabels.indexOf(params.with) > -1){
+                    item.classList.remove('d-none');
+                    found = true;
+                    //
+
+                    const filteredElements = Array.from(aElements).filter(a => a.textContent.trim() === params.with);
+                    filteredElements.map((el) => {
+                        el.classList.remove('btn-outline-secondary');
+                        el.classList.add('btn-secondary');
+                    });
+                }
+            }
+        }
+
+        if (!found){
+            let notFound = document.getElementById('notFound');
+            notFound.classList.remove('d-none');
+        }
+    }
+
+    window.onCardLabelClick = function(){
+        if (params.with == event.target.innerText){
+            window.location.href = document.getElementById('showAllItemsLink').href;
+            event.preventDefault();
+        }
+    };
+
+    function showAllItems(){
+        document.getElementById('showAllItems').classList.add('d-none');
+
+        for (let item of docItems){
+            item.classList.remove('d-none');
+        }
+    }
+
+</script>
