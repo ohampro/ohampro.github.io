@@ -3,13 +3,14 @@ layout: default
 title: "Projets"
 ---
 
+
 <div class="pt-4 px-3 mb-5 bg-alternate-2">
             
     <div class="row">
         <div class="col"></div>
         <div class="col-lg-6">
             
-            <p id="notFound" class="d-none text-center">
+            <p id="topMsg" class="d-none text-center fw-medium">
                 Not found!<br>
             </p>
 
@@ -46,6 +47,7 @@ title: "Projets"
 
     }else{
         let found = false;
+        
         for (let item of docItems){
             let dataLabels = item.querySelectorAll('[data-labels]');
             const aElements = item.querySelectorAll('a[href]:not(:empty):not(:has(*))');
@@ -67,10 +69,14 @@ title: "Projets"
             }
         }
 
-        if (!found){
-            let notFound = document.getElementById('notFound');
-            notFound.classList.remove('d-none');
+        let topMsg = document.getElementById('topMsg');
+        if (found){
+            topMsg.innerHTML = "Projects Utilizing " + params.with;
+        }else{
+            topMsg.innerHTML = "Not Found!";
         }
+        topMsg.classList.remove('d-none');
+
     }
 
     window.onCardLabelClick = function(){
@@ -86,6 +92,10 @@ title: "Projets"
         for (let item of docItems){
             item.classList.remove('d-none');
         }
+
+        let topMsg = document.getElementById('topMsg');
+        topMsg.innerHTML = "All Projects";
+        topMsg.classList.remove('d-none');
     }
 
 </script>

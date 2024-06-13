@@ -41,9 +41,9 @@
             {{ include.excerpt }}
         </p>
 
-        {% include card_labels.html labels=include.labels %}
+        {% include card_labels.html labels=include.labels skillMap=skillMap %}
 
-        <div class="text-end">
+        <div class="mt-3 text-end">
             {% if include.content.size > 0 %}
                 <a class="card-link position-end card-body-action {% if include.content contains 'under_construction_message' %}text-muted link-dark link-underline-opacity-10{% else %}link-primary fw-bold{% endif %} link-offset-2 link-opacity-50-hover" 
                     href="{{ include.url }}"> 
