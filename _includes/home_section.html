@@ -8,6 +8,42 @@
     {%- endif %}
 {%- endcapture %}
 
+{% assign allTypeSelectArray = "_experiences, _ideas, _projects" | replace: ' ', '' | split: ',' %}
+{% assign allCollections = site.collections | where_exp: 'col', "allTypeSelectArray contains col.label" %}
+{% assign skillMap = "" %}
+
+{% for acollection in allCollections %} 
+{% for adocX in acollection.docs %} 
+    {% assign aLabels = adocX.labels | split: ", " %}
+    
+    {% for item in aLabels %}
+        {% assign item = item | strip | strip_newlines %}
+        
+        {% if item.size > 0 %}
+        {% capture new_map %}
+            {% if skillMap contains item %}
+                {% assign value_start = skillMap | split: item | last | split: "," | first %}
+
+                {% assign oldValue = value_start | split: ": " | last %}
+                {% assign oldItem = item | append: ": " | append: oldValue | append: "," %}
+
+                {% assign newValue = oldValue | plus: 1 %}
+                {% assign newItem = item | append: ": " | append: newValue | append: "," %}
+
+                {{ skillMap | remove: oldItem | append: newItem }}
+            {% else %}
+                {{ skillMap | append: item | append: ": 1," }}
+            {% endif %}
+        {% endcapture %}
+        {% endif %}
+        {% assign skillMap = new_map %}
+
+    {% endfor %}
+
+{% endfor %}
+{% endfor %}
+
+
 <section id="{{ include.id }}" class="{{ include.stripColor }}">
     <div class="row {% if include.deleyed-attention == false %}{% else %}deleyed-attention content-blur{% endif %}">
         {% if include.title %}
@@ -76,7 +112,8 @@
                                 badgeTextColor = doc.badgeTextColor
                                 index = index
                                 maxVisibleItems = maxVisibleItems
-                                labels = doc.labels
+                                labels = doc.labels 
+                                skillMap = skillMap
                             %}
                         </div>
                     {% endif %}

@@ -1,0 +1,5 @@
+{% capture md_content %}
+    {% include {{include.src}} %}
+{% endcapture %}
+
+{{ md_content | markdownify }}
