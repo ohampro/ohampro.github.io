@@ -51,6 +51,7 @@ keywords: portfolio, Mohammad Haghighipoor, software development, projects
     });
 
     let docItems = document.getElementsByClassName('mv-docItem');
+    let count = 0;
 
     if (params.with == undefined || params.with.length == 0){
         showAllItems();
@@ -67,6 +68,7 @@ keywords: portfolio, Mohammad Haghighipoor, software development, projects
                 
                 if (itemLabels.indexOf(params.with) > -1){
                     item.classList.remove('d-none');
+                    count++;
                     found = true;
                     //
 
@@ -81,7 +83,7 @@ keywords: portfolio, Mohammad Haghighipoor, software development, projects
 
         let topMsg = document.getElementById('topMsg');
         if (found){
-            topMsg.innerHTML = "Projects Utilizing " + params.with;
+            topMsg.innerHTML = count + " Projects Utilizing " + params.with;
         }else{
             topMsg.innerHTML = "Not Found!";
         }
@@ -101,10 +103,11 @@ keywords: portfolio, Mohammad Haghighipoor, software development, projects
 
         for (let item of docItems){
             item.classList.remove('d-none');
+            count++;
         }
 
         let topMsg = document.getElementById('topMsg');
-        topMsg.innerHTML = "All Projects";
+        topMsg.innerHTML = `All Projects (${count} items)`;
         topMsg.classList.remove('d-none');
     }
 
