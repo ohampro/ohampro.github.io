@@ -1,46 +1,49 @@
 ---
 layout: default
 title: "Projets"
+description: Discover the portfolio of Mohammad Haghighipoor, showcasing innovative projects and solutions in software development.
+keywords: portfolio, Mohammad Haghighipoor, software development, projects
 ---
 
+<article>
+    <div class="bg-alternate-1">
+        <div class="pt-4 px-3 mb-5">
+                    
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-lg-6">
+                    
+                    <p id="topMsg" class="d-none text-center fw-medium">
+                        Not found!<br>
+                    </p>
 
-<div class="bg-alternate-1">
-    <div class="pt-4 px-3 mb-5">
-                
-        <div class="row">
-            <div class="col"></div>
-            <div class="col-lg-6">
-                
-                <p id="topMsg" class="d-none text-center fw-medium">
-                    Not found!<br>
-                </p>
-
-                {% include home_section.html 
-                    id = 'section_projects'
-                    type = 'projects, ideas'
-                    deleyed-attention = false
-                    maxVisibleItems = 1000
-                    cardBorder = 'secondary'
-                    class = 'mv-docItem d-none'
-                %}
-                
-                <p id="showAllItems" class="text-center">
-                    <a id="showAllItemsLink" href="/projects" class="text-center">
-                        Show all projects
-                    </a>
-                </p>
+                    {% include home_section.html 
+                        id = 'section_projects'
+                        type = 'projects, ideas'
+                        deleyed-attention = false
+                        maxVisibleItems = 1000
+                        cardBorder = 'secondary'
+                        class = 'mv-docItem d-none'
+                    %}
+                    
+                    <p id="showAllItems" class="text-center">
+                        <a id="showAllItemsLink" href="/projects" class="text-center">
+                            Show all projects
+                        </a>
+                    </p>
+                </div>
+                <div class="col"></div>
             </div>
-            <div class="col"></div>
+
         </div>
-
+        <div class="section-shape mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" height="50" width="100%" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                <path class="section-shape-fill" d="M0,0L1000,100H0z"></path>
+            </svg>
+        </div>
     </div>
-    <div class="section-shape mb-4">
-        <svg xmlns="http://www.w3.org/2000/svg" height="50" width="100%" viewBox="0 0 1000 100" preserveAspectRatio="none">
-            <path class="section-shape-fill" d="M0,0L1000,100H0z"></path>
-        </svg>
-    </div>
-</div>
 
+</article>
 
 <script>
     const params = new Proxy(new URLSearchParams(window.location.search), {

@@ -2,6 +2,26 @@
 layout: default
 title: Posts
 permalink: /posts/
+description: Read the latest blog posts by Mohammad Haghighipoor on software development and innovation.
+keywords: posts, blog, Mohammad Haghighipoor, software development, innovation
+
 ---
 
 {% include under_construction.html %}
+
+{% if site.user == 'mhp' %}
+    Meta Descriptions for a Post:
+    in header:
+    <meta name="description" content="Explore how IoT technology is transforming urban infrastructure in smart cities.">
+
+    <article>
+        <h1>Understanding IoT in Smart Cities</h1>
+        <p>...</p>
+    </article>
+
+    Social Sharing Buttons:
+    <div class="social-share">
+        <a href="https://twitter.com/intent/tweet?url=http://oham.pro/blog/iot-smart-cities&text=Check out this post by Mohammad Haghighipoor" target="_blank">Share on Twitter</a>
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://oham.pro/blog/iot-smart-cities&title=Understanding IoT in Smart Cities&summary=Explore how IoT technology is transforming urban infrastructure in smart cities." target="_blank">Share on LinkedIn</a>
+    </div>
+{% endif %}

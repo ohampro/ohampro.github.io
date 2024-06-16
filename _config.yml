@@ -18,12 +18,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Oham - (Mohammad Haghighipoor)
-subtitle: Software developer | Critical Thinking | Problem Solving.
-avatar_url: https://avatars.githubusercontent.com/u/16705068?v=4
+title: Mohammad Haghighipoor
+subtitle: Innovative Software Developer & Problem Solver
+# avatar_url: https://avatars.githubusercontent.com/u/16705068?v=4
+avatar_url: /assets/images/ohamhpr.jpg
+description: Explore Mohammad Haghighipoor's portfolio and projects. A software developer dedicated to innovation and impactful solutions.
+keywords: Mohammad Haghighipoor, software developer, innovation, innovative solutions, portfolio
+
 
 email: mohammad.haghighi.poor@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
+descriptionIGNORED: >- # this means to ignore newlines until "baseurl:"
   The day doesn't run me; I run the day,
   I make sure every single day has a clear and well-communicated structure.
   It also means changes are welcome.
