@@ -6,6 +6,9 @@
 
 ## Overview
 
+**Year**: 2009  
+**Client**: Individual Client
+
 This project involved the design and development of a network listener module aimed at enhancing network security through real-time monitoring. The device, based on an AVR microcontroller and an ENC28J60 Ethernet controller, captures and filters IP, ICMP, and ARP packets. The filtered packets are logged in the AVR's internal memory and can also be accessed by a PC via an RS232 port for detailed analysis.
 
 
