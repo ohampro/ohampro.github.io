@@ -1,17 +1,17 @@
-{% if include.labels.size > 0 %}
+{%- if include.labels.size > 0 -%}
     <div class="card-text textt-nowrap overflow-x-auto" data-labels="{{ include.full_labels | default: include.labels }}">
-        {% assign labelsArr = include.labels | split: ', ' %}
-        {% for label in labelsArr %}
-            {% assign sLabel = label | strip | strip_newlines %}
-            {% if sLabel.size > 0 %}
-                {% assign value_start = include.skillMap | split: sLabel | last | split: "," | first %}
-                {% assign pCount = value_start | split: ": " | last | plus: 0 %}
+        {%- assign labelsArr = include.labels | split: ', ' -%}
+        {%- for label in labelsArr -%}
+            {%- assign sLabel = label | strip | strip_newlines -%}
+            {%- if sLabel.size > 0 -%}
+                {%- assign value_start = include.skillMap | split: sLabel | last | split: "," | first -%}
+                {%- assign pCount = value_start | split: ": " | last | plus: 0 -%}
 
-                <a role="button" class="btn btn-label btn-outline-secondary d-inline-block m-0 py-0 px-1" 
+                <a role="button" class="btn btn-label btn-outline-secondary d-inline-block m-0 me-1 py-0 px-1" 
                 onclick="onCardLabelClick()"
                     href="/projects?with={{label}}">{{ sLabel }}{% if pCount > 1 %} <small>({{ pCount }})</small>{% endif %}
                 </a>
-            {% endif %}
-        {% endfor %}
+            {%- endif -%}
+        {%- endfor -%}
     </div>
-{% endif %}
+{%- endif -%}
