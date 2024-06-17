@@ -51,11 +51,9 @@
     <meta name="description" content="{{ page.description | default: site.description }}">
     <meta name="keywords" content="{{ page.keywords | default: site.keywords }}">
 
-    {% if page.markup == true %}
-        {% assign markupStructure = "structured_markups/" | append: page.name %}
+    {% if page.dataMarkup %}
+        {% assign markupStructure = "structured_markups/" | append: page.dataMarkup | append: ".html" %}
         {% include {{markupStructure}} %}
-    {% else %}
-        {% include structured_markups/default.html %}
     {% endif %}
 </head>
 
