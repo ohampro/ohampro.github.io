@@ -56,6 +56,8 @@ collections:
     output: true
   experiences:
     output: true
+  challenges:
+    output: true
 
 defaults:
   - scope:
@@ -71,6 +73,11 @@ defaults:
   - scope:
       path: ""
       type: "experiences"
+    values:
+      layout: single
+  - scope:
+      path: ""
+      type: "challenges"
     values:
       layout: single
   
@@ -125,3 +132,4 @@ docsOrder:
     - _experiences/selakteb.html
     - _experiences/kankash.html
     - _experiences/self_emp.html
+    - _challenges/gps_drift.md
