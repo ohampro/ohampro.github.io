@@ -1,0 +1,38 @@
+---
+layout: default
+
+---
+
+{%- if content.size > 1 -%}
+
+    {%- if page.flat -%}
+        {{ content }}
+    {%- else -%}
+        <div class="pt-4 px-3 mb-5 {{ page.rootClass }}">
+                    
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-lg-6 {{ page.centerClass }}">
+                    {{ content }}
+                </div>
+                <div class="col"></div>
+            </div>
+                        
+        </div>
+    {%- endif -%}
+
+
+    {% include projects-call-to-action.html %}
+
+    {%- if page.nextProject -%}
+        {% include next-project.html %}
+    {%- else -%}
+        <hr class="my-5">
+        <div class="w-100 text-center">
+            <a href="/projects" role="button" class="btn btn-outline-primary">
+                Explore Other Projects
+            </a>
+        </div>
+    {%- endif -%}
+
+{%- endif -%}
