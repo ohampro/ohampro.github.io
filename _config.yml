@@ -102,7 +102,7 @@ defaults:
 #   - vendor/ruby/
 
 docsOrder:
-    - _projects/rt_dispatch.html
+    - _projects/rt_dispatch.md
     - _ideas/neoterra-cities.html
     - _projects/shop_floor_meeting.html
     - _projects/limousine_reservation.html
@@ -116,8 +116,8 @@ docsOrder:
     - _projects/workflow_engine.html
     - _projects/douran_bi.html
     - _projects/selak_dentistry_clinic.html
-    - _projects/network_listener.html
-    - _projects/course_selection_kiosk.html
+    - _projects/network_listener.md
+    - _projects/course_selection_kiosk.md
     - _projects/concrete_curbing_machine.html
     - _projects/shadman_acc.html
     - _projects/sepam.html
