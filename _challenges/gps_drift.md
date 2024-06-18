@@ -7,7 +7,7 @@ excerpt: "refers to the issue where the location service in a mobile app broadca
 ---
 
 # GPS drift
-#### Problem: Location Drift in Mobile App Development
+#### Location Drift in Mobile App Development
 
 ### Definition
 **Location Drift** refers to the issue where the location service in a mobile app broadcasts incorrect positions that are significantly far from the majority of accurate positions.
