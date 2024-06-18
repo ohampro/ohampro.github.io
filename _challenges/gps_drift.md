@@ -2,12 +2,39 @@
 title: "GPS drift"
 permalink: "/challenges/gps_drift/"
 rootClass: markdown-gen
-excerpt: "refers to the issue where the location service in a mobile app broadcasts incorrect positions that are significantly far from the majority of accurate positions."
+excerpt: "Refers to the issue where the location service in a mobile app broadcasts incorrect positions that are significantly far from the majority of accurate positions."
  
 ---
 
-# GPS drift
-#### Location Drift in Mobile App Development
+{% include card_labels.html labels="RT Dispatch, Fidasys Inc." href="/projects/rt_dispatch, /experiences/fidasys" %}
+
+### The Problem:
+
+- In the RT Dispatch App project, we encountered a significant challenge with GPS drift, where users' locations were inaccurately reported due to multipath effects and poor signal quality.
+
+### The Impact:
+
+- This issue was particularly problematic for our app, which relied heavily on precise location data for features like geofencing, route tracking. It undermined our driver summoning accuracy by 30%.
+
+### Solution:
+
+- After identifying the root causes, I researched the latest practices to confidently address the issue. I then implemented a combination of signal filtering techniques to smooth out erratic location data and used the Environmental Awareness technique to employ dynamic geofencing, ignoring locations outside reasonable bounds.
+- Finally, I documented the consequences and potential problems of my solution, such as increased computational load and battery usage. This analysis ensured that applying this solution would not adversely affect the overall performance and user experience of the app.
+
+### Results:
+
+- We saw a substantial improvement in location accuracy, reducing GPS drift by over 60%. This boosted the reliability of our app's features, especially driver summoning, and received positive feedback from users and stakeholders.
+
+<br>
+
+---
+
+
+<details>
+<summary>Research Learning on GPS drift</summary>
+<div markdown="1">
+
+## Location Drift in Mobile App Development
 
 ### Definition
 **Location Drift** refers to the issue where the location service in a mobile app broadcasts incorrect positions that are significantly far from the majority of accurate positions.
@@ -48,3 +75,6 @@ excerpt: "refers to the issue where the location service in a mobile app broadca
 
 8. **Crowdsourced Data**
    - **Technique**: Use crowdsourced location data to identify and correct areas with known multipath problems. Apply corrections based on historical data from other users.
+
+</div>
+</details>
