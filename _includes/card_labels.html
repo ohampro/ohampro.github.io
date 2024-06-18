@@ -7,9 +7,15 @@
                 {%- assign value_start = include.skillMap | split: sLabel | last | split: "," | first -%}
                 {%- assign pCount = value_start | split: ": " | last | plus: 0 -%}
 
+                {%- assign ahref = "/projects?with=" | append: label -%}
+                {%- if include.href -%}
+                    {%- assign hrefs = include.href | split: ", " -%}
+                    {%- assign ahref = hrefs[forloop.index0] | strip | strip_newlines -%}
+                {%- endif -%}
+
                 <a role="button" class="btn btn-label btn-outline-secondary d-inline-block m-0 me-1 py-0 px-1" 
                 onclick="onCardLabelClick()"
-                    href="/projects?with={{label}}">{{ sLabel }}{% if pCount > 1 %} <small>({{ pCount }})</small>{% endif %}
+                    href="{{ ahref }}">{{ sLabel }}{% if pCount > 1 %} <small>({{ pCount }})</small>{% endif %}
                 </a>
             {%- endif -%}
         {%- endfor -%}
