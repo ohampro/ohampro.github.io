@@ -29,13 +29,13 @@ excerpt: "refers to the issue where the location service in a mobile app broadca
 
 2. **Using Multiple GNSS Constellations**
    - **Method**: Utilize multiple GNSS systems (e.g., GPS, GLONASS, Galileo, BeiDou) to increase the number of satellites available, improving accuracy.
+   In android mobile development it is using Fused Location Provider (FLP) rather than LocationManager, FLP has designed for efficiency, uses multiple sources, optimizes power usage, and batches updates.
 
 3. **Sensor Fusion**
    - **Technique**: Integrate data from additional sensors such as accelerometers, gyroscopes, and magnetometers to enhance location accuracy.
 
 4. **Advanced Algorithms**
-   - **Algorithm**: Implement algorithms that can detect and ignore outlier positions that deviate significantly from the expected path.
-   - **ML**: Use machine learning models to predict and correct for multipath errors.
+   - **Algorithm**: Implement algorithms that can detect and ignore outlier positions that deviate significantly from the expected path using machine learning models to predict and correct for multipath errors, RAIM, and ARAIM.
 
 5. **Enhanced GPS Receivers**
    - **Method**: Use high-quality GPS receivers with better multipath mitigation capabilities, and implement dual-frequency GPS receivers to reduce multipath errors.
