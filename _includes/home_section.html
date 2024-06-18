@@ -1,4 +1,4 @@
-{% assign maxVisibleItems = include.maxVisibleItems | default: 3 %}
+{% assign maxVisibleItems = include.maxVisibleItems | default: 10000 %}
 
 {% assign allTypeSelectArray = "_experiences, _ideas, _projects" | replace: ' ', '' | split: ',' %}
 {% assign allCollections = site.collections | where_exp: 'col', "allTypeSelectArray contains col.label" %}
