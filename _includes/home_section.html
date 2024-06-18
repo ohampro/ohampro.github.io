@@ -36,10 +36,7 @@
 {% endfor %}
 
 
-<section id="{{ include.id }}" class="{{ include.stripColor }}">
-    <div class="row {% if include.deleyed-attention == false %}{% else %}deleyed-attention content-blur{% endif %}">
-
-        <div class="col offset-0">
+{%- capture bodyItems -%}
             {% assign typeSelectArray = include.type | replace: ' ', '' | split: ',' %}
             {% assign collectionId = typeSelectArray | join: '' %}
             {% assign collections = site.collections | where_exp: 'col', "typeSelectArray contains col.label" %}
@@ -83,7 +80,7 @@
 
                         {%- assign cardBorder = include.cardBorder | default: doc.cardBorder -%}
                         
-                        <div class="mb-4 {{ include.class }}">
+                        <div class="{%- if include.grid -%}col{%- else -%}mb-4{%- endif %} {{ include.class }}">
                             {% include minimal_view.html 
                                 id = docItemId
                                 url = doc.permalink
@@ -106,7 +103,18 @@
                     {% endif %}
                 {% endfor %}
             {% endfor %}
-        </div>
+{%- endcapture -%}
+
+<section id="{{ include.id }}" class="{{ include.stripColor }}">
+    <div class="row {% if include.grid -%}{{ include.grid }}{%- endif %} {%- if include.deleyed-attention == false -%}{%- else -%}deleyed-attention content-blur{%- endif %}">
+
+        {%- if include.grid -%}
+            {{bodyItems}}
+        {%- else -%}
+            <div class="col">
+                {{bodyItems}}
+            </div>
+        {%- endif -%}
     
         {% assign itemSize = select.size %}
         <div class="row text-end">
