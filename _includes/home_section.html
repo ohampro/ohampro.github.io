@@ -1,13 +1,5 @@
 {% assign maxVisibleItems = include.maxVisibleItems | default: 3 %}
 
-{% capture titleClass -%}
-    {%- if include.titleAlign == 'top' -%}
-        align-self-top
-    {%- else -%}
-        align-self-center
-    {%- endif %}
-{%- endcapture %}
-
 {% assign allTypeSelectArray = "_experiences, _ideas, _projects" | replace: ' ', '' | split: ',' %}
 {% assign allCollections = site.collections | where_exp: 'col', "allTypeSelectArray contains col.label" %}
 {% assign skillMap = "" %}
@@ -46,13 +38,8 @@
 
 <section id="{{ include.id }}" class="{{ include.stripColor }}">
     <div class="row {% if include.deleyed-attention == false %}{% else %}deleyed-attention content-blur{% endif %}">
-        {% if include.title %}
-        <div class="col-3 {{titleClass}} text-muted">
-            <h3>{{ include.title }}</h3>
-        </div>
-        {% endif %}
 
-        <div class="{% if include.title %}col-7{% else %}col{% endif %} offset-0">
+        <div class="col offset-0">
             {% assign typeSelectArray = include.type | replace: ' ', '' | split: ',' %}
             {% assign collectionId = typeSelectArray | join: '' %}
             {% assign collections = site.collections | where_exp: 'col', "typeSelectArray contains col.label" %}
