@@ -7,32 +7,27 @@ keywords: portfolio, Mohammad Haghighipoor, software development, projects
 
 <article>
     <div class="bg-alternate-1">
-        <div class="pt-4 px-3 mb-5">
+        <div class="pt-4 px-3 px-md-4 mb-5">
                     
-            <div class="row">
-                <div class="col"></div>
-                <div class="col-lg-6">
-                    
-                    <p id="topMsg" class="d-none text-center fw-medium">
-                        Not found!<br>
-                    </p>
+            <p id="topMsg" class="d-none text-center fw-medium">
+                Not found!<br>
+            </p>
 
-                    {% include home_section.html 
-                        id = 'section_projects'
-                        type = 'projects, ideas'
-                        deleyed-attention = false
-                        cardBorder = 'secondary'
-                        class = 'mv-docItem d-none'
-                    %}
-                    
-                    <p id="showAllItems" class="text-center">
-                        <a id="showAllItemsLink" href="/projects" class="text-center">
-                            Show all projects
-                        </a>
-                    </p>
-                </div>
-                <div class="col"></div>
-            </div>
+            {% include home_section.html 
+                id = 'section_projects'
+                type = 'projects, ideas'
+                deleyed-attention = false
+                cardBorder = 'secondary'
+                class = 'mv-docItem d-none'
+                grid = 'row-cols-1 row-cols-sm-2 row-cols-md-3 g-4'
+                equalHeight = true
+            %}
+            
+            <p id="showAllItems" class="text-center">
+                <a id="showAllItemsLink" href="/projects" class="text-center">
+                    Show all projects
+                </a>
+            </p>
 
         </div>
         <div class="section-shape mb-4">

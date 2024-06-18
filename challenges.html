@@ -9,20 +9,14 @@ keywords: portfolio, Mohammad Haghighipoor, software development, challenges
     <div class="bg-alternate-1">
         <div class="pt-4 px-3 mb-5">
                     
-            <div class="row">
-                <div class="col"></div>
-                <div class="col-lg-6">
-
-                    {% include home_section.html 
-                        id = 'section_challenges'
-                        type = 'challenges'
-                        deleyed-attention = false
-                        cardBorder = 'secondary'
-                    %}
-                    
-                </div>
-                <div class="col"></div>
-            </div>
+            {% include home_section.html 
+                id = 'section_challenges'
+                type = 'challenges'
+                deleyed-attention = false
+                cardBorder = 'secondary'
+                grid = 'row-cols-1 row-cols-sm-2 row-cols-md-3 g-4'
+                equalHeight = true
+            %}
 
         </div>
         <div class="section-shape mb-4">
