@@ -11,8 +11,6 @@ excerpt: "Involved in the design of Fleet Management System and Order Delivery,
     These efforts resulted in notable cost savings and improved delivery timelines."
 
 rootClass: markdown-gen
-AchievementsClass: link-success link-underline-opacity-0 link-underline-success link-offset-2 link-underline-opacity-75-hover
-Achievements_icon_end: bi bi-box-arrow-up-right small ms-1
 Achievements: 
     - Reducing GPS drift by over 60%, boosted the reliability of location-based features, and received positive feedback from users and stakeholders
     - Second
@@ -25,7 +23,7 @@ Fidasys Inc. is a mid-sized firm in the software development industry, specializ
 - **MERN Full Stack Developer** &#124; 2021 - 2023
 
 #### Achievements
-- <a class="{{ page.AchievementsClass }}" href="/challenges/gps_drift">{{ page.Achievements[0] }}<i class="{{ page.Achievements_icon_end }}"></i></a>
+- {{ page.Achievements[0] }} {% include find_more.html href="/challenges/gps_drift" %}
 
 #### Contributions
 >>> {% include home_section.html 
