@@ -65,7 +65,7 @@
             <p class="card-text">
                 {{ include.excerpt }}
                 {% if include.content.size > 0 %}
-                    <a class="card-link text-nowrap {% if include.content contains 'under_construction_message' %}text-muted link-dark link-underline-opacity-10{% else %}link-primary fw-medium{% endif %} link-offset-2 link-opacity-50-hover" 
+                    <a class="card-link text-nowrap {% if include.content contains 'under_construction_message' %}text-muted link-dark link-underline-opacity-10{% else %}link-primary {% endif %} link-offset-2 link-opacity-50-hover" 
                     href="{{ include.url }}"> 
                     find more<i class="bi bi-box-arrow-up-right small ms-1"></i>
                 </a>  
