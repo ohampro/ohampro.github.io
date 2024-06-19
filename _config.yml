@@ -103,6 +103,7 @@ defaults:
 
 docsOrder:
     - _projects/rt_dispatch.md
+    - _projects/order_delivery.md
     - _ideas/neoterra-cities.html
     - _projects/shop_floor_meeting.html
     - _projects/limousine_reservation.html
@@ -124,7 +125,7 @@ docsOrder:
     - _projects/emamali_labrtor.html
     - _projects/ivr.html
     - _ideas/ecity.html
-    - _experiences/fidasys.html
+    - _experiences/fidasys.md
     - _experiences/resertrac.html
     - _experiences/nrdc.html
     - _experiences/tva.html
