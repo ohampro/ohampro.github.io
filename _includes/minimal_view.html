@@ -12,7 +12,31 @@
     {%- endif -%}
 {%- endcapture -%}
 
-<div id="{{ include.id }}" class="{{ display }} card bg-transparent {% if include.equalHeight %}card-equal-height{% endif %} {% if include.cardBorder.size > 0 %}border-{{ include.cardBorder }}{% else %}border-0{% endif %} " 
+{%- capture hasContent -%}
+    {%- if include.content.size == 0 or include.content contains 'under_construction_message' -%}
+        false
+    {%- else -%}
+        true
+    {%- endif -%}
+{%- endcapture -%}
+
+{%- capture borderClass -%}
+    {%- if include.cardBorder.size > 0 -%}
+        {% if include.cardBorder == "auto" %}
+            {% if hasContent == 'true' %}
+                border-success
+            {%- else -%}
+                border-dark-subtle
+            {%- endif -%}
+        {%- else -%}
+            border-{{ include.cardBorder }}
+        {%- endif -%}
+    {%- else -%}
+        border-0
+    {%- endif -%}
+{%- endcapture -%}
+
+<div id="{{ include.id }}" class="{{ display }} card bg-transparent {% if include.equalHeight %}card-equal-height{% endif %} {{ borderClass }}" 
     {% if include.badge %}data-badge="{{ include.badge }}"{% endif %} 
     {% if bagdeStyle %}style="{{ bagdeStyle }}"{% endif %}>
 
@@ -21,10 +45,10 @@
         <section>
             {% if include.title %}
                 {% if include.content.size > 0 %}
-                    <a class="link-underline link-body-emphasis link-underline-opacity-75-hover link-offset-3-hover link-underline-opacity-0"
-                        href="{{ include.url }}">
-                        <h3 class="card-title">{{ include.title }}</h3>
-                    </a>
+                <a class="link-underline link-body-emphasis link-underline-opacity-75-hover link-offset-3-hover link-underline-opacity-0"
+                    href="{{ include.url }}">
+                    <h3 class="card-title">{{ include.title }}</h3>
+                </a>
                 {% else %}
                     <h3 class="card-title">{{ include.title }}</h3>
                 {% endif %}
@@ -42,9 +66,9 @@
                 {{ include.excerpt }}
                 {% if include.content.size > 0 %}
                     <a class="card-link text-nowrap {% if include.content contains 'under_construction_message' %}text-muted link-dark link-underline-opacity-10{% else %}link-primary fw-medium{% endif %} link-offset-2 link-opacity-50-hover" 
-                        href="{{ include.url }}"> 
-                        find more<i class="bi bi-box-arrow-up-right small ms-1"></i>
-                    </a>  
+                    href="{{ include.url }}"> 
+                    find more<i class="bi bi-box-arrow-up-right small ms-1"></i>
+                </a>  
                 {% endif %}
             </p>
 
