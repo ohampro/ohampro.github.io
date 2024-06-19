@@ -70,6 +70,8 @@
                     find more<i class="bi bi-box-arrow-up-right small ms-1"></i>
                 </a>  
                 {% endif %}
+                {% include card_labels.html labels=include.tempting default_href=include.url 
+                    btnClass="border-0 btn-outline-success fw-bold" %}
             </p>
 
             {% include card_labels.html labels=include.labels skillMap=skillMap %}
