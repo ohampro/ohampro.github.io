@@ -6,6 +6,8 @@ excerpt: "Refers to the issue where the location service in a mobile app broadca
  
 ---
 
+## {{page.title}} Challenge
+
 {% include card_labels.html labels="RT Dispatch, Fidasys Inc., Challenges" href="/projects/rt_dispatch, /experiences/fidasys, /challenges" %}
 
 ### The Problem:
