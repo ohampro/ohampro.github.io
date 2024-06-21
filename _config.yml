@@ -134,3 +134,4 @@ docsOrder:
     - _experiences/kankash.html
     - _experiences/self_emp.html
     - _challenges/gps_drift.md
+    - _challenges/cross_app_display.md
