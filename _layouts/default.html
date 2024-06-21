@@ -49,7 +49,11 @@
     {% assign pageTitle = page.title | append: " | " | append: site.title %}
     <title>{{ page.pageTitle | default: pageTitle }}</title>
     <meta name="description" content="{{ page.description | default: site.description }}">
-    <meta name="keywords" content="{{ page.keywords | default: site.keywords }}">
+
+    {% assign pageKeyword = page.keywords | default: '$' %}
+    {% assign pageKeyword = pageKeyword | append: ', ' | append: site.keywords %}
+    {% assign pageKeyword = pageKeyword | replace: '$, ' %}
+    <meta name="keywords" content="{{ pageKeyword | strip }}">
 
     {% if page.dataMarkup %}
         {% assign markupStructure = "structured_markups/" | append: page.dataMarkup | append: ".html" %}
