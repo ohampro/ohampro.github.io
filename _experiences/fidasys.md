@@ -3,7 +3,7 @@ title: "MERN Full Stack Developer"
 subtitle: "2021-2023"
 muted: "Fidasys Inc. | Canada (Remote)"
 pageTitle: "Fidasys Inc. | Mohammad Haghighipoor" 
-labels: "Node.js, MongoDB, React.js, Flutter, Android, Java, GreenDao, Retrofit, GPS, BLE, HTML, JavaScript, CSS, Git, GitHub, Agile, Jira, Unit Test"
+labels: "Node.js, MongoDB, React.js, Express.js, Flutter, Android, Java, GreenDao, Retrofit, GPS, BLE, HTML, JavaScript, CSS, Git, GitHub, Agile, Jira, Unit Test"
 temptingIGNORED: 2 Achievements, 6 Contributions
 permalink: "/experiences/fidasys/"
 excerpt: "Involved in the design of Fleet Management System and Order Delivery,
@@ -14,7 +14,8 @@ excerpt: "Involved in the design of Fleet Management System and Order Delivery,
 rootClass: markdown-gen
 Achievements: 
     - Reducing GPS drift by over 60%, boosted the reliability of location-based features, and received positive feedback from users and stakeholders
-    - Achieved a 90% increase in user engagement.
+    - Achieved a 90% increase in user engagement of the driver mobile app.
+    - Saved weeks of development time through critical thinking and innovative problem-solving.
 ---
 
 ### {{ page.muted }}
@@ -26,6 +27,7 @@ Fidasys Inc. is a mid-sized firm in the software development industry, specializ
 #### Achievements
 - {{ page.Achievements[0] }} {% include find_more.html href="/challenges/gps_drift" %}
 - {{ page.Achievements[1] }} {% include find_more.html href="/projects/rt_dispatch#outcomes-and-results" %}
+- {{ page.Achievements[2] }} {% include find_more.html href="/projects/rt_dispatch#challenges-and-solutions" %}
 
 #### Contributions
 - **Collaborated with Cross-Functional Teams**: Worked closely with designers, product managers, and developers to deliver high-quality software solutions within established deadlines.

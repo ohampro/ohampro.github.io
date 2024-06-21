@@ -47,7 +47,15 @@ This application is an integral component of an extensive system designed to gat
 - **GPS drift**: We faced a significant challenge with GPS drift, this was particularly problematic for our app features like summoning drivers and route tracking. {% include find_more.html href="/challenges/gps_drift" %}
     - **Solution**: I implemented a combination of signal filtering techniques and Environmental Awareness technique.
     - **Impact**: Reducing GPS drift by over 60% and received positive feedback from users and stakeholders.
+- **Cross-app Display**: Clients using this app along with another product faced frequent app switching and password prompts, leading to workflow disruption and nearly 40% user abandonment of this app. {% include find_more.html href="/challenges/cross_app_display" %}
+    - **Solution**: Embedded the required UI elements into the other one, eliminating the need for app switching and password re-entry.
+    - **Impact**: Achieved a 50% increase in user retention and saved weeks of development time through innovative problem-solving.
     
+## Key Contributions
+- **Hackathon-Style Work**: Engaged in several intensive solo development sessions to drive significant progress and fast-track development.
+- **Code Optimization**: Enhanced app performance through meticulous code review and optimization techniques, leading to faster load times and smoother user experience.
+- **Security Enhancements**: Implemented advanced security measures, including monitoring app detection, to protect user data.
+- **Key Solutions**: Developed and provided innovative solutions and technical consultancy for critical features.
 
 ## Outcomes and Results
 - **Results**: Achieved a 90% increase in mobile app user engagement within the first three months, resulting in 300 new installations.
