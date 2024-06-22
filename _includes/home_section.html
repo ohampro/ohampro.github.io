@@ -123,9 +123,9 @@
         {%- endif -%}
     
         {% assign itemSize = select.size %}
-        <div class="row text-end">
+        <div class="row text-end {% if itemSize <= maxVisibleItems %}d-none{% endif %}">
             <a  id="displayMore_{{ collectionId }}"
-                class="display-more-items mb-3 link-success {% if itemSize <= maxVisibleItems %}d-none{% endif %}" 
+                class="display-more-items mb-3 link-success" 
                 href="#" data-target-item="{{ include.id }}"
                 onclick="return displayMoreItems()">
                 Display more
