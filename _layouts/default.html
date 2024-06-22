@@ -13,7 +13,6 @@
         gtag('config', 'G-FEFJ7Y2LE5');
 
         if (window.location.search && window.location.search.length > 0){
-            console.log(window.location.search);
             gtag('event', 'link', {'search' : window.location.search,});
         }
 
@@ -80,10 +79,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    {% if page.url == '/' %}
-        <script src="/assets/js/home_scripts.js"></script>
-    {% endif %}
-
     <script src="/assets/js/common_scripts.js"></script>
 
     <script src="/assets/js/parallax.js"></script>
@@ -93,6 +88,14 @@
     <script src="/assets/js/modals.js"></script>
     
     <script src="/assets/js/bootstrap_scripts.js"></script>
+
+    {% if page.url == '/' %}
+        <script src="/assets/js/home_scripts.js"></script>
+    {% endif %}
+
+    {% if page.url == '/projects.html' %}
+        <script src="/assets/js/projects.js"></script>
+    {% endif %}
 
 </body>
 
