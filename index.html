@@ -61,25 +61,23 @@ dataMarkup: default
 
 <section>
     <div class="pt-5 px-3">
-        <div class="row gy-4">
-            <div class="col"></div>
-            <div class="col-md-3 text-center">
-                <a href="#portfolio_list" onclick="scrollToProjects()" role="button" class="btn btn-primary w-100" 
-                    data-bs-toggle="collapse" aria-expanded="false" aria-controls="portfolio_list">
-                    All Projects
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="text-center text-md-end">
+                <a href="/projects" role="button" class="btn btn-primary w-50 text-nowrap">
+                    All Projects <i class="bi bi-box-arrow-up-right small ms-1"></i>
                 </a>
             </div>
 
-            <div class="col-md-3 text-center text-nowrap">
-                <a href="/about#work_experiences" role="button" class="btn btn-outline-primary w-100">
+            <div class="text-center text-md-start">
+                <a href="/about#work_experiences" role="button" class="btn btn-outline-primary w-50 text-nowrap">
                     Work Experiences <i class="bi bi-box-arrow-up-right small ms-1"></i>
                 </a>
             </div>
-            <div class="col"></div>
         </div>
     </div>
 </section>
 
+{%- if site.user == 'mhp' -%}
 <section>
     <div class="collapse" id="portfolio_list">
         <div class="pt-4 px-3 mb-5">
@@ -132,6 +130,7 @@ dataMarkup: default
         </div>
     </div>
 </section>
+{%- endif -%}
 <!-- skills -->
 
 <!-- learning -->
