@@ -62,7 +62,7 @@
                 <p class="text-muted">{{ include.muted }}</p>
             {% endif %}
 
-            <p class="card-text">
+            <p class="card-text overflow-y-auto">
                 {{ include.excerpt }}
                 {% if include.content.size > 0 %}
                     <a class="card-link text-nowrap {% if include.content contains 'under_construction_message' %}text-muted link-dark link-underline-opacity-10{% else %}link-primary {% endif %} link-offset-2 link-opacity-50-hover" 
