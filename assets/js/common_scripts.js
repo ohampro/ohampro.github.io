@@ -88,3 +88,30 @@
     if (window.onCardLabelClick == undefined){
         window.onCardLabelClick = function(){};
     } 
+
+    function highlithLabel(docItems, label){
+        let foundItems = 0;
+
+        for (let item of docItems){
+            let dataLabels = item.querySelectorAll('[data-labels]');
+            const aElements = item.querySelectorAll('a[href]:not(:empty):not(:has(*))');
+
+            if (dataLabels.length > 0){
+                let itemLabels = dataLabels[0].getAttribute('data-labels');
+                
+                if (itemLabels.indexOf(label) > -1){
+                    item.classList.remove('d-none');
+                    foundItems++;
+                    //
+
+                    const filteredElements = Array.from(aElements).filter(a => a.textContent.trim() === label);
+                    filteredElements.map((el) => {
+                        el.classList.remove('btn-outline-secondary');
+                        el.classList.add('btn-secondary');
+                    });
+                }
+            }
+        }
+
+        return foundItems;
+    }

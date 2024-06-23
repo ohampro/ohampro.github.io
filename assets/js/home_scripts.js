@@ -63,3 +63,42 @@
         await delay(400);
         targetElement.scrollIntoView({ behavior: 'smooth' });
     }
+
+
+    var featuresButtons = document.querySelectorAll('.features-group .btn');
+    //
+    let selectedFeature = sessionStorage.getItem('selectedFeature');
+    let selectedButtons = [];
+
+    if (selectedFeature > -1){
+        selectedButtons = document.querySelectorAll(`.features-group [data-bs-slide-to='${selectedFeature}']`);
+    }
+    if (selectedButtons.length == 0){
+        selectedFeature = 1;
+        selectedButtons = document.querySelectorAll(`.features-group [data-bs-slide-to='${selectedFeature}']`);
+    }
+    
+    let docItems = document.getElementsByClassName('mv-docItem');
+    {
+        selectedButtons[0].classList.add('active');
+        selectedButtons[0].classList.remove('link-underline-opacity-0');
+        const bsCarouselSignificantWorks = new bootstrap.Carousel('#carouselSignificantWorks');
+        bsCarouselSignificantWorks.to(selectedFeature);
+        highlithLabel(docItems, selectedButtons[0].getAttribute('data-card-label'));
+    }
+    //
+    featuresButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            featuresButtons.forEach(btn => {
+                btn.classList.remove('active');
+                if (!btn.classList.contains('link-underline-opacity-0 ')){
+                    btn.classList.add('link-underline-opacity-0');
+                }
+            });
+            this.classList.add('active');
+            this.classList.remove('link-underline-opacity-0');
+            sessionStorage.setItem('selectedFeature', this.getAttribute('data-bs-slide-to'));
+            //
+            highlithLabel(docItems, this.getAttribute('data-card-label'));
+        });
+    });

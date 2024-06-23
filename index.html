@@ -18,68 +18,130 @@ dataMarkup: default
     </div>
 </section>
 
-<section class="my-5 bg-alternate-1" id="section_significant_works">
-    <div class="section-shape rotate-180">
+<section class="my-5 bg-alternate-1" >
+    <div class="section-shape rotate-180" id="section_significant_works">
         <svg xmlns="http://www.w3.org/2000/svg" height="50" width="100%" viewBox="0 0 1000 100" preserveAspectRatio="none">
             <path class="section-shape-fill" d="M806,94.7C619.5,90,500,20.3,500,1.7c-1,18.6-117.5,88.3-306,93C92,97.2,0,97.9,0,97.9v-0l0,0v2.3h1000v-2.3 C1000,97.7,920.3,97.6,806,94.7z M350,65.1L350,65.1L350,65.1L350,65.1z"></path>
         </svg>
     </div>
     
-    <div class="pt-5 px-3">
-        <div class="row">
-            <div class="d-flex w-100 justify-content-center fs-4 pb-4">Significant Works</div>
-            <div class="col-lg">
-                {% include home_section.html 
-                    id = 'section_innovations'
-                    stripColor1 = 'bg-burlywood'
-                    type = "ideas"
-                    equalHeight = true
-                    cardBorder = 'primary'
-                    select = "ecity, smart-city, neoterra-cities"
-                %}
+    <div class="py-5 px-3">
+            
+            <div class="features-group text-center mb-3">
+                <a type="button" class="btn btn-link link-underline link-underline-opacity-0 link-offset-2 bbtn-outline-primary me-2 mb-2 fw-medium"
+                    data-card-label = "Urban Futurist"
+                    data-bs-target="#carouselSignificantWorks" data-bs-slide-to="0" aria-label="Slide 3">
+                    Urban Futurist</a>
+
+                <a type="button" class="btn btn-link link-underline link-underline-opacity-0 link-offset-2 bbtn-outline-primary me-2 mb-2 fw-medium"
+                    data-card-label = "Embedded Systems"
+                    data-bs-target="#carouselSignificantWorks" data-bs-slide-to="1" aria-label="Slide 2">
+                    Embedded Systems Development</a>
+
+                <button type="button" class="btn btn-link link-underline link-underline-opacity-0 link-offset-2 bbtn-outline-primary me-2 mb-2 fw-medium"
+                    data-card-label = "Back-end"
+                    data-bs-target="#carouselSignificantWorks" data-bs-slide-to="2" aria-label="Slide 2">
+                    Back-End Development</button>
+
+                <button type="button" class="btn btn-link link-underline link-underline-opacity-0 link-offset-2 bbtn-outline-primary me-2 mb-2 fw-medium"
+                    data-card-label = "Mobile app"
+                    data-bs-target="#carouselSignificantWorks" data-bs-slide-to="3" aria-label="Slide 3">
+                    Mobile App Development</button>
+
+                <button type="button" class="btn btn-link link-underline link-underline-opacity-0 link-offset-2 bbtn-outline-primary me-2 mb-2 fw-medium"
+                    data-card-label = "Front-end"
+                    data-bs-target="#carouselSignificantWorks" data-bs-slide-to="4" aria-current="true" aria-label="Slide 1">
+                    <i class="bi bi-funnel-fill me-1 d-none"></i>
+                    Font-End Development</button>
+                    
             </div>
-            <div class="col-lg">
-                {% include home_section.html 
-                    id = 'section_projects'
-                    type = 'projects'
-                    equalHeight = true
-                    cardBorder = 'secondary'
-                    select = "shop_floor_meeting, sensors_mgm, course_selection_kiosk"
-                %}
+
+            <div class="d-flex w-100 justify-content-center fs-4 pb-4 d-none">Significant Works</div>
+
+            <div id="carouselSignificantWorks" class="carousel slide pt-3">                
+                <div class="carousel-inner justify-content-center">
+                    <div class="carousel-item active">
+                        {% include home_section.html 
+                            id = 'section_urban_futurist'
+                            stripColor1 = 'bg-burlywood'
+                            type = "ideas"
+                            grid = 'row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 mv-docItem'
+                            equalHeight = true
+                            cardBorder = 'secondary'
+                            select = "neoterra-cities, smart-city, ecity"
+                        %}
+                    </div>
+                    <div class="carousel-item">
+                        {% include home_section.html 
+                            id = 'section_embedded_systems'
+                            type = 'projects'
+                            grid = 'row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 mv-docItem'
+                            equalHeight = true
+                            cardBorder = 'secondary'
+                            select = "network_listener, course_selection_kiosk, concrete_curbing_machine"
+                        %}
+                    </div>
+                    <div class="carousel-item">
+                        {% include home_section.html 
+                            id = 'section_back_end'
+                            type = 'projects'
+                            grid = 'row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 mv-docItem'
+                            equalHeight = true
+                            cardBorder = 'secondary'
+                            select = "sensors_mgm, workflow_engine, douran_bi"
+                        %}
+                    </div>
+                    <div class="carousel-item">
+                        {% include home_section.html 
+                            id = 'section_mobile_app'
+                            type = 'projects'
+                            grid = 'row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 mv-docItem'
+                            equalHeight = true
+                            cardBorder = 'secondary'
+                            select = "rt_dispatch, order_delivery, driver_assistance_center"
+                        %}
+                    </div>
+                    <div class="carousel-item">
+                        {% include home_section.html 
+                            id = 'section_front_end'
+                            type = 'projects'
+                            grid = 'row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 justify-content-center mv-docItem'
+                            equalHeight = true
+                            cardBorder = 'secondary'
+                            select = "order_delivery, shop_floor_meeting"
+                        %}
+                    </div>
+                </div>
             </div>
-        </div>
     </div>
     
-    <div class="section-shape">
+    <div class="section-shape d-none">
         <svg xmlns="http://www.w3.org/2000/svg" height="20" width="100%" viewBox="0 0 1000 100" preserveAspectRatio="none">
         <path class="section-shape-fill" d="M806,94.7C619.5,90,500,20.3,500,1.7c-1,18.6-117.5,88.3-306,93C92,97.2,0,97.9,0,97.9v-0l0,0v2.3h1000v-2.3 C1000,97.7,920.3,97.6,806,94.7z M350,65.1L350,65.1L350,65.1L350,65.1z"></path>
         </svg>
     </div>
 </section>
 
-<hr>
 
 <section>
-    <div class="pt-5 px-3">
-        <div class="row gy-4">
-            <div class="col"></div>
-            <div class="col-md-3 text-center">
-                <a href="#portfolio_list" onclick="scrollToProjects()" role="button" class="btn btn-primary w-100" 
-                    data-bs-toggle="collapse" aria-expanded="false" aria-controls="portfolio_list">
-                    All Projects
+    <div class="pt-3 px-3">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="text-center text-md-end">
+                <a href="/projects" role="button" class="btn btn-primary w-50 text-nowrap">
+                    All Projects <i class="bi bi-box-arrow-up-right small ms-1"></i>
                 </a>
             </div>
 
-            <div class="col-md-3 text-center text-nowrap">
-                <a href="/about#work_experiences" role="button" class="btn btn-outline-primary w-100">
+            <div class="text-center text-md-start">
+                <a href="/about#work_experiences" role="button" class="btn btn-outline-primary w-50 text-nowrap">
                     Work Experiences <i class="bi bi-box-arrow-up-right small ms-1"></i>
                 </a>
             </div>
-            <div class="col"></div>
         </div>
     </div>
 </section>
 
+{%- if site.user == 'mhp' -%}
 <section>
     <div class="collapse" id="portfolio_list">
         <div class="pt-4 px-3 mb-5">
@@ -132,6 +194,7 @@ dataMarkup: default
         </div>
     </div>
 </section>
+{%- endif -%}
 <!-- skills -->
 
 <!-- learning -->

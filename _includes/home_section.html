@@ -112,7 +112,7 @@
 {%- endcapture -%}
 
 <section id="{{ include.id }}" class="{{ include.stripColor }}">
-    <div class="row {% if include.grid -%}{{ include.grid }}{%- endif %} {%- if include.deleyed-attention == false -%}{%- else -%}deleyed-attention content-blur{%- endif %}">
+    <div class="row {% if include.grid -%}{{ include.grid }}{%- endif %} {% if include.deleyed-attention == false -%}{%- else -%}deleyed-attention content-blur{%- endif %}">
 
         {%- if include.grid -%}
             {{bodyItems}}
@@ -123,9 +123,9 @@
         {%- endif -%}
     
         {% assign itemSize = select.size %}
-        <div class="row text-end">
+        <div class="row text-end {% if itemSize <= maxVisibleItems %}d-none{% endif %}">
             <a  id="displayMore_{{ collectionId }}"
-                class="display-more-items mb-3 link-success {% if itemSize <= maxVisibleItems %}d-none{% endif %}" 
+                class="display-more-items mb-3 link-success" 
                 href="#" data-target-item="{{ include.id }}"
                 onclick="return displayMoreItems()">
                 Display more
