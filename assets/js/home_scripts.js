@@ -65,40 +65,49 @@
     }
 
 
+    // selected feature -----------------------------------
     var featuresButtons = document.querySelectorAll('.features-group .btn');
     //
-    let selectedFeature = sessionStorage.getItem('selectedFeature');
-    let selectedButtons = [];
+    let selectedFeatureBtn;
+    {
+        let prevIndex = sessionStorage.getItem('selectedFeature');
+        let selectedButtons = [];
 
-    if (selectedFeature > -1){
-        selectedButtons = document.querySelectorAll(`.features-group [data-bs-slide-to='${selectedFeature}']`);
-    }
-    if (selectedButtons.length == 0){
-        selectedFeature = 1;
-        selectedButtons = document.querySelectorAll(`.features-group [data-bs-slide-to='${selectedFeature}']`);
+        if (prevIndex > -1){
+            selectedButtons = document.querySelectorAll(`.features-group [data-bs-slide-to='${prevIndex}']`);
+        }
+
+        if (selectedButtons.length == 0){
+            selectedButtons = document.querySelectorAll(`.features-group [data-bs-slide-default]`);
+        }
+
+        selectedFeatureBtn = selectedButtons[0];
     }
     
     let docItems = document.getElementsByClassName('mv-docItem');
-    {
-        selectedButtons[0].classList.add('active');
-        selectedButtons[0].classList.remove('link-underline-opacity-0');
-        const bsCarouselSignificantWorks = new bootstrap.Carousel('#carouselSignificantWorks');
-        bsCarouselSignificantWorks.to(selectedFeature);
-        highlithLabel(docItems, selectedButtons[0].getAttribute('data-card-label'));
-    }
+    const bsCarouselSignificantWorks = new bootstrap.Carousel('#carouselSignificantWorks');
+    setSelectedFeature(selectedFeatureBtn);
     //
     featuresButtons.forEach(button => {
         button.addEventListener('click', function() {
-            featuresButtons.forEach(btn => {
-                btn.classList.remove('active');
-                if (!btn.classList.contains('link-underline-opacity-0 ')){
-                    btn.classList.add('link-underline-opacity-0');
-                }
-            });
-            this.classList.add('active');
-            this.classList.remove('link-underline-opacity-0');
-            sessionStorage.setItem('selectedFeature', this.getAttribute('data-bs-slide-to'));
-            //
-            highlithLabel(docItems, this.getAttribute('data-card-label'));
+            setSelectedFeature(this);
         });
     });
+
+    function setSelectedFeature(button){
+        featuresButtons.forEach(btn => {
+            btn.classList.remove('active');
+            if (!btn.classList.contains('link-underline-opacity-0 ')){
+                btn.classList.add('link-underline-opacity-0');
+            }
+        });
+        button.classList.add('active');
+        button.classList.remove('link-underline-opacity-0');
+
+        let selectedFeatureIndex = button.getAttribute('data-bs-slide-to');
+        sessionStorage.setItem('selectedFeature', selectedFeatureIndex);
+        //
+        bsCarouselSignificantWorks.to(selectedFeatureIndex);
+        highlithLabel(docItems, button.getAttribute('data-card-label'));
+        setEqualHeight();
+    }
