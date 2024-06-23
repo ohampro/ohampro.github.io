@@ -99,6 +99,11 @@
             if (dataLabels.length > 0){
                 let itemLabels = dataLabels[0].getAttribute('data-labels');
                 
+                Array.from(aElements).filter(a => a.classList.contains('btn-secondary')).map((el) => {
+                    el.classList.add('btn-outline-secondary');
+                    el.classList.remove('btn-secondary');
+                });
+
                 if (itemLabels.indexOf(label) > -1){
                     item.classList.remove('d-none');
                     foundItems++;
