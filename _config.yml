@@ -112,7 +112,7 @@ docsOrder:
     - _projects/paybank_android_app.html
     - _projects/push_notification.html
     - _projects/sensors_mgm.html
-    - _ideas/smart-city.html
+    - _ideas/smart-city.md
     - _projects/enterprise_pop3_mail_server.html
     - _projects/workflow_engine.html
     - _projects/douran_bi.html
