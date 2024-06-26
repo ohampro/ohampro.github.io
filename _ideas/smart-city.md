@@ -14,7 +14,9 @@ excerpt: "Envision a world where every object, from household appliances to publ
     or even engaging with public transportation systems, the possibilities are limitless."
 ---
 
-# {{page.title}}
+<div class="mt-4"><i>Synopsis of the</i></div>
+<h1 class="mt-0" id="smart-city---iot-framework">{{page.title}}</h1>
+
 <small>Jan 2016 - Jan 2017</small>
 <br>
 Associated with Tose Vira Afzar Co. 
@@ -24,7 +26,7 @@ Associated with Tose Vira Afzar Co.
 
 ---
 
-<p class="text-center fs-italic small text-muted">To comply with my non-disclosure agreement (NDA) with the company, confidential information has been omitted or obfuscated. The synopsis of information presented here does not reflect the views of the company.</p>
+<p class="text-center fs-italic small text-muted">To comply with my non-disclosure agreement (NDA) with the company, confidential information has been omitted or obfuscated. The information presented here does not reflect the views of the company.</p>
 
 ---
 
