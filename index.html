@@ -30,27 +30,32 @@ dataMarkup: default
             <div class="features-group text-center mb-3">
                 <a type="button" class="btn btn-link link-underline link-underline-opacity-0 link-offset-3 bbtn-outline-primary me-2 mb-2 fw-medium"
                     data-card-label = "Urban Futurist"
-                    data-bs-target="#carouselSignificantWorks" data-bs-slide-to="0" aria-label="Slide 3">
+                    data-bs-target="#carouselSignificantWorks" data-bs-slide-to="0" aria-label="Slide 0">
                     Urban Futurist</a>
+
+                <button type="button" class="btn btn-link link-underline link-underline-opacity-0 link-offset-3 bbtn-outline-primary me-2 mb-2 fw-medium"
+                    data-card-label = "System Architecture" data-bs-slide-default
+                    data-bs-target="#carouselSignificantWorks" data-bs-slide-to="1" aria-label="Slide 1">
+                    Leadership - System Architecture</button>
 
                 <a type="button" class="btn btn-link link-underline link-underline-opacity-0 link-offset-3 bbtn-outline-primary me-2 mb-2 fw-medium"
                     data-card-label = "Embedded Systems"
-                    data-bs-target="#carouselSignificantWorks" data-bs-slide-to="1" aria-label="Slide 2">
+                    data-bs-target="#carouselSignificantWorks" data-bs-slide-to="2" aria-label="Slide 2">
                     Embedded Systems Development</a>
 
                 <button type="button" class="btn btn-link link-underline link-underline-opacity-0 link-offset-3 bbtn-outline-primary me-2 mb-2 fw-medium"
                     data-card-label = "Back-end"
-                    data-bs-target="#carouselSignificantWorks" data-bs-slide-to="2" aria-label="Slide 2">
+                    data-bs-target="#carouselSignificantWorks" data-bs-slide-to="3" aria-label="Slide 3">
                     Back-End Development</button>
 
                 <button type="button" class="btn btn-link link-underline link-underline-opacity-0 link-offset-3 bbtn-outline-primary me-2 mb-2 fw-medium"
-                    data-card-label = "Mobile app" data-bs-slide-default
-                    data-bs-target="#carouselSignificantWorks" data-bs-slide-to="3" aria-label="Slide 3">
+                    data-card-label = "Mobile app"
+                    data-bs-target="#carouselSignificantWorks" data-bs-slide-to="4" aria-label="Slide 4">
                     Mobile App Development</button>
 
                 <button type="button" class="btn btn-link link-underline link-underline-opacity-0 link-offset-3 bbtn-outline-primary me-2 mb-2 fw-medium"
                     data-card-label = "Front-end"
-                    data-bs-target="#carouselSignificantWorks" data-bs-slide-to="4" aria-current="true" aria-label="Slide 1">
+                    data-bs-target="#carouselSignificantWorks" data-bs-slide-to="5" aria-current="true" aria-label="Slide 5">
                     <i class="bi bi-funnel-fill me-1 d-none"></i>
                     Font-End Development</button>
                     
@@ -73,6 +78,16 @@ dataMarkup: default
                     </div>
                     <div class="carousel-item">
                         {% include home_section.html 
+                            id = 'section_leadership_architecture'
+                            type = 'projects'
+                            grid = 'row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 justify-content-center mv-docItem'
+                            equalHeight = true
+                            cardBorder = 'secondary'
+                            select = "shop_floor_meeting, equipment_management_system, sensors_mgm"
+                        %}
+                    </div>
+                    <div class="carousel-item">
+                        {% include home_section.html 
                             id = 'section_embedded_systems'
                             type = 'projects'
                             grid = 'row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 mv-docItem'
@@ -88,7 +103,7 @@ dataMarkup: default
                             grid = 'row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 mv-docItem'
                             equalHeight = true
                             cardBorder = 'secondary'
-                            select = "sensors_mgm, workflow_engine, douran_bi"
+                            select = "workflow_engine, douran_bi, sepam"
                         %}
                     </div>
                     <div class="carousel-item">
