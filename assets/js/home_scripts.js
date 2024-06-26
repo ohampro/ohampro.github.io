@@ -1,4 +1,8 @@
 
+    const params = new Proxy(new URLSearchParams(window.location.search), {
+        get: (searchParams, prop) => searchParams.get(prop),
+    });
+
     var prevScrollpos = window.pageYOffset;
 
     var deleyed_attentions = document.getElementsByClassName('deleyed-attention');
@@ -70,7 +74,7 @@
     //
     let selectedFeatureBtn;
     {
-        let prevIndex = sessionStorage.getItem('selectedFeature');
+        let prevIndex = params.fi ?? sessionStorage.getItem('selectedFeature');
         let selectedButtons = [];
 
         if (prevIndex > -1){
