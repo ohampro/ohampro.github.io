@@ -21,7 +21,7 @@
 title: Mohammad Haghighipoor
 subtitle: Innovative Software Developer & Problem Solver
 # avatar_url: https://avatars.githubusercontent.com/u/16705068?v=4
-avatar_url: /assets/images/ohamhpr.jpg
+avatar_url: /assets/images/ohampro.jpg
 description: Explore Mohammad Haghighipoor's portfolio and projects. A software developer dedicated to innovation and impactful solutions.
 keywords: Mohammad Haghighipoor, Mohammad Haghighi poor, software developer, innovation, innovative solutions, portfolio, problem solving
 
@@ -32,14 +32,14 @@ descriptionIGNORED: >- # this means to ignore newlines until "baseurl:"
   I make sure every single day has a clear and well-communicated structure.
   It also means changes are welcome.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://ohamhpr.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ohampro.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
-youtube_username: mohammadhaghighipoor3044
-linkedin_username:  ohamhpr
-github_username:  ohamhpr
-twitter_username: ohamhpr
-stack_overflow_username:  ohamhpr
-instagram_username:  ohamhpr
+youtube_username: ohamhp
+linkedin_username:  ohampro
+github_username:  ohampro
+twitter_username: ohampro
+stack_overflow_username:  2965104/ohampro
+instagram_username:  ohampro
 
 under_construction_message: Thank you for your interest!<br/>
   I'm making some improvements and will have everything ready soon.
