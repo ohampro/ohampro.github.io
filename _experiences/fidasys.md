@@ -1,6 +1,6 @@
 ---
 title: "MERN Full Stack Developer"
-subtitle: "2021-2023"
+subtitle: "2021 - 2023"
 muted: "Fidasys Inc. | Canada (Remote)"
 pageTitle: "Fidasys Inc. | Mohammad Haghighipoor" 
 labels: "Node.js, MongoDB, React.js, Express.js, Flutter, Android, Java, GreenDao, Retrofit, GPS, BLE, HTML, JavaScript, CSS, Git, GitHub, Agile, Jira, Unit Test"
@@ -22,7 +22,7 @@ Achievements:
 Fidasys Inc. is a mid-sized firm in the software development industry, specializing in advanced fleet management systems and order delivery platforms. The company provides comprehensive solutions for airport and ground transportation, significantly enhancing logistics operations for various clients.
 
 #### My Roles
-- **MERN Full Stack Developer** &#124; 2021 - 2023
+- **{{page.title}}** &#124; {{page.subtitle}}
 
 #### Achievements
 - {{ page.Achievements[0] }} {% include find_more.html href="/challenges/gps_drift" %}
