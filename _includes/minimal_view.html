@@ -65,9 +65,10 @@
             <p class="card-text overflow-y-auto">
                 {{ include.excerpt }}
                 {% if include.content.size > 0 %}
+                <br><br>
                     <a class="card-link text-nowrap {% if include.content contains 'under_construction_message' %}text-muted link-dark link-underline-opacity-10{% else %}link-primary {% endif %} link-offset-2 link-opacity-50-hover" 
                     href="{{ include.url }}"> 
-                    Find more.<i class="bi bi-box-arrow-up-right small ms-1"></i>
+                    Find more<i class="bi bi-chevron-right small ms-1"></i>
                 </a>  
                 {% endif %}
                 {% include card_labels.html labels=include.tempting default_href=include.url 
