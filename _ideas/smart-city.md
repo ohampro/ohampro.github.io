@@ -138,7 +138,7 @@ Big data analytics involves external services that users can connect their devic
 
 ## Challenges and Solutions
 ### Challenge
-We faced several challenges, such as publishing sensor data while ensuring privacy, maintaining consistent performance under varying usage conditions, and programming our kit to support different models—from mini versions with 2 outputs to more complex facilities with multiple PWM outputs. However, the most difficult challenge was implementing RSA encryption in our IoT kit due to its resource and speed limitations.
+We encountered numerous challenges, such as publishing sensor data while ensuring privacy, maintaining consistent performance under varying usage conditions, and programming our kit to support different models—from mini versions with 2 outputs to more complex facilities with multiple PWM outputs. However, the most difficult technical challenge was implementing RSA encryption in our IoT kit due to its resource and speed limitations.
 
 #### Solution
 To overcome this, I opted for AES encryption due to its lower computational and memory requirements, and a custom protocol, which reduced the number of messages between peers as well as the message size in bytes.
