@@ -89,7 +89,7 @@
         window.onCardLabelClick = function(){};
     } 
 
-    function highlithLabel(docItems, label){
+    function highlithLabel(docItems, label, xButton = undefined){
         let foundItems = 0;
 
         for (let item of docItems){
@@ -113,6 +113,10 @@
                     filteredElements.map((el) => {
                         el.classList.remove('btn-outline-secondary');
                         el.classList.add('btn-secondary');
+                        //
+                        if (xButton){
+                            el.innerHTML += xButton;
+                        }
                     });
                 }
             }

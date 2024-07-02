@@ -20,7 +20,7 @@
                     {%- assign ahref = hrefs[forloop.index0] | strip | strip_newlines -%}
                 {%- endif -%}
 
-                <a role="button" class="btn btn-label {{btnClass}} d-inline-block me-1" 
+                <a role="button" class="btn btn-label {{btnClass}} d-inline-block me-1" data-card-label="{{sLabel}}"
                 onclick="onCardLabelClick()"
                     href="{{ ahref }}">{{ sLabel }}{% if pCount > 1 %} <small>({{ pCount }})</small>{% endif %}
                 </a>

@@ -10,8 +10,9 @@ if (params.with == undefined || params.with.length == 0){
     showAllItems();
 
 }else{
-    
-    foundItems = highlithLabel(docItems, params.with);
+    let xButton = `<i class="bi bi-x p-0 d-inline pe-none"></i>`;
+
+    foundItems = highlithLabel(docItems, params.with, xButton);
 
     let topMsg = document.getElementById('topMsg');
     if (foundItems > 0){
@@ -32,7 +33,7 @@ if (params.with == undefined || params.with.length == 0){
 }
 
 window.onCardLabelClick = function(){
-    if (params.with == event.target.innerText){
+    if (params.with == event.target.getAttribute('data-card-label')){
         window.location.href = document.getElementById('showAllItemsLink').href;
         event.preventDefault();
     }
