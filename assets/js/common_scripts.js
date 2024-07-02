@@ -104,7 +104,7 @@
                     el.classList.remove('btn-secondary');
                 });
 
-                if (itemLabels.indexOf(label) > -1){
+                if (itemLabels.split(', ').indexOf(label) > -1){
                     item.classList.remove('d-none');
                     foundItems++;
                     //
