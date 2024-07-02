@@ -14,9 +14,14 @@ if (params.with == undefined || params.with.length == 0){
 
     let topMsg = document.getElementById('topMsg');
     if (foundItems > 0){
-        topMsg.innerHTML = foundItems + " Projects Utilizing " + params.with;
+        topMsg.innerHTML = `(${foundItems} of ${docItems.length}) Projects Utilizing '${params.with}':`;
     }else{
-        topMsg.innerHTML = "Not Found!";
+        foundItems = highlithLabel(docItems, "-Default");
+        if (foundItems > 0){
+            topMsg.innerHTML = `Projects possibly utilizing ${params.with}:`;
+        }else{
+            topMsg.innerHTML = "Not Found!";
+        }        
     }
     topMsg.classList.remove('d-none');
 

@@ -4,6 +4,11 @@
         {%- assign labelsArr = include.labels | split: ', ' -%}
         {%- for label in labelsArr -%}
             {%- assign sLabel = label | strip | strip_newlines -%}
+            {%- assign firstLetter = sLabel | slice: 0 -%}
+            {%- if firstLetter == '-' -%}
+                {% continue %}
+            {%- endif -%}
+
             {%- if sLabel.size > 0 -%}
                 {%- assign value_start = include.skillMap | split: sLabel | last | split: "," | first -%}
                 {%- assign pCount = value_start | split: ": " | last | plus: 0 -%}
