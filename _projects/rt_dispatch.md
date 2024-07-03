@@ -2,7 +2,7 @@
 rootClass: markdown-gen
 title: "RT Dispatch"
 muted: "2020 - 2023 . Fidasys Inc. - Resertrc Inc."
-labels: "Android, Java, Flutter, RESTful, Retrofit, GreenDao, GPS, Location Service, Agile, Git, GitHub, Mobile app"
+labels: "Android, Java, Flutter, RESTful, Retrofit, GreenDao, JSON, GPS, Location Service, Agile, Git, GitHub, Mobile app"
 permalink: "/projects/rt_dispatch/"
 liveProjectUrl: https://play.google.com/store/apps/details?id=com.resertrac.rtdispatch&hl=en
 excerpt: "An integral component of an extensive system designed to gather information on vehicles, passengers, and 
