@@ -106,7 +106,7 @@ docsOrder:
     - _projects/order_delivery.md
     - _ideas/neoterra-cities.html
     - _projects/shop_floor_meeting.html
-    - _projects/limousine_reservation.html
+    - _projects/limousine_reservation.md
     - _projects/driver_assistance_center.html
     - _projects/equipment_management_system.html
     - _projects/paybank_android_app.html
@@ -126,7 +126,7 @@ docsOrder:
     - _projects/ivr.html
     - _ideas/ecity.html
     - _experiences/fidasys.md
-    - _experiences/resertrac.html
+    - _experiences/resertrac.md
     - _experiences/nrdc.html
     - _experiences/tva.html
     - _experiences/douran.html
