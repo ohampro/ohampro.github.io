@@ -99,9 +99,9 @@
             if (dataLabels.length > 0){
                 let itemLabels = dataLabels[0].getAttribute('data-labels');
                 
-                Array.from(aElements).filter(a => a.classList.contains('btn-secondary')).map((el) => {
-                    el.classList.add('btn-outline-secondary');
-                    el.classList.remove('btn-secondary');
+                Array.from(aElements).filter(a => a.classList.contains(labelsActiveColor)).map((el) => {
+                    el.classList.add(labelsDefaultColor);
+                    el.classList.remove(labelsActiveColor);
                 });
 
                 if (itemLabels.split(', ').indexOf(label) > -1){
@@ -111,8 +111,8 @@
 
                     const filteredElements = Array.from(aElements).filter(a => a.textContent.trim() === label);
                     filteredElements.map((el) => {
-                        el.classList.remove('btn-outline-secondary');
-                        el.classList.add('btn-secondary');
+                        el.classList.remove(labelsDefaultColor);
+                        el.classList.add(labelsActiveColor);
                         //
                         if (xButton){
                             el.innerHTML += xButton;
