@@ -1,6 +1,6 @@
 {%- if include.labels.size > 0 -%}
     {%- assign btnClass = include.btnClass | default: "m-0 py-0 px-1" -%}
-    <div class="card-text textt-nowrap overflow-x-auto" data-labels="{{ include.full_labels | default: include.labels }}">
+    <div class="card-text textt-nowrap overflow-x-auto {{ include.class }}" data-labels="{{ include.full_labels | default: include.labels }}">
         {%- assign labelsArr = include.labels | split: ', ' -%}
         {%- for label in labelsArr -%}
             {%- assign sLabel = label | strip | strip_newlines -%}
