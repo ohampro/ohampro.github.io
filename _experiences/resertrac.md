@@ -6,7 +6,11 @@ pageTitle: "Resertrac Inc. | Mohammad Haghighipoor"
 labels: "Android, Java, React.js"
 permalink: "/experiences/resertrac/"
 rootClass: markdown-gen
-excerpt: "Ground Transportation Management System."
+excerpt: "Actively participated in development of Ground Transportation Management Systems."
+achievements:
+    - Reduced development time of a complex feature by 20 days by utilizing a pre-written library, achieving an 80% time savings.
+    - Developed and maintained various features for the company's Android app.
+    - Successfully reimplemented a legacy app to enhance support and maintenance within a tight deadline.
 ---
 
 ### {{ page.muted }}
@@ -18,10 +22,10 @@ Resertrac Inc. is a mid-sized expert firm in the Ground Transportation Managemen
 
 
 #### Achievements
+- {{page.achievements[0]}}
+- {{page.achievements[1]}}
+- {{page.achievements[2]}}
 
-- Reduced development time of a complex feature by 20 days by utilizing a pre-written library, achieving an 80% time savings.
-- Developed and maintained various features for the company's Android app.
-- Successfully reimplemented a legacy app to enhance support and maintenance within a tight deadline.
 
 
 #### Contributions
