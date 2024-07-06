@@ -81,7 +81,7 @@
                         {%- assign cardBorder = include.cardBorder | default: doc.cardBorder -%}
                         
                         <div class="{%- if include.grid -%}col{%- else -%}mb-4{%- endif %} {{ include.class }}">
-                            {% include minimal_view.html 
+                            {% include card.html 
                                 id = docItemId
                                 url = doc.permalink
                                 title = doc.title
