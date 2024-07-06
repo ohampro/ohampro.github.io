@@ -1,6 +1,6 @@
 ---
 title: "Network Listener Module"
-muted: "2009 . Individual Client"
+muted: "2009 | Individual Client"
 labels: "AVR, Bascom, Embedded Systems, Serial Communication, Network Protocols, Electronics, Schematic Diagramming, SPI, CMOS, Troubleshooting"
 permalink: "/projects/network_listener/"
 liveProjectUrl:

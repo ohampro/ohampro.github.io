@@ -1,7 +1,7 @@
 ---
 rootClass: markdown-gen
 title: "Crowdsourced Delivery Platform"
-muted: "2021 - 2023 . Fidasys Inc."
+muted: "2021 - 2023 | Fidasys Inc."
 labels: "React.js, Node.js, Flutter, RESTful, JSON, GPS, Location Service, JavaScript, HTML, CSS, Agile, Git, GitHub, Mobile app, Front-end"
 permalink: "/projects/order_delivery/"
 liveProjectUrl: 

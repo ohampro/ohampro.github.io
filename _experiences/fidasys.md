@@ -1,7 +1,7 @@
 ---
 title: "MERN Full Stack Developer"
 subtitle: "2021 - 2023"
-muted: "Fidasys Inc. | Canada (Remote)"
+muted: "Fidasys Inc. | Canada | Remote"
 pageTitle: "Fidasys Inc. | Mohammad Haghighipoor" 
 labels: "Node.js, MongoDB, React.js, Express.js, Flutter, Android, Java, GreenDao, Retrofit, GPS, BLE, HTML, JavaScript, CSS, Git, GitHub, Agile, Jira, Unit Test"
 temptingIGNORED: 2 Achievements, 6 Contributions

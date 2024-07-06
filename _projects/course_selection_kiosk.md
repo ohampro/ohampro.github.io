@@ -1,6 +1,6 @@
 ---
 title: "Electronic Course Selection Kiosk"
-muted: "2008 . Individual Client"
+muted: "2008 | Individual Client"
 labels: "Bascom, AVR, Graphic LCD, TouchPad, keyboard, Electronics, Embedded Systems, -Default"
 permalink: "/projects/course_selection_kiosk/"
 rootClass: markdown-gen pt-5

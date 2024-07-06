@@ -1,7 +1,7 @@
 ---
 title: "Mobile Application Developer"
 subtitle: "2019 - 2021"
-muted: "Resertrac Inc. | Canada (Remote)"
+muted: "Resertrac Inc. | Canada | Remote"
 pageTitle: "Resertrac Inc. | Mohammad Haghighipoor" 
 labels: "Android, Java, React.js"
 permalink: "/experiences/resertrac/"
