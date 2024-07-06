@@ -34,7 +34,7 @@ Fidasys Inc. is a mid-sized firm in the software development industry, specializ
 - **Implemented Web-app Prototype**: Designed and launched a clickable Bootstrap + Java web app prototype for automatic license plate recognition.
 - **Research and Development**: Conducted comprehensive research on Fleet Management Systems to identify best practices and features, guiding the development of our new FMS product.
 - **Projects**
->>> {% include home_section.html 
+>>> {% include collection.html 
         id = 'fidasys_projects'
         type = "projects"
         cardBorder = 'success'

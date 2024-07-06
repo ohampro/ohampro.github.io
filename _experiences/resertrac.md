@@ -28,7 +28,7 @@ Resertrac Inc. is a mid-sized expert firm in the Ground Transportation Managemen
 - **Collaborated with Cross-Functional Teams**: Worked closely with designers, product managers, and developers to deliver high-quality software solutions.
 
 - **Projects**
->>> {% include home_section.html 
+>>> {% include collection.html 
         id = 'resertrac_projects'
         type = "projects"
         cardBorder = 'success'
