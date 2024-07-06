@@ -4,7 +4,6 @@ subtitle: "2021 - 2023"
 muted: "Fidasys Inc. | Canada | Remote"
 pageTitle: "Fidasys Inc. | Mohammad Haghighipoor" 
 labels: "Node.js, MongoDB, React.js, Express.js, Flutter, Android, Java, GreenDao, Retrofit, GPS, BLE, HTML, JavaScript, CSS, Git, GitHub, Agile, Jira, Unit Test"
-temptingIGNORED: 2 Achievements, 6 Contributions
 permalink: "/experiences/fidasys/"
 excerpt: "Involved in the design of Fleet Management System and Order Delivery,
     Contributed to the implementation of front-end and mobile app,
