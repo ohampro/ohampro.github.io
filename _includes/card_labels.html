@@ -1,5 +1,5 @@
 {%- if include.labels.size > 0 -%}
-    {%- assign btnClass = include.btnClass | default: "m-0 py-0 px-1" -%}
+    {%- assign btnClass = include.btnClass | default: "m-0 py-0" -%}
     <div class="card-text textt-nowrap overflow-x-auto {{ include.class }}" data-labels="{{ include.full_labels | default: include.labels }}">
         {%- assign labelsArr = include.labels | split: ', ' -%}
         {%- for label in labelsArr -%}
@@ -35,7 +35,7 @@
 
                 {%- assign btnColor = include.btnColor | default: site.data.labels.yearsColor[btnColorIndex] | default: site.data.labels.defaultColor -%}
 
-                <a role="button" class="btn btn-label {{ btnColor }} {{btnClass}} d-inline-block me-1 {% if ahref.size == 0 -%}pe-none{%- endif %}" 
+                <a role="button" class="btn btn-label {{ btnColor }} {{btnClass}} d-inline-block {% if ahref.size == 0 -%}pe-none{%- endif %}" 
                 data-card-label="{{sLabel}}"
                 onclick="onCardLabelClick()"
                     href="{{ ahref }}">{{ sLabel }}{% if pCount > 1 %} <small>({{ pCount }})</small>{% endif %}
