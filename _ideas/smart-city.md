@@ -36,9 +36,10 @@ This smart city project integrates IoT technology with urban infrastructure usin
 
 ## Team and Contributions
 - Project Manager
-- **Full Stack Developer (My Role)**: technical consultancy and development.
+- **System Architect (My Role)**: Designed the overall system architecture.
+- **Full Stack Developer (My Role)**: Technical consultancy and development.
 - **Embedded Systems Developer (My Role)**
-- **Quality Assurance**: partially contributed in creating tests and scenarios
+- **Quality Assurance**: Partially contributed in creating tests and scenarios.
 - Business Analyst
 
 ## Project Overview
@@ -56,15 +57,15 @@ This smart city project integrates IoT technology with urban infrastructure usin
     - To create an interconnected urban environment where devices and infrastructure communicate seamlessly.
     - To enhance convenience and quality of life for residents.
     - To provide businesses and manufacturers with tools for operational efficiency and customer insights.
-    - To promote sustainable living practices.
+    - To promote sustainable living practices including three Rs (Reduce, Reuse, Recycle).
     - To ensure robust security and privacy for users and their sensor data.
 
 - **Scope**:
     - **Mobile App**
-        - Communicate with IoT peers (electronic kits or software clients).
+        - Communicate with IoT peers (electronic kits, sensors, actuators, or software clients).
         - Explore connected peers
         - Set up custom scenarios.
-        - Manage a shopping cart and access a marketplace.
+        - Manage a shopping cart and access a marketplace.<br>_Ordering with Cash on Delivery (COD) payment._
         - Scan QR codes and read NFC tags.
         - Integrate predefined smart city applications.
         - Ensure secure communication and data integrity.
@@ -73,6 +74,18 @@ This smart city project integrates IoT technology with urban infrastructure usin
         - Develop core firmware for the kit.
         - Provide manufacturers with IoT kits and guidelines for embedding kits in their products.
         - Support multiple connection types, including peer-to-peer (P2P) and peer-to-gateway (P2G), and G2G communications.
+
+- **Out of Scope**:
+    - Online Payment Integration.
+    - Advanced AI Analytics.
+    - VR Applications.
+    - Full-Scale Security Audits.
+    - Legacy System Integration.
+    - Large-scale public awareness and engagement campaigns.
+    - Broadband Infrastructure Development.
+    - All Full management or Full overhaul including city's energy grid, public transportation, healthcare system, agriculture,and real-time traffic control.
+    - Detailed comprehensive environmental impact assessments for all initiatives.
+    - Full-Scale Security Audits.
 
 - **Process and Methodology**: Followed Agile methodology with iterative sprints for continuous improvement.
 
@@ -110,9 +123,13 @@ The IoT kit and Mifo app offer the ability for a device to be somewhat programma
 - **Script Propagation**: The Mifo app propagates the required scripts to the devices, enabling them to function independently of the mobile app.
 
 
-### Interfaces for Any Object
+### Interfaces for Every Thing
 
-- **Smart Homes**: Control and monitor home appliances.
+- **Smart Homes**: 
+    - **Control and monitor** home appliances.
+    - **Automating basic item orders**: Setting up automatic orders for frequently used items and managing subscription services.
+    - **Integrating weather data**: Syncing weather forecasts with heating, cooling, shading, and watering schedules to optimize efficiency and prevent wastage
+    
 - **Smart Museums**: Access detailed information about museum items.
 - **Smart Shopping Malls**: View the latest information about products, such as price or inventory status. Add items to a virtual cart for delivery at the exit point. Utilize vertical shelves to optimize space, and much more.
 - **Kids Location Tracer**: Track the location of children for parents.
@@ -127,6 +144,10 @@ Users can use their Mifo app throughout the city, including in public infrastruc
 - **Smart Energy**: Optimize the synergy between electric and gas heaters within buildings using thermal sensors.
 - **Clean City**: Use pollution sensors (dust or CO2) to provide data for managing traffic and industrial activities.
 - **Smart Health and Medical Services**: Implement a range of services, from accident sensor kits and emergency alarms (covering streets) to monitoring patients' vital signs and facilitating medical workflows.
+- **Smart Agriculture**
+    - **Smart Irrigation Systems**: Automating plant watering, adequately without overwatering.
+    - **Managing plant-specific needs**: Configuring different watering needs for various plants within the same system.
+
 
 ### Business and Manufacturer Benefits
 Businesses and manufacturers can track their device or product health and status upon user grant, leading to better services and higher quality products.
@@ -150,7 +171,7 @@ To overcome this, I opted for AES encryption due to its lower computational and 
 ---
 
 ## Outcomes and Results
-- Successful deployment of the smart city infrastructure, with widespread adoption among our clients of residents, businesses.
+- Successful deployment of the smart city infrastructure, with widespread adoption among our clients of residents and businesses.
 - Enhanced convenience and quality of life for residents, with automation and smart technologies reducing daily hassles.
 - Improved operational efficiency and customer insights for businesses and manufacturers, leading to better services and products.
 - Positive feedback from users about the functionality, usability, and security of the Mifo app and IoT system.
