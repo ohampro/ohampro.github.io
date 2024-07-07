@@ -6,7 +6,6 @@ pageTitle: "Fidasys Inc. | Mohammad Haghighipoor"
 labels: "Node.js, MongoDB, React.js, Express.js, Flutter, Android, Java, GreenDao, Retrofit, GPS, BLE, HTML, JavaScript, CSS, Git, GitHub, Agile, Jira, Unit Test"
 permalink: "/experiences/fidasys/"
 excerpt: "Involved in the design of Fleet Management System and Order Delivery platforms."
-
 rootClass: markdown-gen
 achievements: 
     - Reducing GPS drift by over 60%, boosted the reliability of location-based features, and received positive feedback from users and stakeholders

@@ -5,6 +5,7 @@ muted: "Selakteb Co | Iran"
 pageTitle: "Selakteb Co | Mohammad Haghighipoor" 
 labels: "VB.net, MS-SQL, MS Access"
 permalink: "/experiences/selakteb/"
+rootClass: markdown-gen
 excerpt: "Developed multiple medical applications and provided leadership to the web development team."
 achievements:
     - Successfully executed a swift redesign within a compressed timeframe of less than two months.

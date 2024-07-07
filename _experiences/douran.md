@@ -5,8 +5,8 @@ muted: "DOURAN GROUP Co | Iran"
 pageTitle: "DOURAN GROUP Co | Mohammad Haghighipoor" 
 labels: "Java, JFC, GWT, Oracle Database, JBPM, JIDE components, JFC Charts, Jasper Report, BI, KPI, Swing, JSP, Hibernate, GWT, JDBC, SVN, Apache Tomcat"
 permalink: "/experiences/douran/"
+rootClass: markdown-gen
 excerpt: "Involvement with ERP development across various subsystems, including Business Intelligence, Workflow, and Database Management."
-
 achievements:
     - Developed four innovative tools for ERP development teams at Douran Group, resulting in a 50% to 90% increase in development speed.
     - Created a Report Generator tool.

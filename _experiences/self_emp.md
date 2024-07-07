@@ -5,6 +5,7 @@ muted: "Self Employed | Iran"
 pageTitle: "Self Employed | Mohammad Haghighipoor" 
 labels: "Software Development, Electronics, Electrical Installations, Maintenance"
 permalink: "/experiences/self_emp/"
+rootClass: markdown-gen
 excerpt: "A diverse range of interests and skills, spanning from software programming to electronics, 
     coupled with expertise in electrical installations and maintenance, setting-up of Language Labs, Auditoriums, and more."
 achievements:

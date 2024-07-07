@@ -5,6 +5,7 @@ muted: "NRDC Co | Iran"
 pageTitle: "NRDC Co | Mohammad Haghighipoor" 
 labels: "Java, Oracle Database, SQL, PL/SQL, Java Enterprise Edition, Axure RP, Spring Framework, SonarQube, Gradle, Maven, JavaScript, HTML, CSS, SVN, Agile, Jira, JBoss"
 permalink: "/experiences/nrdc/"
+rootClass: markdown-gen
 excerpt: "During this period, I deepened my understanding of distributed systems and real-time stream processing with Kafka, gained insights into ESBs, and shared hands-on experiences in various technologies."
 achievements:
     - Successfully led a diverse group of developers, significantly enhancing team performance and code quality across multiple projects.
