@@ -13,3 +13,11 @@ achievements:
 ---
 
 {% include under_construction.html %}
+
+- **Projects**
+{% include collection.html 
+        id = 'kankash_projects'
+        type = "projects"
+        cardBorder = 'success'
+        select = "concrete_curbing_machine"
+    %}

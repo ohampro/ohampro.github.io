@@ -1,5 +1,4 @@
 ---
-layout: default
 title: "Senior Java Developer"
 subtitle: "2011-2016"
 muted: "DOURAN GROUP Co | Iran" 
@@ -18,3 +17,12 @@ achievements:
     - Conducted advanced one-on-one mentoring sessions, boosting employee motivation and cohesion.
 ---
 
+{% include under_construction.html %}
+
+- **Projects**
+{% include collection.html 
+        id = 'douran_projects'
+        type = "projects"
+        cardBorder = 'success'
+        select = "douran_bi, workflow_engine, enterprise_pop3_mail_server"
+    %}

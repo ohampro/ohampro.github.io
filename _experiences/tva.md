@@ -12,3 +12,11 @@ excerpt: "Focused on Software Development, IoT solutions, Smart Home systems, an
 ---
 
 {% include under_construction.html %}
+
+- **Projects**
+{% include collection.html 
+        id = 'tva_projects'
+        type = "ideas"
+        cardBorder = 'success'
+        select = "smart-city"
+    %}

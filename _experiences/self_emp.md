@@ -15,3 +15,13 @@ achievements:
     - Implemented various solutions, including water consumption optimization, stop request buttons in buses, and advanced IR alarm systems.
     - Strategically designed, developed, and implemented a sales management system.
 ---
+
+{% include under_construction.html %}
+
+- **Projects**
+{% include collection.html 
+        id = 'self_emp_projects'
+        type = "projects"
+        cardBorder = 'success'
+        select = "neoterra-cities, network_listener, course_selection_kiosk, shadman_acc, sepam, emamali_labrtor, ivr, ecity"
+    %}

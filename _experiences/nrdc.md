@@ -13,3 +13,12 @@ achievements:
     - Implemented a comprehensive Equipment Management System, eliminating significant manual work of classifying and maintaining equipment status within the first 2 months.
 ---
 
+{% include under_construction.html %}
+
+- **Projects**
+{% include collection.html 
+        id = 'nrdc_projects'
+        type = "projects"
+        cardBorder = 'success'
+        select = "driver_assistance_center, equipment_management_system, push_notification, sensors_mgm"
+    %}

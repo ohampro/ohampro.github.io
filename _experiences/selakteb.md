@@ -12,3 +12,12 @@ achievements:
     - Mentored junior developers resulting in a 25% increase in project completion rates.
 ---
 
+{% include under_construction.html %}
+
+- **Projects**
+{% include collection.html 
+        id = 'selakteb_projects'
+        type = "projects"
+        cardBorder = 'success'
+        select = "selak_dentistry_clinic"
+    %}
