@@ -37,7 +37,7 @@ This smart city project integrates IoT technology with urban infrastructure usin
 ## Team and Contributions
 - Project Manager
 - **System Architect (My Role)**: Designed the overall system architecture.
-- **Full Stack Developer (My Role)**: Technical consultancy and development.
+- **Full Stack Java Developer (My Role)**: Technical consultancy and development.
 - **Embedded Systems Developer (My Role)**
 - **Quality Assurance**: Partially contributed in creating tests and scenarios.
 - Business Analyst
@@ -63,7 +63,7 @@ This smart city project integrates IoT technology with urban infrastructure usin
 - **Scope**:
     - **Mobile App**
         - Communicate with IoT peers (electronic kits, sensors, actuators, or software clients).
-        - Explore connected peers
+        - Explore connected peers.
         - Set up custom scenarios.
         - Manage a shopping cart and access a marketplace.<br>_Ordering with Cash on Delivery (COD) payment._
         - Scan QR codes and read NFC tags.
@@ -74,6 +74,8 @@ This smart city project integrates IoT technology with urban infrastructure usin
         - Develop core firmware for the kit.
         - Provide manufacturers with IoT kits and guidelines for embedding kits in their products.
         - Support multiple connection types, including peer-to-peer (P2P) and peer-to-gateway (P2G), and G2G communications.
+    - **Desktop Server app**
+        - Manage IoT devices in a corporate setting through a centralized server station.
 
 - **Out of Scope**:
     - Online Payment Integration.
