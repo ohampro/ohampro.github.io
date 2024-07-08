@@ -105,25 +105,25 @@ docsOrder:
     - _projects/rt_dispatch.md
     - _projects/order_delivery.md
     - _ideas/neoterra-cities.html
-    - _projects/shop_floor_meeting.html
+    - _projects/shop_floor_meeting.md
     - _projects/limousine_reservation.md
-    - _projects/driver_assistance_center.html
-    - _projects/equipment_management_system.html
-    - _projects/paybank_android_app.html
-    - _projects/push_notification.html
-    - _projects/sensors_mgm.html
+    - _projects/driver_assistance_center.md
+    - _projects/equipment_management_system.md
+    - _projects/paybank_android_app.md
+    - _projects/push_notification.md
+    - _projects/sensors_mgm.md
     - _ideas/smart-city.md
-    - _projects/enterprise_pop3_mail_server.html
+    - _projects/enterprise_pop3_mail_server.md
     - _projects/workflow_engine.html
-    - _projects/douran_bi.html
+    - _projects/douran_bi.md
     - _projects/selak_dentistry_clinic.html
     - _projects/network_listener.md
     - _projects/course_selection_kiosk.md
     - _projects/concrete_curbing_machine.html
     - _projects/shadman_acc.html
-    - _projects/sepam.html
+    - _projects/sepam.md
     - _projects/emamali_labrtor.html
-    - _projects/ivr.html
+    - _projects/ivr.md
     - _ideas/ecity.html
     - _experiences/fidasys.md
     - _experiences/resertrac.md
