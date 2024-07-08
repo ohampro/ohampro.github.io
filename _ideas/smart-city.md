@@ -3,7 +3,8 @@ rootClass: markdown-gen
 title: "Smart City - IoT Framework"
 muted: "2016 - 2017 | Tose Vira Afzar Co"
 permalink: "/projects/smart-city/"
-labels: "Java, Oracle Database, Spring Framework, RSA, Android, Microsoft Visio, Axure RP, RESTful, WebSocket, MQTT, CoAP, 
+labels: "Java, Oracle Database, Spring Framework, Android, Bootstrap, Electronics, IoT, Urban Futurist, -Default"
+skills: "Java, Oracle Database, Spring Framework, RSA, Android, Microsoft Visio, Axure RP, RESTful, WebSocket, MQTT, CoAP, 
 Electronics, IoT, ESP8266, AVR, NFC, Mifare, RFID, QR, Camera Module, GPS, Bootstrap, JavaScript, HTML, CSS, Git, GitHub, Urban Futurist, -Default"
 keywords: smart city, cities, Urban Futurist
 techAndTools: ""
@@ -92,7 +93,7 @@ This smart city project integrates IoT technology with urban infrastructure usin
 - **Process and Methodology**: Followed Agile methodology with iterative sprints for continuous improvement.
 
 - **Tools and Technologies**: 
-    {% include card_labels.html labels=page.labels %} 
+    {% include card_labels.html labels=page.skills %} 
 
 <br>
 
