@@ -141,7 +141,7 @@ The IoT kit and Mifo app offer the ability for a device to be somewhat programma
 ### City-Wide Integration
 Users can use their Mifo app throughout the city, including in public infrastructure, learning institutions, healthcare facilities, and more.
 - **Smart Transportation System**: Provide information about stops, buses, and schedules.
-- **Smart Energy**: Optimize the synergy between electric and gas heaters within buildings using thermal sensors.
+- **Smart Energy**: Automated adjustment of lighting, heating, and cooling based on occupancy and usage patterns.
 - **Clean City**: Use pollution sensors (dust or CO2) to provide data for managing traffic and industrial activities.
 - **Smart Health and Medical Services**: Implement a range of services, from accident sensor kits and emergency alarms (covering streets) to monitoring patients' vital signs and facilitating medical workflows.
 - **Smart Agriculture**
