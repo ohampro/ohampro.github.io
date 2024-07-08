@@ -79,6 +79,10 @@
                     {% if docBasename == basename or doc.path == basename %}
 
                         {%- assign cardBorder = include.cardBorder | default: doc.cardBorder -%}
+                        {%- assign labels = doc.labels -%}
+                        {%- if include.labels == 'skills' -%}
+                            {%- assign labels = doc.skills -%}
+                        {%- endif -%}
                         
                         <div class="{%- if include.grid -%}col{%- else -%}mb-4{%- endif %} {{ include.class }}">
                             {% include card.html 
@@ -96,7 +100,7 @@
                                 badgeTextColor = doc.badgeTextColor
                                 index = index
                                 maxVisibleItems = maxVisibleItems
-                                labels = doc.labels 
+                                labels = labels 
                                 tempting = doc.tempting
                                 skillMap = skillMap
                                 itemList = doc.achievements
