@@ -6,9 +6,7 @@ labels: "Android, Java, Flutter, GPS, Mobile app"
 skills: "Android, Java, Flutter, RESTful, Retrofit, GreenDao, JSON, GPS, Location Service, Agile, Git, GitHub, Mobile app, -ready"
 permalink: "/projects/rt_dispatch/"
 liveProjectUrl: https://play.google.com/store/apps/details?id=com.resertrac.rtdispatch&hl=en
-excerpt: "An integral component of an extensive system designed to gather information on vehicles, passengers, and 
-    transportation zones, optimizing the provision of the best possible trips. My role included developing both 
-    the Android and iOS applications for this system."
+excerpt: "Developed and implemented both the Android and iOS applications for an extensive system designed to gather information on vehicles, passengers, and transportation zones, optimizing the provision of the best possible trips."
 
 ---
 

@@ -5,10 +5,7 @@ labels: "AVR, Electronics, Embedded Systems"
 skills: "AVR, Bascom, Graphic LCD, TouchPad, keyboard, Electronics, Embedded Systems, -Default, -ready"
 permalink: "/projects/course_selection_kiosk/"
 rootClass: markdown-gen pt-5
-excerpt: "Intuitive Electronic Course Selection Kiosk, optimizing in-person student course management. 
- Seamless login integration for students, admins, academic advisors, and bursar, 
- it facilitates effortless course enrollment, withdrawal, and financial monitoring, 
- enhancing academic planning and administrative efficiency."
+excerpt: "Designed and developed an intuitive Electronic Course Selection Kiosk to optimize in-person student course management. Integrated seamless login for students, admins, academic advisors, and bursars, facilitating effortless course enrollment, withdrawal, and financial monitoring to enhance academic planning and administrative efficiency."
  
 ---
 

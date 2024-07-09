@@ -4,8 +4,7 @@ muted: "2018 - 2019 | NRDC Co"
 labels: "Java, Spring Framework, Oracle Database, Back-end, System Architecture, -Default"
 skills: "Java, Spring Framework, Oracle Database, PL/SQL, Microsoft Visio, SonarQube, JavaScript, DWR, HTML, CSS, JBoss, Git, Jira, Agile, IntelliJ IDEA, Eclipse IDE, Back-end, System Architecture, System Design, -Default"
 permalink: "/projects/equipment_management_system/"
-excerpt: "Record all movements, costs, and services as well as repair-maintenance schedules, 
-    return, transfer to other locations and scrapping."
+excerpt: "Led design of EMS to record equipment movements, costs, services, repair and maintenance schedules, returns, transfers to other locations, and scrapping."
  
 ---
 

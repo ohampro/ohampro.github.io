@@ -4,9 +4,7 @@ muted: "2018 - 2019 | NRDC Co"
 labels: "Java, Android, WebSocket, JavaScript, Mobile app"
 skills: "Java, Android, WebSocket, RESTful, JSON, JSP, HTML, JavaScript, CSS, JBoss, SVN, Jira, Agile, Mobile app"
 permalink: "/projects/driver_assistance_center/"
-excerpt: "This application notifies mission drivers through a centralized system, 
-    prompting them to be present at designated locations, assist individuals, 
-    and seamlessly proceed with assigned tasks."
+excerpt: "Designed and developed an application that notifies mission drivers through a centralized system, prompting them to be present at designated locations, assist individuals, and proceed with assigned tasks."
  
 ---
 

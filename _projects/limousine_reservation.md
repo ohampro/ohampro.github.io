@@ -5,9 +5,7 @@ labels: "Android, Java, Retrofit, GPS, Mobile app"
 skills: "Android, Java, RESTful, Retrofit, GreenDao, JSON, GPS, Location Service, Git, GitHub, Agile, Mobile app, -ready"
 permalink: "/projects/limousine_reservation/"
 rootClass: markdown-gen
-excerpt: "An intuitive mobile app facilitating airport trip reservations. Users can easily create an account, 
-    log in, and choose an airport as either the source or destination. The system efficiently processes the request, 
-    dispatching a vehicle accordingly."
+excerpt: "Developed an intuitive mobile app for facilitating airport trip reservations. Users can easily create an account, log in, and select an airport as either the source or destination. The system efficiently processes the request and dispatches a vehicle accordingly."
  
 ---
 

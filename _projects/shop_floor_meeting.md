@@ -4,9 +4,7 @@ muted: "2020 | F2F Group"
 labels: "Java, Spring Framework, Oracle Database, Bootstrap, Back-end, Front-end, System Architecture, -Default"
 skills: "Java, Spring Framework, Oracle Database, Microsoft Visio, RESTful, Thymeleaf, Bootstrap, jQuery, JavaScript, HTML, CSS, WildFly, Trello, Agile, Git, GitHub, Back-end, Front-end, System Architecture, System Design, -Default"
 permalink: "/projects/shop_floor_meeting/"
-excerpt: "Innovative platform managing daily meetings, 5S audits, HSE, Production, Suggestion, 
- and Kaizen sessions seamlessly. With dynamic wall screens displaying progress and moderator plans, 
- track risk management records and open to client representatives."
+excerpt: "Engineered a platform for managing daily meetings, 5S audits, HSE, production, suggestions, and Kaizen sessions. The platform features dynamic wall screens, tracks risk management, and is accessible to client representatives."
  
 ---
 

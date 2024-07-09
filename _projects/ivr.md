@@ -4,8 +4,7 @@ muted: "2002 | Innovation | Individual Client"
 labels: "Electronics, Schematic Diagramming, Embedded Systems"
 skills: "Electronics, Schematic Diagramming, CMOS, TTL, Embedded Systems, Troubleshooting"
 permalink: "/projects/ivr/"
-excerpt: "Facilitating control over lighting, temperature, and home appliances through phone connectivity, 
-    and enabling extension dialing without speaking to an agent."
+excerpt: "Designed and developed an IVR system facilitating control over lighting, temperature, and home appliances through phone connectivity. The system also enabled extension dialing without the need to speak to an agent."
  
 ---
 

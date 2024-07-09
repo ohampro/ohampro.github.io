@@ -9,10 +9,7 @@ Electronics, IoT, ESP8266, AVR, NFC, Mifare, RFID, QR, Camera Module, GPS, Boots
 keywords: smart city, cities, Urban Futurist
 techAndTools: ""
 nextProject: "neoterra-cities"
-excerpt: "Envision a world where every object, from household appliances to public infrastructure, 
-    is interconnected and responsive to your commands and queries through your smartphone. 
-    Whether it's adjusting the thermostat, checking the availability of parking spaces, 
-    or even engaging with public transportation systems, the possibilities are limitless."
+excerpt: "Spearheaded a smart city project where every object, from household appliances to public infrastructure, is interconnected and responsive to commands and queries through a smartphone. Whether it's adjusting the thermostat, checking the availability of parking spaces, or engaging with public transportation systems, the possibilities are limitless."
 ---
 
 <div class="mt-4"><i>Synopsis of the</i></div>

@@ -7,8 +7,7 @@ permalink: "/projects/network_listener/"
 liveProjectUrl:
 srcGitUrl:
 rootClass: markdown-gen pt-5
-excerpt: "This project involved the design and development of a network listener module aimed at enhancing network 
-    security through real-time monitoring. The device captures and filters network packets for detailed analysis."
+excerpt: "Designed and developed a network listener module to enhance network security through real-time monitoring. The module captures and filters network packets for detailed analysis."
  
 ---
 

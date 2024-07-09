@@ -21,7 +21,7 @@ Highly skilled Software and Embedded Systems Developer with over 12 years of exp
 
 **MERN Full Stack Developer**  
 *Fidasys, Remote (Jan 2021 - Jan 2023)*  
-- Designed and implemented a Fleet Management System and Order Delivery system.
+- Designed and developed a Fleet Management System and Order Delivery system.
 - Developed front-end and mobile app, route optimization algorithms, and automated order processing systems.
 - Achieved significant cost savings and improved delivery timelines.
 - **Skills:** React.js, JavaScript, Flutter, System Architecture, Agile, Test Driven Development.
