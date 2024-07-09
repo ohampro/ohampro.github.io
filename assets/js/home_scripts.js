@@ -55,7 +55,7 @@
     }
 
 
-    async function scrollToProjects(){
+    async function scrollToProjects(event){
         const portfolio_list = document.getElementById('portfolio_list');
         if (portfolio_list.classList.contains('show')){
             return;

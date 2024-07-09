@@ -24,7 +24,7 @@
         return new Promise(resolve => setTimeout(resolve, ms));
     }
 
-    function displayMoreItems(){
+    function displayMoreItems(event){
         let btnLink = event.target;
 
         let targetItem = btnLink.dataset.targetItem;
@@ -46,6 +46,8 @@
 
         return false;
     }
+
+    [...document.querySelectorAll('[displayMoreOnclick]')].map(el => el.addEventListener('click', window.displayMoreItems));
 
     function displayDocsItem(item){
         item.classList.remove("d-none");

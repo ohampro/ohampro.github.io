@@ -2,7 +2,7 @@ var thumbnailBookDialogMatchingImages = [];
 var thumbnailBookDialogIndex = 0;
 
 // Add dialog to images
-function onThumbnailBookClick (){
+function onThumbnailBookClick (event){
     let imgEl = document.getElementById('thumbnailBookDialogImg');
     let src = event.target.getAttribute('src');
     imgEl.src = src;
@@ -81,7 +81,7 @@ function setupImage(img){
     img.style.cursor = 'pointer';
     img.setAttribute('data-bs-toggle', "modal");
     img.setAttribute('data-bs-target', "#thumbnailBookDialog");
-    img.onclick = onThumbnailBookClick;
+    img.addEventListener('click', onThumbnailBookClick);
 }
 
 const imgList = document.querySelectorAll('img');
