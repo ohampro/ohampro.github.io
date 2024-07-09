@@ -2,7 +2,7 @@
 title: "Electronic Course Selection Kiosk"
 muted: "2008 | Individual Client"
 labels: "AVR, Electronics, Embedded Systems"
-skills: "AVR, Bascom, Graphic LCD, TouchPad, keyboard, Electronics, Embedded Systems, -Default"
+skills: "AVR, Bascom, Graphic LCD, TouchPad, keyboard, Electronics, Embedded Systems, -Default, -ready"
 permalink: "/projects/course_selection_kiosk/"
 rootClass: markdown-gen pt-5
 excerpt: "Intuitive Electronic Course Selection Kiosk, optimizing in-person student course management. 

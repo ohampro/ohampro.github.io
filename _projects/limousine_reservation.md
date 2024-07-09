@@ -2,7 +2,7 @@
 title: "Limousine Reservation App"
 muted: "2019 | Resertrac Inc."
 labels: "Android, Java, Retrofit, GPS, Mobile app"
-skills: "Android, Java, RESTful, Retrofit, GreenDao, JSON, GPS, Location Service, Git, GitHub, Agile, Mobile app"
+skills: "Android, Java, RESTful, Retrofit, GreenDao, JSON, GPS, Location Service, Git, GitHub, Agile, Mobile app, -ready"
 permalink: "/projects/limousine_reservation/"
 rootClass: markdown-gen
 excerpt: "An intuitive mobile app facilitating airport trip reservations. Users can easily create an account, 

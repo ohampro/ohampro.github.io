@@ -10,7 +10,7 @@ excerpt: "Comprehensive software solution that connects students, teachers, pare
  
 ---
 
-{% include under_construction.html %}
+{% include under_construction_project.html %}
 
 ## Skills Used
 

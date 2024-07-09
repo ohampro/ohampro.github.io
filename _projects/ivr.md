@@ -9,7 +9,7 @@ excerpt: "Facilitating control over lighting, temperature, and home appliances t
  
 ---
 
-{% include under_construction.html %}
+{% include under_construction_project.html %}
 
 ## Skills Used
 

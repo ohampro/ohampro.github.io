@@ -10,7 +10,7 @@ excerpt: "Innovative platform managing daily meetings, 5S audits, HSE, Productio
  
 ---
 
-{% include under_construction.html %}
+{% include under_construction_project.html %}
 
 ## Skills Used
 

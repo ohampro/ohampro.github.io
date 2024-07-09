@@ -16,7 +16,12 @@ if (params.with == undefined || params.with.length == 0){
 
     let topMsg = document.getElementById('topMsg');
     if (foundItems > 0){
-        topMsg.innerHTML = `(${foundItems} of ${docItems.length}) Projects Utilizing '${params.with}'`;
+        let nextWord = `Utilizing '${params.with}'`;
+        if (params.with.startsWith('-ready')){
+            nextWord = `have details`;
+        }
+
+        topMsg.innerHTML = `(${foundItems} of ${docItems.length}) Projects ${nextWord}`;
     }else{
         topMsg.classList.remove('text-success');
         topMsg.classList.add('text-danger');

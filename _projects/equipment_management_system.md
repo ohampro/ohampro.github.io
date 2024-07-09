@@ -27,7 +27,7 @@ excerpt: "Record all movements, costs, and services as well as repair-maintenanc
 </div>
 
 
-{% include under_construction.html style="" %}
+{% include under_construction_project.html style="" %}
 
 ## Skills Used
 

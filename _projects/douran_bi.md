@@ -9,7 +9,7 @@ excerpt: "Developed a dynamic analytic report, incorporating pivot tables and va
  
 ---
 
-{% include under_construction.html %}
+{% include under_construction_project.html %}
 
 ## Skills Used
 

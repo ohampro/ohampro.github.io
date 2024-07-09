@@ -10,7 +10,7 @@ excerpt: "Collecting data from sensors, logs, networks, and live data streams,
  
 ---
 
-{% include under_construction.html %}
+{% include under_construction_project.html %}
 
 ## Skills Used
 

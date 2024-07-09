@@ -10,7 +10,7 @@ excerpt: "A Crowdsourced Delivery System where users register their orders, and 
  
 ---
 
-{% include under_construction.html %}
+{% include under_construction_project.html %}
 
 ## Skills Used
 

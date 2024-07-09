@@ -1,8 +1,13 @@
 {% assign style = include.style | default: 'min-height: 60vh;' %}
 <div class="under_construction_message">
     <div class="px-3 d-flex align-items-center" style="{{ style }}">
-        <div class="fw-meduim fs-4 text-success text-center flex-fill">
-            {{ site.under_construction_message }}
+        <div class="text-center flex-fill">
+            <p class="fw-meduim fs-4 text-success">{{ site.under_construction_message }}</p>
+
+            {% if include.action -%}
+                <br/>
+                <a class="link fs-5" href="{{ include.actionHref }}">{{include.action}}</a>
+            {%- endif %}
         </div>
     </div>
 </div>

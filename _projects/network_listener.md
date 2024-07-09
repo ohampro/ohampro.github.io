@@ -2,7 +2,7 @@
 title: "Network Listener Module"
 muted: "2009 | Individual Client"
 labels: "AVR, Embedded Systems, Serial Communication, Network Protocols, Electronics"
-skills: "AVR, Bascom, Embedded Systems, Serial Communication, Network Protocols, Electronics, Schematic Diagramming, SPI, CMOS, Troubleshooting"
+skills: "AVR, Bascom, Embedded Systems, Serial Communication, Network Protocols, Electronics, Schematic Diagramming, SPI, CMOS, Troubleshooting, -ready"
 permalink: "/projects/network_listener/"
 liveProjectUrl:
 srcGitUrl:
