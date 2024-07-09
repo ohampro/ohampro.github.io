@@ -37,7 +37,7 @@
 
                 <a role="button" class="btn btn-label {{ btnColor }} {{btnClass}} d-inline-block {% if ahref.size == 0 -%}pe-none{%- endif %}" 
                 data-card-label="{{sLabel}}"
-                onclick="onCardLabelClick()"
+                labelOnclick
                     href="{{ ahref }}">{{ sLabel }}{% if pCount > 1 %} <small>({{ pCount }})</small>{% endif %}
                 </a>
             {%- endif -%}

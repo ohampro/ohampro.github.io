@@ -37,12 +37,14 @@ if (params.with == undefined || params.with.length == 0){
 
 }
 
-window.onCardLabelClick = function(){
+window.onCardLabelClick = function(event){
     if (params.with == event.target.getAttribute('data-card-label')){
-        window.location.href = document.getElementById('showAllItemsLink').href;
         event.preventDefault();
+        window.location.href = document.getElementById('showAllItemsLink').href;
     }
 };
+
+[...document.querySelectorAll('[labelOnclick]')].map(el => el.addEventListener('click', window.onCardLabelClick));
 
 function showAllItems(){
     document.getElementById('showAllItems').classList.add('d-none');
