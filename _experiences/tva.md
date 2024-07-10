@@ -14,6 +14,8 @@ achievements:
 ---
 
 ### Tose Vira Afzar Co
+_Iran | Part-time_
+
 Tose Vira Afzar is a privately held, small-sized company in the software development industry. The company delivers comprehensive smart solutions for a diverse range of clients.
 
 #### My Roles

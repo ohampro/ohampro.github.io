@@ -13,7 +13,9 @@ achievements:
     - Successfully reimplemented a legacy app to enhance support and maintenance within a tight deadline.
 ---
 
-### {{ page.muted }}
+### Resertrac Inc.
+_Canada | Remote_
+
 Resertrac Inc. is a mid-sized expert firm in the Ground Transportation Management System. The company provides comprehensive solutions for airport and ground transportation, assisting with technical solutions for over 15,000 Ministry vehicles.
 
 

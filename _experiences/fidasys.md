@@ -13,7 +13,9 @@ achievements:
     - Saved weeks of development time through critical thinking and innovative problem-solving.
 ---
 
-### {{ page.muted }}
+### Fidasys Inc.
+_Canada | Remote_
+
 Fidasys Inc. is a mid-sized firm in the software development industry, specializing in advanced fleet management systems and order delivery platforms. The company provides comprehensive solutions for airport and ground transportation, significantly enhancing logistics operations for various clients.
 
 #### My Roles
