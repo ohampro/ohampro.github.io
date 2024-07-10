@@ -88,22 +88,25 @@
                             {% include card.html 
                                 id = docItemId
                                 url = doc.permalink
+                                content = doc.content
+                                index = index
+                                maxVisibleItems = maxVisibleItems
+
+                                equalHeight = include.equalHeight
+                                cardBorder = cardBorder
+                                
+                                skillMap = skillMap
+                                
                                 title = doc.title
                                 subtitle = doc.subtitle
                                 muted = doc.muted
                                 excerpt = doc.excerpt
-                                content = doc.content
-                                equalHeight = include.equalHeight
-                                cardBorder = cardBorder
+                                itemList = doc.achievements
+                                labels = labels 
+
                                 badge = doc.badge
                                 badgeColor = doc.badgeColor
                                 badgeTextColor = doc.badgeTextColor
-                                index = index
-                                maxVisibleItems = maxVisibleItems
-                                labels = labels 
-                                tempting = doc.tempting
-                                skillMap = skillMap
-                                itemList = doc.achievements
                             %}
                         </div>
 
