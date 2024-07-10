@@ -8,7 +8,7 @@ permalink: "/experiences/fidasys/"
 excerpt: "Involved in the design of Fleet Management System and Order Delivery platforms."
 rootClass: markdown-gen
 achievements: 
-    - Reducing GPS drift by over 60%, boosted the reliability of location-based features, and received positive feedback from users and stakeholders
+    - Reducing GPS drift by over 60%, boosted the reliability of location-based features, and received positive feedback from users and stakeholders.
     - Achieved a 90% increase in user engagement of the driver mobile app.
     - Saved weeks of development time through critical thinking and innovative problem-solving.
 ---
