@@ -1,6 +1,6 @@
 ---
 title: "Full Stack Java Developer"
-subtitle: "2016-2019"
+subtitle: "2016 - 2019"
 muted: "NRDC Co | Iran"
 pageTitle: "NRDC Co | Mohammad Haghighipoor" 
 labels: "Java, Oracle Database, SQL, PL/SQL, Java Enterprise Edition, Axure RP, Spring Framework, SonarQube, Gradle, Maven, JavaScript, HTML, CSS, SVN, Agile, Jira, JBoss"
@@ -14,8 +14,22 @@ achievements:
     - Implemented a comprehensive Equipment Management System, eliminating significant manual work of classifying and maintaining equipment status within the first 2 months.
 ---
 
-{% include under_construction.html %}
+### NRDC Co
+_Iran_
+NRDC Co is a leading company, focused on providing software development services to a diverse range of organizations.
 
+
+#### My Roles
+- **{{ page.title }}** &#124; {{page.subtitle}}
+
+#### Achievements
+- {{ page.achievements[0] }}
+- {{ page.achievements[1] }}
+- {{ page.achievements[2] }}
+- {{ page.achievements[3] }}
+
+#### Contributions
+- {{ page.excerpt }}
 - **Projects**
 {% include collection.html 
         id = 'nrdc_projects'
