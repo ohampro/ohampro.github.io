@@ -16,7 +16,11 @@
         {% assign title = dataFile.role %}
         {% assign subtitle = dataFile.date %}
         {% capture muted %}
-            {{dataFile.company}} | {{dataFile.country}} | {{ dataFile.workType }}
+            {% if dataFile.workType %}
+                {{dataFile.company}} | {{dataFile.country}} | {{ dataFile.workType }}
+            {% else %}
+                {{dataFile.company}} | {{dataFile.country}}
+            {% endif %}
         {% endcapture %}
 
     {% elsif dataFile.documentType == 'project' %}
