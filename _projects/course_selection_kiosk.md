@@ -1,42 +1,28 @@
 ---
-title: "Electronic Course Selection Kiosk"
-muted: "2008 | Individual Client"
 labels: "AVR, Electronics, Embedded Systems"
-skills: "AVR, Bascom, Graphic LCD, TouchPad, keyboard, Electronics, Embedded Systems, -Default, -ready"
 permalink: "/projects/course_selection_kiosk/"
-rootClass: markdown-gen pt-5
-excerpt: "Designed and developed an intuitive Electronic Course Selection Kiosk to optimize in-person student course management. Integrated seamless login for students, admins, academic advisors, and bursars, facilitating effortless course enrollment, withdrawal, and financial monitoring to enhance academic planning and administrative efficiency."
- 
+rootClass: markdown-gen pt-5 
 ---
 
+{% assign data = site.data.course_selection_kiosk %}
 
-# Electronic Course Selection Kiosk
+# {{ data.title }}
 
 ## Overview
 
-**Year**: 2008  
-**Client**: Individual Client
+**Year**: {{ data.date }}  
+**Client**: {{ data.client }}
 
-The Electronic Course Selection Kiosk is an intuitive system designed to optimize in-person student course management. This project aimed to streamline the process of course enrollment and administration through a user-friendly interface. The kiosk supports seamless login integration for students, administrators, academic advisors, and the bursar, facilitating effortless course enrollment, withdrawal, and financial monitoring. This enhances academic planning and administrative efficiency.
+
+{{ data.introduction }}
+
 
 ## Key Features
-
-- **User-Friendly Interface**: Easy-to-navigate graphic LCD with touchpad and keyboard for input (integrated with a Focus FK-6200 keyboard).
-- **Multi-User Support**: Different login modes for students, admins, academic advisors, and bursar.
-- **Password and User Info Management**: Allows users to manage their passwords and personal information.
-- **Admin Role Assignment**: Enables the assignment and management of administrative roles.
-- **Financial Status Overview**: Provides a detailed overview of tuition fees, debts, and financial status.
-- **Course Selection Interface**: Intuitive interface for enrolling in and withdrawing from courses.
-- **Professor Definition Administration**: Manages information related to professors and their courses.
-- **Program/Course Management**: Comprehensive management of academic programs and courses.
-- **CSV Import/Export Functionality**: Supports importing and exporting data in CSV format.
-- **Bilingual Support**: Offers user interface in both Persian and English languages.
-- **PC Console**: Access to data and other functionalities using a serial port connected to the PC.
-
+{% include md_list.md data=data.key_features %}
 
 ## Skills Used
 
-{% include card_labels.html labels=page.skills %}
+{% include card_labels.html labels=data.skills %}
 
 
 ## Photos
@@ -60,48 +46,42 @@ The Electronic Course Selection Kiosk is an intuitive system designed to optimiz
 
 ## Implementation Details
 
+
 ### Hardware Design
+{% assign hwd = data.implementation_details.hardware_design %}
 
 1. **Component Selection**:
-   - **Microcontroller**: Chose an AVR microcontroller for its versatility and performance.
-   - **Display**: Used a graphic LCD for clear and interactive display.
-   - **Input Devices**: Integrated a touchpad and keyboard for user input.
+   {% include md_list.md data=hwd.component_selection ident="    " %}
 
 2. **Circuit Design**:
-   - Designed the circuit to connect the microcontroller, graphic LCD, touchpad, and keyboard.
-   - Ensured robust power supply and signal integrity throughout the circuit.
+   {% include md_list.md data=hwd.circuit_design ident="    " %}
 
 3. **Assembly**:
-   - Assembled the components in a compact enclosure for fisrt functional prototype.
-   - Tested the hardware to ensure proper functionality and user interaction.
+   {% include md_list.md data=hwd.assembly ident="    " %}  
+
 
 ### Software Development
-
+{% assign swd = data.implementation_details.software_development %}
 1. **Programming**:
-   - Developed the kiosk software using Bascom to run on the AVR microcontroller.
-   - Implemented user interfaces and functionalities for course selection, enrollment, and financial monitoring.
+   {% include md_list.md data=swd.programming ident="    " %}  
 
 2. **User Authentication**:
-   - Integrated login systems for students, admins, academic advisors, and the bursar.
-   - Ensured secure and differentiated access to various functionalities.
+   {% include md_list.md data=swd.user_authentication ident="    " %}  
 
 3. **Data Management**:
-   - Implemented real-time data updates capability for course selections and financial transactions.
-   - Ensured reliable data storage and retrieval.
+   {% include md_list.md data=swd.data_management ident="    " %}  
 
 ### Testing and Validation
-
+{% assign tav = data.implementation_details.testing_and_validation %}
 1. **Functional Testing**:
-   - Conducted extensive testing to verify all features and functionalities.
-   - Ensured accurate course selection, enrollment, and financial monitoring.
+   {% include md_list.md data=tav.functional_testing ident="    " %}  
 
 2. **Usability Testing**:
-   - Tested the user interface with different users to ensure ease of use and intuitive interaction.
-   - Made adjustments based on user feedback to enhance usability.
+   {% include md_list.md data=tav.usability_testing ident="    " %}  
 
 3. **Integration Testing**:
-   - Ensured seamless operation and interaction between different system parts.
+   {% include md_list.md data=tav.integration_testing ident="    " %}  
 
 ## Conclusion
 
-The Electronic Course Selection Kiosk project showcases a comprehensive approach to optimizing course management and administrative tasks. By leveraging skills in Bascom programming, AVR microcontrollers, and user interface design, the project delivers a robust and user-friendly solution for academic institutions. The kiosk enhances efficiency, streamlines processes, and provides a modern approach to course selection and enrollment.
+{{ data.conclusion }}
