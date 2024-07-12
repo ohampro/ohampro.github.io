@@ -67,7 +67,7 @@
 
             {% assign select = selectString | replace: ' ', '' | split: ',' %}
             
-            {% for basename in select %}
+            {% for selectedItem in select %}
                 {% assign index = forloop.index %}
                 {%- capture docItemId -%}
                     docItemId_{{collectionId}}_{{ index }}
@@ -75,8 +75,9 @@
 
                 {% for doc in allDocs %}
                     {% assign docBasename = doc.path | split:'/' | last | split: '.' | first %}          
+                    {% assign basename = selectedItem | split:'/' | last | split: '.' | first %}          
 
-                    {% if docBasename == basename or doc.path == basename %}
+                    {% if docBasename == basename %}
 
                         {%- assign cardBorder = include.cardBorder | default: doc.cardBorder -%}
                         {%- assign labels = doc.labels -%}
@@ -100,6 +101,7 @@
                                 title = doc.title
                                 subtitle = doc.subtitle
                                 muted = doc.muted
+
                                 excerpt = doc.excerpt
                                 itemList = doc.achievements
                                 labels = labels 
