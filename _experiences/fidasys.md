@@ -3,6 +3,7 @@ pageTitle: "Fidasys Inc. | Mohammad Haghighipoor"
 permalink: "/experiences/fidasys/"
 rootClass: markdown-gen
 ---
+
 {% assign data = site.data.fidasys %}
 
 ### {{ data.company }}
