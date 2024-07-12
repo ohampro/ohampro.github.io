@@ -4,7 +4,8 @@ permalink: "/projects/course_selection_kiosk/"
 rootClass: markdown-gen pt-5 
 ---
 
-{% assign data = site.data.course_selection_kiosk %}
+{% assign docBasename = page.path | split:'/' | last | split: '.' | first %}          
+{% assign data = site.data[docBasename] %}
 
 # {{ data.title }}
 
