@@ -51,36 +51,36 @@ rootClass: markdown-gen pt-5
 {% assign hwd = data.implementation_details.hardware_design %}
 
 1. **Component Selection**:
-   {% include md_list.md data=hwd.component_selection ident="    " %}
+   {% include md_list.md data=hwd.component_selection indent="    " %}
 
 2. **Circuit Design**:
-   {% include md_list.md data=hwd.circuit_design ident="    " %}
+   {% include md_list.md data=hwd.circuit_design indent="    " %}
 
 3. **Assembly**:
-   {% include md_list.md data=hwd.assembly ident="    " %}  
+   {% include md_list.md data=hwd.assembly indent="    " %}  
 
 
 ### Software Development
 {% assign swd = data.implementation_details.software_development %}
 1. **Programming**:
-   {% include md_list.md data=swd.programming ident="    " %}  
+   {% include md_list.md data=swd.programming indent="    " %}  
 
 2. **User Authentication**:
-   {% include md_list.md data=swd.user_authentication ident="    " %}  
+   {% include md_list.md data=swd.user_authentication indent="    " %}  
 
 3. **Data Management**:
-   {% include md_list.md data=swd.data_management ident="    " %}  
+   {% include md_list.md data=swd.data_management indent="    " %}  
 
 ### Testing and Validation
 {% assign tav = data.implementation_details.testing_and_validation %}
 1. **Functional Testing**:
-   {% include md_list.md data=tav.functional_testing ident="    " %}  
+   {% include md_list.md data=tav.functional_testing indent="    " %}  
 
 2. **Usability Testing**:
-   {% include md_list.md data=tav.usability_testing ident="    " %}  
+   {% include md_list.md data=tav.usability_testing indent="    " %}  
 
 3. **Integration Testing**:
-   {% include md_list.md data=tav.integration_testing ident="    " %}  
+   {% include md_list.md data=tav.integration_testing indent="    " %}  
 
 ## Conclusion
 
