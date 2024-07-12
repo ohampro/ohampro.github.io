@@ -78,37 +78,20 @@
                     {% assign basename = selectedItem | split:'/' | last | split: '.' | first %}          
 
                     {% if docBasename == basename %}
-
-                        {%- assign cardBorder = include.cardBorder | default: doc.cardBorder -%}
-                        {%- assign labels = doc.labels -%}
-                        {%- if include.labels == 'skills' -%}
-                            {%- assign labels = doc.skills -%}
-                        {%- endif -%}
                         
                         <div class="{%- if include.grid -%}col{%- else -%}mb-4{%- endif %} {{ include.class }}">
-                            {% include card.html 
+                            {% include card_project.html 
+                                doc = doc
+                                docBasename = docBasename
                                 id = docItemId
-                                url = doc.permalink
-                                content = doc.content
+                                
                                 index = index
                                 maxVisibleItems = maxVisibleItems
 
                                 equalHeight = include.equalHeight
-                                cardBorder = cardBorder
+                                cardBorder = include.cardBorder
                                 
                                 skillMap = skillMap
-                                
-                                title = doc.title
-                                subtitle = doc.subtitle
-                                muted = doc.muted
-
-                                excerpt = doc.excerpt
-                                itemList = doc.achievements
-                                labels = labels 
-
-                                badge = doc.badge
-                                badgeColor = doc.badgeColor
-                                badgeTextColor = doc.badgeTextColor
                             %}
                         </div>
 

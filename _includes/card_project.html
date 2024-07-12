@@ -1,0 +1,32 @@
+
+
+{%- assign cardBorder = include.cardBorder | default: include.doc.cardBorder -%}
+
+{%- assign labels = include.doc.labels -%}
+{%- if include.labels == 'skills' -%}
+    {%- assign labels = include.doc.skills -%}
+{%- endif -%}
+
+{% include card.html 
+    id = include.docItemId
+    index = include.index
+    maxVisibleItems = include.maxVisibleItems
+    equalHeight = include.equalHeight
+    cardBorder = include.cardBorder
+    skillMap = include.skillMap
+
+    url = include.doc.permalink
+    content = include.doc.content
+        
+    title = include.doc.title
+    subtitle = include.doc.subtitle
+    muted = include.doc.muted
+
+    excerpt = include.doc.excerpt
+    itemList = include.doc.achievements
+    labels = labels 
+
+    badge = include.doc.badge
+    badgeColor = include.doc.badgeColor
+    badgeTextColor = include.doc.badgeTextColor
+%}
