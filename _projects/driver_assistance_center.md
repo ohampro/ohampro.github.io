@@ -8,8 +8,11 @@ excerpt: "Designed and developed an application that notifies mission drivers th
  
 ---
 
+{% assign docBasename = page.path | split:'/' | last | split: '.' | first %}          
+{% assign data = site.data[docBasename] %}
+
 {% include under_construction_project.html %}
 
 ## Skills Used
 
-{% include card_labels.html labels=page.skills %}
+{% include card_labels.html labels=data.skills %}
