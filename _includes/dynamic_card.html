@@ -1,0 +1,63 @@
+
+{% assign title = include.doc.title %}
+{% assign subtitle = include.doc.subtitle %}
+{% assign muted = include.doc.muted %}
+{% assign excerpt = include.doc.excerpt %}
+{% assign achievements = include.doc.achievements %}
+
+{%- assign cardBorder = include.cardBorder | default: include.doc.cardBorder -%}
+
+
+{% assign dataFile = site.data[include.docBasename] %}
+
+{% if dataFile %}
+
+    {% if dataFile.documentType == 'experience' %}
+        {% assign title = dataFile.role %}
+        {% assign subtitle = dataFile.date %}
+        {% capture muted %}
+            {{dataFile.company}} | {{dataFile.country}} | {{ dataFile.workType }}
+        {% endcapture %}
+
+    {% elsif dataFile.documentType == 'project' %}
+        {% assign title = dataFile.title %}
+        {% assign subtitle = '' %}
+        {% capture muted %}
+            {{dataFile.date}} | {{dataFile.client}}
+        {% endcapture %}
+
+    {% endif %}
+
+    {% assign excerpt = dataFile.excerpt %}
+    {% assign achievements = dataFile.achievements %}
+
+{% endif %}
+
+{%- assign labels = include.doc.labels -%}
+{%- if include.labels == 'skills' or labels == '' or labels == nil -%}
+    {%- assign labels = dataFile.skills | default: include.doc.skills -%}
+{%- endif -%}
+
+{% include card.html 
+    id = include.docItemId
+    index = include.index
+    maxVisibleItems = include.maxVisibleItems
+    equalHeight = include.equalHeight
+    cardBorder = include.cardBorder
+    skillMap = include.skillMap
+
+    url = include.doc.permalink
+    content = include.doc.content
+        
+    title = title
+    subtitle = subtitle
+    muted = muted
+
+    excerpt = excerpt
+    itemList = achievements
+    labels = labels 
+
+    badge = include.doc.badge
+    badgeColor = include.doc.badgeColor
+    badgeTextColor = include.doc.badgeTextColor
+%}
