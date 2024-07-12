@@ -1,15 +1,14 @@
 ---
-title: "Interactive Voice Response (IVR) Controller"
-muted: "2002 | Innovation | Individual Client"
 labels: "Electronics, Schematic Diagramming, Embedded Systems"
-skills: "Electronics, Schematic Diagramming, CMOS, TTL, Embedded Systems, Troubleshooting"
 permalink: "/projects/ivr/"
-excerpt: "Designed and developed an IVR system facilitating control over lighting, temperature, and home appliances through phone connectivity. The system also enabled extension dialing without the need to speak to an agent."
- 
+rootClass: markdown-gen pt-5    
 ---
+
+{% assign docBasename = page.path | split:'/' | last | split: '.' | first %}          
+{% assign data = site.data[docBasename] %}
 
 {% include under_construction_project.html %}
 
 ## Skills Used
 
-{% include card_labels.html labels=page.skills %}
+{% include card_labels.html labels=data.skills %}
