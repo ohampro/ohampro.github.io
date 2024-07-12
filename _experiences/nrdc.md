@@ -4,7 +4,8 @@ permalink: "/experiences/nrdc/"
 rootClass: markdown-gen
 ---
 
-{% assign data = site.data.nrdc %}
+{% assign docBasename = page.path | split:'/' | last | split: '.' | first %}          
+{% assign data = site.data[docBasename] %}
 
 ### {{ data.company }}
 _{{ data.country }}_

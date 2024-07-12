@@ -4,7 +4,8 @@ permalink: "/experiences/douran/"
 rootClass: markdown-gen
 ---
 
-{% assign data = site.data.douran %}
+{% assign docBasename = page.path | split:'/' | last | split: '.' | first %}          
+{% assign data = site.data[docBasename] %}
 
 ### {{ data.company }}
 _{{ data.country }}_
