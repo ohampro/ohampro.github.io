@@ -17,6 +17,9 @@ achievements:
     - Strategically designed, developed, and implemented a sales management system.
 ---
 
+{% assign docBasename = page.path | split:'/' | last | split: '.' | first %}          
+{% assign data = site.data[docBasename] %}
+
 {% include under_construction.html %}
 
 - **Projects**
@@ -24,5 +27,5 @@ achievements:
         id = 'self_emp_projects'
         type = "projects"
         cardBorder = 'success'
-        select = "neoterra-cities, network_listener, course_selection_kiosk, shadman_acc, sepam, emamali_labrtor, ivr, ecity"
+        select = data.projects
     %}
