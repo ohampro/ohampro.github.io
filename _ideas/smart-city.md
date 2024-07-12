@@ -63,7 +63,7 @@ This smart city project integrates IoT technology with urban infrastructure usin
         - Communicate with IoT peers (electronic kits, sensors, actuators, or software clients).
         - Explore connected peers.
         - Set up custom scenarios.
-        - Manage a shopping cart and access a marketplace.<br>_Ordering with Cash on Delivery (COD) payment._
+        - Manage a shopping cart and access a marketplace.<br>_Ordering with POS and Cash on Delivery (COD) payment._
         - Scan QR codes and read NFC tags.
         - Integrate predefined smart city applications.
         - Ensure secure communication and data integrity.
