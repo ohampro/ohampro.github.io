@@ -1,0 +1,19 @@
+documentType: experience
+role: MERN Full Stack Developer
+date: 2021 - 2023
+company: Fidasys Inc.
+country: Canada
+workType: Remote
+skills: Node.js, MongoDB, React.js, Express.js, Flutter, Android, Java, GreenDao, Retrofit, GPS, BLE, HTML, JavaScript, CSS, Git, GitHub, Agile, Jira, Unit Test
+excerpt: Involved in the design of Fleet Management System and Order Delivery platforms.
+achievements: 
+    - Reducing GPS drift by over 60%, boosted the reliability of location-based features, and received positive feedback from users and stakeholders.
+    - Achieved a 90% increase in user engagement of the driver mobile app.
+    - Saved weeks of development time through critical thinking and innovative problem-solving.
+about: Fidasys Inc. is a mid-sized firm in the software development industry, specializing in advanced fleet management systems and order delivery platforms. The company provides comprehensive solutions for airport and ground transportation, significantly enhancing logistics operations for various clients.
+contributions:
+    - 'Collaborated with Cross-Functional Teams: Worked closely with designers, product managers, and developers to deliver high-quality software solutions within established deadlines.'
+    - 'Team Support and Collaboration: Provided assistance and support to team members, fostering a collaborative and supportive work environment.'
+    - 'Implemented Web-app Prototype: Designed and launched a clickable Bootstrap + Java web app prototype for automatic license plate recognition.'
+    - 'Research and Development: Conducted comprehensive research on Fleet Management Systems to identify best practices and features, guiding the development of our new FMS product.'
+projects: rt_dispatch, order_delivery
