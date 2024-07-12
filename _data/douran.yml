@@ -1,0 +1,18 @@
+documentType: experience
+role: Senior Java Developer
+date: 2011 - 2016
+company: DOURAN GROUP Co
+country: Iran
+skills: Java, JFC, GWT, Oracle Database, JBPM, JIDE components, JFC Charts, Jasper Report, BI, KPI, Swing, JSP, Hibernate, GWT, JDBC, SVN, Apache Tomcat
+excerpt: Involved in ERP development across various subsystems, with a focus on Business Intelligence and Workflow.
+achievements:
+  - Created a Report Generator tool, resulting in a 90% increase in development speed for 4 developer teams.
+  - Developed a Release Management System, reducing deployment time by 40% and minimizing errors.
+  - Designed and developed a WYSIWYG Cheque Designer, streamlining cheque printing and improving efficiency by 80% for numerous Douran ERP accountants nationwide.
+  - Implemented a dynamic Hierarchical Approval workflow, eliminating the need for workflow updates due to role changes, benefiting over 30 clients.
+  - Designed and developed a customized mail server, enabling over 200 ERP users in the first month to access their Cartable remotely via any mail client.
+  - Mentored over 15 developers in advanced concepts of workflow and BI subsystems, resulting in a 25% increase in team performance and productivity.
+about: DOURAN GROUP Co is a reputable company specializing in comprehensive ERP (Enterprise Resource Planning) solutions, delivering high-quality software to various industries.
+contributions:
+  - Involved in ERP development across various subsystems, with a focus on Business Intelligence and Workflow.
+projects: douran_bi, workflow_engine, enterprise_pop3_mail_server
