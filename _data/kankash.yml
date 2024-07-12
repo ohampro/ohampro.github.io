@@ -1,0 +1,15 @@
+documentType: experience
+role: Senior .Net Developer, Embedded Systems Developer
+date: 2007-2009
+company: Kankash Hafez Co
+country: Iran
+workType: 
+skills: Electronics, AVR, VB.net, C, C++, Borland Delphi, Visual Basic, ASP.NET, JavaScript, HTML, CSS, Codevision, Bascom
+excerpt: Developed advanced software and embedded systems for industrial automation, leveraging technologies such as ATmega128, Siemens S5 PLC, and Intel 8051.
+achievements:
+  - 'Successfully Crafted a digital control panel for a concrete curbing machine.'
+  - 'Meticulously Conducted mechanical CAD design for the concrete curbing machine.'
+  - 'Redesigned and implemented two state-of-the-art computer labs.'
+about:
+contributions:
+projects: concrete_curbing_machine

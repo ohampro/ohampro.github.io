@@ -13,6 +13,9 @@ achievements:
     - Redesigned and implemented two state-of-the-art computer labs.
 ---
 
+{% assign docBasename = page.path | split:'/' | last | split: '.' | first %}          
+{% assign data = site.data[docBasename] %}
+
 {% include under_construction.html %}
 
 - **Projects**
@@ -20,5 +23,5 @@ achievements:
         id = 'kankash_projects'
         type = "projects"
         cardBorder = 'success'
-        select = "concrete_curbing_machine"
+        select = data.projects
     %}
