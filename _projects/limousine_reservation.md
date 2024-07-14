@@ -30,10 +30,8 @@ Associated with {{ data.client }}
 
 
 ## Challenges and Solutions
-{% assign challenge0 = data.challenges_and_solutions[0] %}
-- **{{ challenge0.title }}**: {{ challenge0.desc }}
-  - **Solution**: {{ challenge0.solution }}
-  - **Impact**: {{ challenge0.impact }}
+{% include md_list.md data=data.challenges_and_solutions %}
+
 
 ## Reflection and Learning
 {% include md_list.md data=data.reflection_and_learning %}

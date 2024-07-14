@@ -31,16 +31,14 @@ Associated with Fidasys Inc.
 
 
 ## Challenges and Solutions
-{% include challenges_and_solutions.md data=data.challenges_and_solutions 
-href="/challenges/gps_drift, /challenges/cross_app_display" %}
-
+{% include md_list.md data=data.challenges_and_solutions %}
     
 ## Key Contributions
 {% include md_list.md data=data.key_contributions %}
 
 
 ## Outcomes and Results
-{% include outcomes_and_results.md data=data.outcomes_and_results %}
+{% include md_list.md data=data.outcomes_and_results %}
 
 
 ## Reflection and Learning

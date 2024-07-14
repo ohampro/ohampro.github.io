@@ -22,25 +22,25 @@ detailed_description:
   - 'Process and Methodology: Followed Agile methodology with iterative sprints for continuous improvement.'
   - 'Tools and Technologies: [*skills]'
 challenges_and_solutions:
-  - title: GPS drift
-    desc: We faced a significant challenge with GPS drift, this was particularly problematic for our app features like summoning drivers and route tracking.
-    solution: I implemented a combination of signal filtering techniques and Environmental Awareness technique.
-    impact: Reducing GPS drift by over 60% and received positive feedback from users and stakeholders.
-  - title: Cross-app Display
-    desc: Clients using this app along with another product faced frequent app switching and password prompts, leading to workflow disruption and nearly 40% user abandonment of this app.
-    solution: Embedded the required UI elements into the other one, eliminating the need for app switching and password re-entry.
-    impact: Achieved a 50% increase in user retention and saved weeks of development time through innovative problem-solving.
+  - 'GPS drift': 
+      Problem: 'We faced a significant challenge with GPS drift, this was particularly problematic for our app features like summoning drivers and route tracking. @href=/challenges/gps_drift'
+      Solution: I implemented a combination of signal filtering techniques and Environmental Awareness technique.
+      Impact: Reducing GPS drift by over 60% and received positive feedback from users and stakeholders.
+  - 'Cross-app Display':
+      Problem: 'Clients using this app along with another product faced frequent app switching and password prompts, leading to workflow disruption and nearly 40% user abandonment of this app. @cross_app_display @href=/challenges/cross_app_display'
+      Solution: Embedded the required UI elements into the other one, eliminating the need for app switching and password re-entry.
+      Impact: Achieved a 50% increase in user retention and saved weeks of development time through innovative problem-solving.
 key_contributions:
   - 'Hackathon-Style Work: Engaged in several intensive solo development sessions to drive significant progress and fast-track development.'
   - 'Code Optimization: Enhanced app performance through meticulous code review and optimization techniques, leading to faster load times and smoother user experience.'
   - 'Security Enhancements: Implemented advanced security measures, including monitoring app detection, to protect user data.'
   - 'Key Solutions: Developed and provided innovative solutions and technical consultancy for critical features.'
 outcomes_and_results:
-  results: Achieved a 90% increase in mobile app user engagement within the first three months, resulting in 300 new installations.
-  impact: Provided a revenue stream for the company as well as increased driver satisfaction through coordinated taxi operations.
-  feedback: 
+  Results: Achieved a 90% increase in mobile app user engagement within the first three months, resulting in 300 new installations.
+  Impact: Provided a revenue stream for the company as well as increased driver satisfaction through coordinated taxi operations.
+  Feedback: 
     - “The platform is incredibly user-friendly and intuitive.” - Driver User
-    - “His exceptional reliability, teamwork, good listening skills, and fresh, out-of-the-box ideas consistently helped us move forward.” – CEO
+    - "“His exceptional reliability, teamwork, good listening skills, and fresh, out-of-the-box ideas consistently helped us move forward.” – CEO"
 reflection_and_learning:
   - 'Lessons Learned: Reinforcing that effective project outcomes are often more dependent on managing team dynamics and maintaining focus rather than just technical expertise.'
   - 'Skills Acquired: Deepened expertise in Flutter.'
