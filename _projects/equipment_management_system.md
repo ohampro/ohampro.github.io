@@ -21,8 +21,7 @@ rootClass: markdown-gen pt-5
     </div>
 </div>
 
-{% assign docBasename = page.path | split:'/' | last | split: '.' | first %}          
-{% assign data = site.data[docBasename] %}
+{% include page_data.html %}
 
 {% include under_construction_project.html style="" %}
 

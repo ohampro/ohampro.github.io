@@ -4,8 +4,7 @@ permalink: "/projects/ivr/"
 rootClass: markdown-gen pt-5    
 ---
 
-{% assign docBasename = page.path | split:'/' | last | split: '.' | first %}          
-{% assign data = site.data[docBasename] %}
+{% include page_data.html %}
 
 {% include under_construction_project.html %}
 

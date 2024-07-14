@@ -1,0 +1,2 @@
+{% assign docBasename = page.path | split:'/' | last | split: '.' | first %}          
+{% assign data = site.data[page.collection][docBasename] %}

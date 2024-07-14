@@ -4,8 +4,7 @@ permalink: "/projects/limousine_reservation/"
 rootClass: markdown-gen 
 ---
 
-{% assign docBasename = page.path | split:'/' | last | split: '.' | first %}          
-{% assign data = site.data[docBasename] %}
+{% include page_data.html %}
 
 # {{data.title}}
 <small>Mar 2019 - May 2019</small>

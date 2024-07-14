@@ -4,8 +4,7 @@ permalink: "/projects/enterprise_pop3_mail_server/"
 rootClass: markdown-gen pt-5   
 ---
 
-{% assign docBasename = page.path | split:'/' | last | split: '.' | first %}          
-{% assign data = site.data[docBasename] %}
+{% include page_data.html %}
 
 ## Skills Used
 
