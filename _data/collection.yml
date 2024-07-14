@@ -1,7 +1,6 @@
 
 docsOrder:
   - _projects/order_delivery.md
-  - _ideas/neoterra-cities.html
   - _projects/rt_dispatch.md    
   - _projects/shop_floor_meeting.md
   - _projects/limousine_reservation.md
