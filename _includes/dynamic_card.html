@@ -8,7 +8,7 @@
 {%- assign cardBorder = include.cardBorder | default: include.doc.cardBorder -%}
 
 
-{% assign dataFile = site.data[include.docBasename] %}
+{% assign dataFile = site.data[doc.collection][include.docBasename] %}
 
 {% if dataFile %}
 
