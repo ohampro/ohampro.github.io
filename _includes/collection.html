@@ -52,7 +52,7 @@
                 {%- if include.select == nil -%}
                     {%- assign unordered = allDocs | map: "path" -%}
                     {%- assign ordered = "" | split: "" -%}
-                    {%- for docOrder in site.docsOrder -%}
+                    {%- for docOrder in site.data.collection.docsOrder -%}
                         {%- if unordered contains docOrder -%}
                             {%- assign ordered = ordered | push: docOrder -%}
                         {%- endif -%}

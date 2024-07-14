@@ -101,37 +101,3 @@ defaults:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-docsOrder:
-    - _projects/rt_dispatch.md
-    - _projects/order_delivery.md
-    - _ideas/neoterra-cities.html
-    - _projects/shop_floor_meeting.md
-    - _projects/limousine_reservation.md
-    - _projects/driver_assistance_center.md
-    - _projects/equipment_management_system.md
-    - _projects/paybank_android_app.md
-    - _projects/push_notification.md
-    - _projects/sensors_mgm.md
-    - _ideas/smart-city.md
-    - _projects/enterprise_pop3_mail_server.md
-    - _projects/workflow_engine.html
-    - _projects/douran_bi.md
-    - _projects/selak_dentistry_clinic.html
-    - _projects/network_listener.md
-    - _projects/course_selection_kiosk.md
-    - _projects/concrete_curbing_machine.md
-    - _projects/shadman_acc.html
-    - _projects/sepam.md
-    - _projects/emamali_labrtor.md
-    - _projects/ivr.md
-    - _ideas/ecity.html
-    - _experiences/fidasys.md
-    - _experiences/resertrac.md
-    - _experiences/tva.md
-    - _experiences/nrdc.md
-    - _experiences/douran.md
-    - _experiences/selakteb.md
-    - _experiences/kankash.md
-    - _experiences/self_emp.md
-    - _challenges/gps_drift.md
-    - _challenges/cross_app_display.md
