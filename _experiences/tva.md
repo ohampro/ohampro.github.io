@@ -4,8 +4,7 @@ permalink: "/experiences/tva/"
 rootClass: markdown-gen
 ---
 
-{% assign docBasename = page.path | split:'/' | last | split: '.' | first %}          
-{% assign data = site.data[docBasename] %}
+{% include page_data.html %}
 
 ### {{ data.company }}
 _{{ data.country }} | {{ data.workType }}_

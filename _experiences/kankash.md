@@ -4,8 +4,7 @@ permalink: "/experiences/kankash/"
 rootClass: markdown-gen
 ---
 
-{% assign docBasename = page.path | split:'/' | last | split: '.' | first %}          
-{% assign data = site.data[docBasename] %}
+{% include page_data.html %}
 
 {% include under_construction.html %}
 
