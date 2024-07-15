@@ -4,13 +4,7 @@
 <div class="row pt-3">
     
     <div class="col-lg-8">
-         <p>
-            In the vast majority of cases, schools used to provide drinking water through a type of collective drinking trough 
-            equipped with a row of taps. Students, especially younger ones, would often neglect to close the taps, 
-            resulting in significant water wastage. 
-            With tens of taps in each school and thousands of schools nationwide, this led to a considerable amount of water 
-            being wasted every school day.
-         </p>
+         <p>{{ data.discovery.supportings['Water Management']['Water Wastage in Schools'].body }}</p>
     </div>        
 
     <div class="col-lg-4 text-muted">
@@ -22,6 +16,7 @@
 </div>
 
 <h5>Previously proposed solutions:</h5>
+{% assign proposed_solutions = data.discovery.supportings['Water Management']['Water Wastage in Schools']['Previously proposed solutions'] %}
 
 {% include ecity/water/school_water_wastage/info_student_patrol.html %}
 
@@ -30,14 +25,7 @@
 {% include ecity/water/school_water_wastage/info_push_taps.html %}
 
 <h5>Finding:</h5>
-<p>
-        Influencing policies and measures was beyond the limitation of my young 18-year-old self, as
-        was changing the standards in appliance manufacturing. Therefore, I focused on the observed
-        pain points and inferred that we required taps that operate similarly to push taps, without the 
-        need for physical contact and with easy installation.
-        By discussing with other school principals, I ensured that the inference closely matched
-        the expectations.
- </p>
+<p>{{ data.discovery.supportings['Water Management']['Water Wastage in Schools'].conclusion }}</p>
  
  {% if site.user == 'mhp' %}
  <p class="mt-2 d-none"><strong>Goal:</strong>
