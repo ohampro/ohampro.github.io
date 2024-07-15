@@ -27,7 +27,7 @@ _{{ data.country }} | {{ data.workType }}_
 - **Projects**
 {% include collection.html 
         id = 'tva_projects'
-        type = "ideas"
+        type = "projects"
         cardBorder = 'success'
         select = data.projects
     %}
