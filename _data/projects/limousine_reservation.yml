@@ -1,6 +1,6 @@
 documentType: project
 title: Limousine Reservation App
-date: 2019
+date: Mar 2019 - May 2019
 client: Resertrac Inc.
 skills: Android, Java, RESTful, Retrofit, GreenDao, JSON, GPS, Location Service, Git, GitHub, Agile, Mobile app, -ready
 excerpt: Developed an intuitive mobile app for facilitating airport trip reservations. Users can easily create an account, log in, and select an airport as either the source or destination. The system efficiently processes the request and dispatches a vehicle accordingly.

@@ -1,6 +1,6 @@
 documentType: project
 title: Network Listener Module
-date: 2009
+date: May 2009 - Jul 2009
 client: Individual Client
 skills: AVR, Bascom, Embedded Systems, Serial Communication, Network Protocols, Electronics, Schematic Diagramming, SPI, CMOS, Troubleshooting, -ready
 excerpt: Designed and developed a network listener module to enhance network security through real-time monitoring. The module captures and filters network packets for detailed analysis.
