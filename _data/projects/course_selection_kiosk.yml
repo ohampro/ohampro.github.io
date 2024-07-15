@@ -2,7 +2,7 @@ documentType: project
 title: Electronic Course Selection Kiosk
 date: 2008
 client: Individual Client
-skills: AVR, Bascom, Graphic LCD, TouchPad, keyboard, Electronics, Embedded Systems
+skills: AVR, Bascom, Graphic LCD, TouchPad, keyboard, Electronics, Embedded Systems, -ready
 excerpt: Designed and developed an intuitive Electronic Course Selection Kiosk to optimize in-person student course management. Integrated seamless login for students, admins, academic advisors, and bursars, facilitating effortless course enrollment, withdrawal, and financial monitoring to enhance academic planning and administrative efficiency.
 introduction: The Electronic Course Selection Kiosk is an intuitive system designed to optimize in-person student course management. This project aimed to streamline the process of course enrollment and administration through a user-friendly interface. The kiosk supports seamless login integration for students, administrators, academic advisors, and the bursar, facilitating effortless course enrollment, withdrawal, and financial monitoring. This enhances academic planning and administrative efficiency.
 key_features:
