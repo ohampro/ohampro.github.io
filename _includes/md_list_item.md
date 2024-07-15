@@ -1,14 +1,17 @@
 
 {% assign itemValue = include.item %}
+{% assign normal = '' %}
 {% assign bold = '' %}
 
 {% assign titleDesc = itemValue | split: ': ' %}
 {% if titleDesc.size == 2 %}
-    {% assign bold = '**' | append: titleDesc[0] | append: '**: ' %}
+    {% assign normal = titleDesc[0] %}
+    {% assign bold = '**' | append: normal | append: '**: ' %}
     {% assign itemValue = titleDesc[1] %}
 
 {% elsif include.bold %}
-    {% assign itemValue = '**' | append: itemValue | append: '**' %}
+    {% assign normal = itemValue %}
+    {% assign itemValue = '**' | append: normal | append: '**' %}
 
 {% endif %}
 
@@ -19,4 +22,11 @@
     {% assign itemValue = itemValue | replace: hrefString, '' %}
 {% endif %}
 
+{% if include.header %}
+{{ include.indent }}- {{ include.header }}{{ normal }}
+{{ itemValue }} {% if ihref %}{% include find_more.html href=ihref %}{% endif %}
+
+{% else %}
 {{ include.indent }}- {{ bold }}{{ itemValue }} {% if ihref %}{% include find_more.html href=ihref %}{% endif %}
+
+{% endif %}
