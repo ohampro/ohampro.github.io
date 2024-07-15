@@ -1,0 +1,49 @@
+documentType: project
+title: Network Listener Module
+date: 2009
+client: Individual Client
+skills: AVR, Bascom, Embedded Systems, Serial Communication, Network Protocols, Electronics, Schematic Diagramming, SPI, CMOS, Troubleshooting, -ready
+excerpt: Designed and developed a network listener module to enhance network security through real-time monitoring. The module captures and filters network packets for detailed analysis.
+introduction: This project involved the design and development of a network listener module aimed at enhancing network security through real-time monitoring. The device, based on an AVR microcontroller and an ENC28J60 Ethernet controller, captures and filters IP, ICMP, and ARP packets. The filtered packets are logged in the AVR's internal memory and can also be accessed by a PC via an RS232 port for detailed analysis.
+key_features:
+  - 'Packet Filtering: Filters packets based on predefined terms for targeted monitoring.'
+  - 'Packet Capture: Monitors and captures network-level packets, including IP, ICMP, and ARP.'
+  - "Data Logging: Stores filtered packets samples in the AVR's internal memory for later review."
+  - 'Real-time Monitoring: Provides continuous monitoring capabilities via a PC console.'
+photos:
+  - '/assets/images/network_listener/1.jpeg'
+  - '/assets/images/network_listener/2.jpeg'
+  - '/assets/images/network_listener/3.jpeg'
+implementation_details:
+  'Hardware Design': 
+    'Component Selection':
+      - 'Microcontroller: Chose an AVR microcontroller for its robust performance and ease of programming.'
+      - 'Ethernet Controller: Used the ENC28J60 for its compatibility and SPI interface with the AVR.'
+      - 'RS232 Driver: Integrated an RS232 driver to facilitate serial communication with a PC.'
+    'Circuit Design':
+      - 'Designed the circuit to interconnect the AVR microcontroller, ENC28J60 Ethernet controller, RS232 driver, and other necessary electronic components.'
+      - 'Ensured proper power supply and signal integrity throughout the circuit.'
+    'Assembly':
+      - 'Assembled the components on a PCB, ensuring reliable connections and minimal interference.'
+      - 'Tested the assembled hardware for basic functionality and connectivity.'
+  'Firmware Development':
+    'Microcontroller Programming':
+      - 'Developed firmware to capture IP, ICMP, and ARP packets from the network.'
+      - 'Implemented packet filtering based on predefined terms to focus on relevant data.'
+    'Data Logging':
+      - "Utilized the AVR's internal memory for logging filtered packets."
+      - 'Implemented efficient memory management to maximize storage capacity.'
+    'RS232 Communication':
+      - 'Developed routines for serial communication via the RS232 port.'
+      - 'Enabled real-time data transmission to a PC for detailed analysis.'
+  'Testing and Validation':
+    'Functional Testing':
+      - 'Conducted extensive testing to ensure the module accurately captures and filters network packets.'
+      - 'Verified the reliability of data logging and RS232 communication.'
+    'Performance Tuning':
+      - 'Optimized the firmware for speed and efficiency to handle real-time packet monitoring.'
+      - 'Ensured the module operates seamlessly under various network conditions.'
+    'Integration Testing':
+      - 'Connected the module to a PC and verified real-time monitoring capabilities through the RS232 port.'
+      - 'Analyzed the captured data to validate the effectiveness of packet filtering and logging.'
+conclusion: Through this systematic approach, the network listener module was successfully developed and demonstrated as a practical tool for enhancing network security through real-time monitoring.
