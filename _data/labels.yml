@@ -8,57 +8,58 @@ yearsColor:
   - # btn-dark
 
 skillYears:
-  0-1 year: 0
-  1-3 years: 3
-  3-5 years: 5
-  5+ years: 10
+  '0-1 year': 0
+  '1-3 years': 3
+  '3-5 years': 5
+  '5+ years': 10
   Java: 10    # Programming Languages
   Dart: 5
   JavaScript: 8
-  C++: 3
+  'C++': 3
   C: 3
-  C#: 3
-  VB.NET: 5
-  PL/SQL: 6
+  'C#': 3
+  'VB.NET': 5
+  'PL/SQL': 6
   SQL: 10
   Phyton: 1
   Go: 1       # Back-end Development
-  Enterprise Java Development: 10
+  'Enterprise Java Development': 10
   JSP: 6
-  Spring Framework: 4
-  Spring Core: 7
-  Spring AOP: 7
-  Spring Data: 8
-  Spring Integration: 8
-  Spring Security: 8
-  Spring Boot: 8
-  Spring MVC: 8
-  Node.js: 2
-  Express.js: 2
+  'Spring Framework': 4
+  'Spring Core': 7
+  'Spring AOP': 7
+  'Spring Data': 8
+  'Spring Integration': 8
+  'Spring Security': 8
+  'Spring Boot': 8
+  'Spring MVC': 8
+  'Node.js': 2
+  'Express.js': 2
   RESTful: 10
   SOAP: 8
   Hibernate: 4
-  Entity Framework: 4
+  'Entity Framework': 4
   OAuth: 2
   Cryptography: 8
   RSA: 8
   AES: 8
   WebSocket: 8
   Netty: 4
-  Internet Protocol Suite (TCP/IP): 8
+  'Internet Protocol Suite (TCP/IP)': 8
+  'TCP/IP': 8
   UDP: 8
   FTP: 6
   RTSP: 1
   JSON: 10
-  Oracle Database: 8
-  Microsoft SQL Server: 4
+  'Oracle Database': 8
+  'Microsoft SQL Server': 4
   NoSQL: 4
   MongoDB: 1
   SQLite: 5
   Hive: 1
   ObjectBox: 4
-  Data Modeling: 10
-  React.js:    # Front-end Development
+  'Data Modeling': 10
+  'React.js':    # Front-end Development
   Bootstrap: 8
   Thymeleaf: 5
   HTML5: 10
@@ -68,31 +69,31 @@ skillYears:
   AWT: 6
   Liquid: 1
   Jekyll: 1
-  ASP.NET: 3
+  'ASP.NET': 3
   AJAX: 4
-  Android Development: 6 # Mobile Application Development
+  'Android Development': 6 # Mobile Application Development
   Flutter: 5
   Retrofit: 3
   GreenDao: 3
   Bloc: 3
-  Internet of Things (IoT): 6 # IoT & Embedded Systems Development
+  'Internet of Things (IoT)': 6 # IoT & Embedded Systems Development
   AVR: 4
   Microcontroller: 4
   Arduino: 1
   NodeMCU: 3
-  ESP8266: 4
+  'ESP8266': 4
   VHDL: 1
   FPGA: 1  
-  NRF24L: 1
-  PLC Programming: 2
+  'NRF24L': 1
+  'PLC Programming': 2
   SPI: 3
   UART: 3
-  I2C: 3
+  'I2C': 3
   MQTT: 2
   CoAP: 2
-  Electronics Design: 10
-  PCB Design: 5
-  Proteus Design Suite 8: 5
+  'Electronics Design': 10
+  'PCB Design': 5
+  'Proteus Design Suite 8': 5
   Bascom: 4
   Sensors: 10
   Actuators: 10
@@ -102,21 +103,21 @@ skillYears:
   BLE: 8
   Gyro: 3
   LDR: 8
-  Graphic LCD: 1
+  'Graphic LCD': 1
   TouchPad: 1
-  Camera Module: 1
-  CMOS 4xxx: 10
-  TTL 74xx: 10
-  Full-Stack Development: 10    # Software Development
-  Test Driven Development (TDD): 3
-  Object-Oriented Programming (OOP): 10
+  'Camera Module': 1
+  'CMOS 4xxx': 10
+  'TTL 74xx': 10
+  'Full-Stack Development': 10    # Software Development
+  'Test Driven Development (TDD)': 3
+  'Object-Oriented Programming (OOP)': 10
   SOLID: 10
   Troubleshooting: 10
   Debugging: 10
-  Unit Test: 5
-  Widget Test: 5
-  Integration Test: 5
-  Load Test: 5
+  'Unit Test': 5
+  'Widget Test': 5
+  'Integration Test': 5
+  'Load Test': 5
   JMeter: 5
   Jira: 6
   Trello: 2
@@ -135,41 +136,41 @@ skillYears:
   Terraform: 1
   Maven: 8
   Gradle: 6
-  System Modeling: 8      # System Architecture & Design
+  'System Modeling': 8      # System Architecture & Design
   Prototyping: 10
   Microservice: 1
   SOA: 8
-  Design Patterns: 8
-  Oracle Cloud Infrastructure (OCI): 1
-  Feedback Loop: 8
-  Risk Analysis: 1
-  Enterprise Architecture (EA): 3
-  Microsoft Visio: 7
-  Axure RP: 3
-  MS Project: 2
+  'Design Patterns': 8
+  'Oracle Cloud Infrastructure (OCI)': 1
+  'Feedback Loop': 8
+  'Risk Analysis': 1
+  'Enterprise Architecture (EA)': 3
+  'Microsoft Visio': 7
+  'Axure RP': 3
+  'MS Project': 2
   ERP: 5
   BI: 4
   KPI: 3
   BPMN: 5
   BPMS: 5
-  JBPM Workflow Engine: 4
-  DevOps & CI/CD: 2
+  'JBPM Workflow Engine': 4
+  'DevOps & CI/CD': 2
   Creativity: 10     # Soft Skills
-  Self-Motivation: 10
-  Critical Thinking: 10
-  Problem Solving: 10
-  Decision Making: 10
+  'Self-Motivation': 10
+  'Critical Thinking': 10
+  'Problem Solving': 10
+  'Decision Making': 10
   Communication: 8
-  Attention to Detail: 10
-  Active Listener: 10
+  'Attention to Detail': 10
+  'Active Listener': 10
   Inquisitive: 10
   SMART: 2
   SWOT: 8
-  Force Field: 6
-  DA Matrix: 8
+  'Force Field': 6
+  'DA Matrix': 8
   Fishbone: 5
-  Time Management: 10
-  Task Prioritization: 10
+  'Time Management': 10
+  'Task Prioritization': 10
   Teamwork: 10
   Flexibility: 10
   Leadership: 5
@@ -179,15 +180,15 @@ skillYears:
   Kaizen: 1
   JFC: 4
   GWT: 3
-  JIDE components: 3
-  JFC Charts: 3
+  'JIDE components': 3
+  'JFC Charts': 3
   JQraph: 3
-  Jasper Report: 3
+  'Jasper Report': 3
   JBoss: 4
   WildFly: 2
-  Eclipse IDE: 8
-  IntelliJ IDEA: 8
-  VS Code: 4
-  MS Access: 3
+  'Eclipse IDE': 8
+  'IntelliJ IDEA': 8
+  'VS Code': 4
+  'MS Access': 3
   POP3: 1
   SMTP: 1
