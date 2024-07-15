@@ -7,7 +7,7 @@ rootClass: markdown-gen
 {% include page_data.html %}
 
 ### {{ data.company }}
-_{{ data.country }} | Tehran_
+_{{ data.country }}_
 
 {{ data.about }}
 
