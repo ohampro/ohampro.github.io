@@ -3,7 +3,7 @@ title: Enterprise POP3 Mail Server
 date: Jan 2015 - Jan 2016
 client: DOURAN GROUP Co
 skills: Java, JFC, Swing, AWT, POP3, SMTP, Back-end
-excerpt: Developed and implemented an email server incorporating POP3 and SMTP from the ground up, providing a new communication channel for Douran-ERP users. This initiative allowed users to seamlessly access their ERP mailbox, inclusive of messages and notifications, on any mobile or desktop device through a standard mail client.
+excerpt: Developed and implemented an email server incorporating POP3 and SMTP from the ground up, providing a new communication channel for over 200 ERP users. This initiative allowed users to seamlessly access their ERP mailbox, inclusive of messages and notifications, on any mobile or desktop device through a standard mail client.
 introduction: 
 key_features:
 photos:
