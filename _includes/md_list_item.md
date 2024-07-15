@@ -15,18 +15,24 @@
 
 {% endif %}
 
-{% assign ihref = nil %}
-{% if itemValue contains '@href=' %}
-    {% assign ihref = itemValue | split: '@href=' | last | split: " " | first %}
-    {% assign hrefString = '@href=' | append: ihref %}
-    {% assign itemValue = itemValue | replace: hrefString, '' %}
-{% endif %}
+{% assign ignoreList = include.ignore | split: ', ' %}
+{% assign itemText = normal | default: itemValue %}
+{% if ignoreList contains itemText %}
 
-{% if include.header %}
+{% else %}
+    {% assign ihref = nil %}
+    {% if itemValue contains '@href=' %}
+        {% assign ihref = itemValue | split: '@href=' | last | split: " " | first %}
+        {% assign hrefString = '@href=' | append: ihref %}
+        {% assign itemValue = itemValue | replace: hrefString, '' %}
+    {% endif %}
+
+    {% if include.header %}
 {{ include.indent }}- {{ include.header }}{{ normal }}
 {{ itemValue }} {% if ihref %}{% include find_more.html href=ihref %}{% endif %}
 
-{% else %}
+    {% else %}
 {{ include.indent }}- {{ bold }}{{ itemValue }} {% if ihref %}{% include find_more.html href=ihref %}{% endif %}
 
+    {% endif %}
 {% endif %}
