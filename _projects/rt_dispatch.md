@@ -25,7 +25,7 @@ Associated with Fidasys Inc.
 {% include md_list.md data=data.team_and_contributions %}
 
 ## Detailed Description
-{% include md_list.md data=data.detailed_description limit=2 %}
+{% include md_list.md data=data.detailed_description ignore='Tools and Technologies' %}
 - **Tools and Technologies**:
     {% include card_labels.html labels=data.skills %} 
 
