@@ -8,7 +8,7 @@ introduction: This project involved the design and development of a network list
 key_features:
   - 'Packet Filtering: Filters packets based on predefined terms for targeted monitoring.'
   - 'Packet Capture: Monitors and captures network-level packets, including IP, ICMP, and ARP.'
-  - "Data Logging: Stores filtered packets samples in the AVR's internal memory for later review."
+  - "Data Logging: Stores filtered packet samples in the AVR's internal memory for later review."
   - 'Real-time Monitoring: Provides continuous monitoring capabilities via a PC console.'
 photos:
   - '/assets/images/network_listener/1.jpeg'

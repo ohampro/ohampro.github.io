@@ -31,7 +31,7 @@ implementation_details:
       - 'Designed the circuit to connect the microcontroller, graphic LCD, touchpad, and keyboard.'
       - 'Ensured robust power supply and signal integrity throughout the circuit.'
     assembly:
-      - 'Assembled the components in a compact enclosure for fisrt functional prototype.'
+      - 'Assembled the components in a compact enclosure for the first functional prototype.'
       - 'Tested the hardware to ensure proper functionality and user interaction.'
   software_development:
     programming:

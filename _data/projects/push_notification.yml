@@ -3,7 +3,7 @@ title: Push Notification
 date: Sep 2018 - Oct 2018
 client: NRDC Co
 skills: Java, Spring Framework, Netty, RESTful, WebSocket, Android, JavaScript, C#.Net, JBoss, SVN, Jira, Agile, Back-end
-excerpt: Developed a tailored Push Notification Solution for the company using Spring and Netty. The solution supports point-to-point messaging, point-to-group messaging, broadcast messaging, message delivery guarantee, client automatic reconnect capability, and a client library for developers in JavaScript, Android, Java, and .NET.
+excerpt: Developed a tailored push notification solution for the company using Spring and Netty. The solution supports point-to-point messaging, point-to-group messaging, broadcast messaging, message delivery guarantees, client automatic reconnect capability, and a client library for developers in JavaScript, Android, Java, and .NET.
 introduction: 
 key_features:
 photos:

@@ -22,11 +22,11 @@ detailed_description:
   - 'Process and Methodology: Followed Agile methodology with iterative sprints for continuous improvement.'
   - 'Tools and Technologies: [*skills]'
 challenges_and_solutions:
-  - 'GPS drift': 
+  - 'GPS Drift': 
       Problem: 'We faced a significant challenge with GPS drift, this was particularly problematic for our app features like summoning drivers and route tracking. @href=/challenges/gps_drift'
-      Solution: I implemented a combination of signal filtering techniques and Environmental Awareness technique.
+      Solution: Implemented a combination of signal filtering techniques and Environmental Awareness technique.
       Impact: Reducing GPS drift by over 60% and received positive feedback from users and stakeholders.
-  - 'Cross-app Display':
+  - 'Cross-App Display':
       Problem: 'Clients using this app along with another product faced frequent app switching and password prompts, leading to workflow disruption and nearly 40% user abandonment of this app. @cross_app_display @href=/challenges/cross_app_display'
       Solution: Embedded the required UI elements into the other one, eliminating the need for app switching and password re-entry.
       Impact: Achieved a 50% increase in user retention and saved weeks of development time through innovative problem-solving.
