@@ -5,14 +5,16 @@ company: Self Employed
 country: Iran
 workType: 
 skills: Software Development, Electronics, Electrical Installations, Maintenance
-excerpt: A diverse range of interests and skills, spanning from software programming to electronics, coupled with expertise in electrical installations and maintenance, setting-up of Language Labs, Auditoriums, and more.
+excerpt: A diverse range of interests and skills, spanning from software programming to electronics, coupled with expertise in electrical installations and maintenance, setting up of language labs, auditoriums, and more.
 achievements: 
-  - 'Created and rolled out a comprehensive student portal solution that connects students, teachers, parents, and administrators in a single system.'
-  - 'Designed and developed an Interactive Voice Response (IVR) Controller, facilitating control over home devices and enabling extension dialing without speaking to an agent.'
-  - "Impressively designed and implemented the electronics for a language lab with 30 student stations and 2 teacher's control panels."
-  - "Skillfully redesigned and installed the electrical systems for an auditorium with 500 seats."
-  - 'Implemented various solutions, including water consumption optimization, stop request buttons in buses, and advanced IR alarm systems.'
-  - 'Strategically designed, developed, and implemented a sales management system.'
-about:
+  - Created and rolled out a comprehensive student portal solution that connects students, teachers, parents, and administrators in a single system.
+  - Designed and developed an Interactive Voice Response (IVR) Controller, facilitating control over home devices and enabling extension dialing without speaking to an agent.
+  - Designed and implemented the electronics for a language lab with 30 student stations and 2 teacher control panels.
+  - Redesigned and installed the electrical systems for an auditorium with 500 seats.
+  - Implemented various solutions, including water consumption optimization, stop request buttons in buses, and advanced IR alarm systems.
+  - Designed, developed, and implemented a sales management system.
+about: Self-employed software developer and technical services provider, offering a wide range of solutions from software development to electronic and electrical installations.
 contributions:
+  - Delivered a variety of software and technical solutions to clients.
+  - Developed innovative systems for education, home automation, and public transportation.
 projects: neoterra-cities, network_listener, course_selection_kiosk, shadman_acc, sepam, emamali_labrtor, ivr, ecity

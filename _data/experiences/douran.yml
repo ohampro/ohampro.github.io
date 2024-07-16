@@ -5,15 +5,15 @@ company: DOURAN GROUP Co
 country: Iran
 workType: 
 skills: Java, JFC, GWT, Oracle Database, JBPM, JIDE components, JFC Charts, Jasper Report, BI, KPI, Swing, JSP, Hibernate, GWT, JDBC, SVN, Apache Tomcat
-excerpt: Involved in ERP development across various subsystems, with a focus on Business Intelligence and Workflow.
+excerpt: Contributed to the development of ERP systems, particularly in Business Intelligence and Workflow subsystems.
 achievements:
-  - 'Created a Report Generator tool, resulting in a 90% increase in development speed for 4 developer teams.'
-  - 'Developed a Release Management System, reducing deployment time by 40% and minimizing errors.'
-  - 'Designed and developed a WYSIWYG Cheque Designer, streamlining cheque printing and improving efficiency by 80% for numerous Douran ERP accountants nationwide.'
-  - 'Implemented a dynamic Hierarchical Approval workflow, eliminating the need for workflow updates due to role changes, benefiting over 30 clients.'
-  - 'Designed and developed a customized mail server, enabling over 200 ERP users in the first month to access their Cartable remotely via any mail client.'
-  - 'Mentored over 15 developers in advanced concepts of workflow and BI subsystems, resulting in a 25% increase in team performance and productivity.'
-about: DOURAN GROUP Co is a reputable company specializing in comprehensive ERP (Enterprise Resource Planning) solutions, delivering high-quality software to various industries.
+  - Created a Report Generator tool, enhancing development speed by 90% for four developer teams.
+  - Developed a Release Management System, reducing deployment time by 40% and minimizing errors.
+  - Designed and developed a WYSIWYG Cheque Designer, increasing efficiency by 80% for numerous accountants using Douran ERP nationwide.
+  - Implemented a dynamic Hierarchical Approval workflow, eliminating the need for updates due to role changes, benefiting over 30 clients.
+  - Developed a customized mail server, enabling over 200 ERP users to remotely access their Cartable via any mail client in the first month.
+  - Mentored over 15 developers in advanced workflow and BI concepts, boosting team performance and productivity by 25%.
+about: DOURAN GROUP Co specializes in comprehensive ERP solutions, delivering high-quality software across various industries.
 contributions:
-  - 'Involved in ERP development across various subsystems, with a focus on Business Intelligence and Workflow.'
+  - Contributed to ERP development across various subsystems, focusing on Business Intelligence and Workflow.
 projects: douran_bi, workflow_engine, enterprise_pop3_mail_server

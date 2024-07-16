@@ -22,6 +22,8 @@ _{{ data.country }}_
 - {{ data.achievements[4] }}
 - {{ data.achievements[5] }}
 
+#### Contributions
+{% include md_list.md data=data.contributions %}
 
 ### Projects
 {% include collection.html 
