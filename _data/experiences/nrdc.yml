@@ -13,5 +13,6 @@ achievements:
   - Designed and implemented a comprehensive Equipment Management System, eliminating significant manual work of classifying and maintaining equipment status within the first 2 months.
 about: NRDC Co is a leading company focused on providing software development services to a diverse range of organizations.
 contributions:
+  - Led design and architecture (design patterns, reliability and scaling) of new and existing systems.
   - Deepened understanding of distributed systems, real-time stream processing with Kafka, and enterprise service buses (ESBs), sharing hands-on experiences in various technologies.
 projects: driver_assistance_center, equipment_management_system, push_notification, sensors_mgm
