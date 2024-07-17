@@ -41,7 +41,7 @@ keywords: skills
 
 - **IoT & Embedded Systems Development**
 {% include card_labels.html class="ms-5" btnClass="btn-lg mt-1" btnColor="btn-outline-dark"
-    labels="AVR, Microcontroller, Arduino, NodeMCU, ESP8266, VHDL, FPGA, PLC Programming, SPI, UART, I2C, MQTT, CoAP, Electronics Design, PCB Design, Proteus Design Suite 8, Bascom, Sensors, Actuators, RFID, NFC, GPS, BLE, Gyro, LDR, Graphic LCD, TouchPad, Camera Module, CMOS 4xxx, TTL 74xx" %}
+    labels="AVR, Microcontroller, Arduino, NodeMCU, ESP8266, VHDL, FPGA, PLC Programming, SPI, UART, I2C, MQTT, CoAP, Electronics Design, PCB Design, Proteus Design Suite 8, Bascom, Sensors, Actuators, RFID, NFC, GPS, Wi-Fi, BLE, Gyro, LDR, Graphic LCD, TouchPad, Camera Module, CMOS 4xxx, TTL 74xx" %}
 
 <br>
 
