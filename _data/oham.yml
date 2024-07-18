@@ -22,13 +22,13 @@ skills:
     'Mobile Application Development':
       - 'Android Development, Flutter, Retrofit, GreenDao'
     'IoT & Embedded Systems Development':
-      - 'AVR, Microcontroller, Arduino, NodeMCU, ESP8266, VHDL, FPGA, PLC Programming, SPI, UART, I2C, MQTT, CoAP, Electronics Design, PCB Design, Proteus Design Suite 8, Bascom, Sensors, Actuators, RFID, NFC, GPS, BLE, Gyro, LDR, Graphic LCD, TouchPad, Camera Module, CMOS 4xxx, TTL 74xx'
+      - 'AVR, Microcontroller, Arduino, NodeMCU, ESP8266, VHDL, FPGA, PLC Programming, SPI, UART, I2C, MQTT, CoAP, Electronics Design, PCB Design, Proteus Design Suite 8, Bascom, Sensors, Actuators, RFID, NFC, GPS, Wi-Fi, BLE, Gyro, LDR, Graphic LCD, TouchPad, Camera Module, CMOS 4xxx, TTL 74xx'
     'Software Development':
       - 'Full-Stack Development, Test Driven Development (TDD), Object-Oriented Programming (OOP), SOLID, Troubleshooting, Debugging, Unit Test, Widget Test, Integration Test, Load Test, JMeter'
       - 'Jira, Trello, Agile, Scrum, Kanban'
       - 'Git, GitHub, SVN, JUnit, Docker, Kubernetes, SonarQube, Jenkins, Ansible, Terraform, Maven, Gradle'
     'System Architecture & Design':
-      - 'System Modeling, Prototyping, Microservice, SOA, Design Patterns, Oracle Cloud Infrastructure (OCI), Feedback Loop, Risk Analysis, Enterprise Architecture (EA), Microsoft Visio, Axure RP, MS Project, ERP, BI, KPI, BPMN, BPMS, JBPM Workflow Engine, DevOps & CI/CD'
+      - 'Research, Planning, System Modeling, Prototyping, Microservice, SOA, Design Patterns, Oracle Cloud Infrastructure (OCI), Feedback Loop, Risk Analysis, Enterprise Architecture (EA), Microsoft Visio, Axure RP, MS Project, ERP, BI, KPI, BPMN, BPMS, JBPM Workflow Engine, DevOps & CI/CD'
   'Soft Skills':
     - 'Creativity, Self-Motivation, Critical Thinking, Problem Solving, Decision Making, Communication, Attention to Detail, Active Listener, Inquisitive, SMART, SWOT, Force Field, DA Matrix, Fishbone, Time Management, Task Prioritization, Teamwork, Flexibility, Leadership, Mentoring'
   Language:
