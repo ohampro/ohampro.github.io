@@ -3,7 +3,7 @@ title: "RT Dispatch"
 date: Jun 2019 - Jan 2023
 client: Fidasys Inc. | Resertrc Inc.
 skills: Android, Java, Flutter, RESTful, Retrofit, GreenDao, JSON, GPS, Location Service, Agile, Git, GitHub, Mobile app, -ready
-excerpt: Developed and implemented both the Android and iOS applications for an extensive system designed to gather information on vehicles, passengers, and transportation zones, optimizing the provision of the best possible trips.
+excerpt: Developed and implemented both the Android and iOS applications for an extensive system designed to gather information on vehicles, trips, and transportation zones, optimizing the provision of the best possible trips.
 introduction: This application is an integral component of an extensive system designed to gather information on vehicles, drivers, and transportation zones, optimizing the provision of the best possible trips. 
 project_overview:
   - 'Audience: Registered taxi drivers who communicate with the dispatch system.'
