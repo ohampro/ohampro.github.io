@@ -101,6 +101,7 @@ skillYears:
   NFC: 8
   GPS: 8
   BLE: 8
+  'Wi-Fi': 8
   Gyro: 3
   LDR: 8
   'Graphic LCD': 1
@@ -137,6 +138,8 @@ skillYears:
   Maven: 8
   Gradle: 6
   'System Modeling': 8      # System Architecture & Design
+  Research: 8
+  Planning: 8
   Prototyping: 10
   Microservice: 1
   SOA: 8
