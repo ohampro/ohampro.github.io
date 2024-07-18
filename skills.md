@@ -10,6 +10,8 @@ keywords: skills
 {% include card_labels.html btnClass="btn-lg mt-1" 
     labelsIGNORED="0-1 year, 1-3 years, 3-5 years, 5+ years" href="" %}
 
+Participated in the entire software development lifecycle, including scoping, design, code, code reviews, testing, deployment and software maintenance.
+
 ### Technical Skills
 
 - **Programming Languages**
