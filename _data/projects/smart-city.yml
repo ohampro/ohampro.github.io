@@ -88,10 +88,10 @@ detailed_description:
   'Business and Manufacturer Benefits': Businesses and manufacturers can track their device or product health and status upon user grant, leading to better services and higher quality products.
   'Big Data Analytics': Big data analytics involves external services that users can connect their devices to, obtaining valuable insights and results. By analyzing large datasets, these services can identify patterns and trends that help in optimizing city operations, improving services, and making data-driven decisions.
 challenges_and_solutions:
-  Challenge: We encountered numerous challenges, such as publishing sensor data while ensuring privacy, maintaining consistent performance under varying usage conditions, and programming our kit to support different models—from mini versions with 2 outputs to more complex facilities with multiple PWM outputs. However, the most difficult technical challenge was implementing RSA encryption in our IoT kit due to its resource and speed limitations.
-  Solution: To overcome this, I opted for AES encryption due to its lower computational and memory requirements, and a custom protocol, which reduced the number of messages between peers as well as the message size in bytes.
+  Challenge: I used an RSA module for end-to-end encryption and a Lua TLS module for secure connections (client and server). The combination of the RSA module, the secure server module, and the main application code often led to flash memory overflow due to their combined size. The challenge was to reduce the overall application size while retaining all necessary encryption features.
+  Solution: The RSA module was redundant since the TLS module already had RSA functionality, which was inaccessible in our code. My approach was to find a WiFi library whose RSA functionality could be used with the entire application. I found the WiFiSecure library in Arduino libraries useful. With a proactive approach, I dismantled the Lua modules and integrated the RSA library used by WiFiSecureClient. I then wrapped the encryption and decryption functions and registered them on the Lua interpreter, making them accessible for Lua scripts and ensuring end-to-end encryption.
   Impact:
-    - 'AES allowed the IoT kit to operate more efficiently, making better use of its limited resources.'
+    - 'The solution allowed the IoT kit to operate more efficiently, making better use of its limited resources.'
     - 'The data transmitted between the IoT kits and the Mifo app remains secure and protected from potential threats.'
 outcomes_and_results:
   - 'Successful deployment of the smart city infrastructure, with widespread adoption among our clients of residents and businesses.'
