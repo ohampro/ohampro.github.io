@@ -5,7 +5,7 @@ Online  DRAFT
 ----
 
 ## Professional Summary
-Highly skilled Software and Embedded Systems Developer with over 12 years of experience in delivering high-quality solutions across various domains, including IoT, urban technical development, and advanced software systems. Proficient in full-stack development, embedded systems, and IoT solutions, with a strong emphasis on continuous learning and innovation. Seeking to leverage expertise in a dynamic in-office role to drive technological advancements and business success.
+Highly skilled Software and Embedded Software Engineer with over 12 years of experience in delivering high-quality solutions across various domains, including IoT, urban technical development, and advanced software systems. Proficient in full-stack development, embedded systems, and IoT solutions, with a strong emphasis on continuous learning and innovation. Seeking to leverage expertise in a dynamic in-office role to drive technological advancements and business success.
 
 ----
 
