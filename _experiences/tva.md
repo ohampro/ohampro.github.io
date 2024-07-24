@@ -12,7 +12,7 @@ _{{ data.country }} | {{ data.workType }}_
 {{ data.about }}
 
 #### My Roles
-- **System Architect &#124; Full Stack Java Developer &#124; Embedded Software Engineer** &#124; {{ data.date }}
+- **System Architect &#124; Full Stack Java Developer &#124; Embedded Systems Developer** &#124; {{ data.date }}
 
 #### Achievements
 - {{ data.achievements[0] }} 
