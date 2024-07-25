@@ -2,8 +2,7 @@ documentType: project
 title: Smart City - IoT Framework
 date: Jan 2016 - Jan 2017
 client: Tose Vira Afzar Co.
-skills: "Java, Oracle Database, Spring Framework, RSA, Android, Microsoft Visio, Axure RP, RESTful, WebSocket, MQTT, CoAP, 
-Electronics, IoT, ESP8266, AVR, NFC, Mifare, RFID, QR, Camera Module, GPS, Bootstrap, JavaScript, HTML, CSS, Lua, ESPlorer, Git, GitHub, Urban Futurist, -Default, -ready"
+skills: "Java, Oracle Database, Spring Framework, RSA, Android, Microsoft Visio, Axure RP, RESTful, WebSocket, MQTT, CoAP, Apache Kafka, Electronics, IoT, ESP8266, AVR, NFC, Mifare, RFID, QR, Camera Module, GPS, Bootstrap, JavaScript, HTML, CSS, Lua, ESPlorer, Git, GitHub, Urban Futurist, -Default, -ready"
 excerpt: Spearheaded a smart city project where every object, from household appliances to public infrastructure, is interconnected and responsive to commands and queries through a smartphone. Whether it's adjusting the thermostat, checking the availability of parking spaces, or engaging with public transportation systems, the possibilities are limitless.
 nda: To comply with my non-disclosure agreement (NDA) with the company, confidential information has been omitted or obfuscated. The information presented here does not reflect the views of the company.
 introduction: This smart city project integrates IoT technology with urban infrastructure using a custom mobile app and IoT kits. It aims to enhance convenience, efficiency, and sustainability, creating a seamless, secure environment where devices and systems work together to improve the quality of life for residents and businesses.
