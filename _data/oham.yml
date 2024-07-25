@@ -26,9 +26,9 @@ skills:
     'Software Development':
       - 'Full-Stack Development, Test Driven Development (TDD), Object-Oriented Programming (OOP), SOLID, Troubleshooting, Debugging, Unit Test, Widget Test, Integration Test, Load Test, JMeter'
       - 'Jira, Trello, Agile, Scrum, Kanban'
-      - 'Git, GitHub, SVN, JUnit, Docker, Kubernetes, SonarQube, Jenkins, Ansible, Terraform, Maven, Gradle'
+      - 'Git, GitHub, SVN, JUnit, Docker, Kubernetes, SonarQube, Jenkins, Ansible, Terraform, Maven, Gradle, DevOps & CI/CD'
     'System Architecture & Design':
-      - 'Research, Planning, System Modeling, Prototyping, Microservice, SOA, Design Patterns, Oracle Cloud Infrastructure (OCI), Feedback Loop, Risk Analysis, Enterprise Architecture (EA), Microsoft Visio, Axure RP, MS Project, ERP, BI, KPI, BPMN, BPMS, JBPM Workflow Engine, DevOps & CI/CD'
+      - 'Research, Planning, System Modeling, Prototyping, Microservice, SOA, Design Patterns, Oracle Cloud Infrastructure (OCI), Feedback Loop, Risk Analysis, Enterprise Architecture (EA), Microsoft Visio, Axure RP, MS Project, ERP, BI, KPI, BPMN, BPMS, JBPM Workflow Engine'
   'Soft Skills':
     - 'Creativity, Self-Motivation, Critical Thinking, Problem Solving, Decision Making, Communication, Attention to Detail, Active Listener, Inquisitive, SMART, SWOT, Force Field, DA Matrix, Fishbone, Time Management, Task Prioritization, Teamwork, Flexibility, Leadership, Mentoring'
   Language:
