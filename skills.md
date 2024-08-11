@@ -71,7 +71,7 @@ Participated in the entire software development lifecycle, including scoping, de
 - **System Architecture & Design**
 {% include card_labels.html class="ms-5" btnClass="btn-lg mt-1" btnColor="btn-outline-dark" labels=design %}
 
-{% assign softSkills = technical['Soft Skills'][0] %}
+{% assign softSkills = site.data.oham.skills['Soft Skills'][0] %}
 
 ### Soft Skills
 {% include card_labels.html class="ms-5" btnClass="btn-lg mt-1" btnColor="btn-outline-dark"
