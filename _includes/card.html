@@ -44,7 +44,7 @@
     <div class="py-3 card-body">
         <section>
             {% if include.title %}
-                {% if include.content.size > 0 %}
+                {% if hasContent == 'true' %}
                 <a class="link-underline link-body-emphasis link-underline-opacity-75-hover link-offset-3-hover link-underline-opacity-0"
                     href="{{ include.url }}">
                     <h3 class="card-title">{{ include.title }}</h3>
@@ -74,7 +74,7 @@
                 </ul>
             {% endif %}
 
-            {% if include.content.size > 0 %}
+            {% if hasContent == 'true' %}
                 <a class="card-link text-nowrap {% if include.content contains 'under_construction_message' %}text-muted link-dark link-underline-opacity-10{% else %}link-primary {% endif %} link-offset-2 link-opacity-50-hover" 
                 href="{{ include.url }}"> 
                 Find more<i class="bi bi-chevron-right small ms-1"></i>
