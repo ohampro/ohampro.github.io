@@ -46,13 +46,6 @@ Participated in the entire software development lifecycle, including scoping, de
     labels=mobile %}
 
 <br>
-{% assign embedded = technical['IoT & Embedded Systems Development'][0] %}
-
-- **IoT & Embedded Systems Development**
-{% include card_labels.html class="ms-5" btnClass="btn-lg mt-1" btnColor="btn-outline-dark"
-    labels=embedded %}
-
-<br>
 {% assign sdev = technical['Software Development'] %}
 {% assign sdev0 = sdev[0] %}
 {% assign sdev1 = sdev[1] %}
@@ -73,6 +66,13 @@ Participated in the entire software development lifecycle, including scoping, de
 
 {% assign softSkills = site.data.oham.skills['Soft Skills'][0] %}
 
+<br>
+{% assign embedded = technical['IoT & Embedded Systems Development'][0] %}
+
+- **Ohter Skills**
+{% include card_labels.html class="ms-5" btnClass="btn-lg mt-1" btnColor="btn-outline-dark"
+    labels=embedded %}
+    
 ### Soft Skills
 {% include card_labels.html class="ms-5" btnClass="btn-lg mt-1" btnColor="btn-outline-dark"
 labels=softSkills %}
