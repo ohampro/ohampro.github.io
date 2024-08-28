@@ -16,11 +16,11 @@ docsOrder:
   - _projects/selak_dentistry_clinic.md
   - _projects/network_listener.md
   - _projects/course_selection_kiosk.md
-  # - _projects/concrete_curbing_machine.md
-  # - _projects/shadman_acc.md
-  # - _projects/sepam.md
-  # - _projects/emamali_labrtor.md
-  # - _projects/ivr.md
+  - _projects/concrete_curbing_machine.md
+  - _projects/shadman_acc.md
+  - _projects/sepam.md
+  - _projects/emamali_labrtor.md
+  - _projects/ivr.md
   - _ideas/ecity.html
   - _experiences/fidasys.md
   # - _experiences/resertrac.md
