@@ -23,12 +23,12 @@ docsOrder:
   - _projects/ivr.md
   - _ideas/ecity.html
   - _experiences/fidasys.md
-  # - _experiences/resertrac.md
-  # - _experiences/tva.md
+  - _experiences/resertrac.md
+  - _experiences/tva.md
   - _experiences/nrdc.md
   - _experiences/douran.md
-  # - _experiences/selakteb.md
-  # - _experiences/kankash.md
-  # - _experiences/self_emp.md
+  - _experiences/selakteb.md
+  - _experiences/kankash.md
+  - _experiences/self_emp.md
   - _challenges/gps_drift.md
   - _challenges/cross_app_display.md
