@@ -79,7 +79,7 @@
 
                     {% if docBasename == basename %}
                         
-                        <div class="{%- if include.grid -%}col{%- else -%}mb-4{%- endif %} {{ include.class }}">
+                        <div id="{{basename}}_card" class="{%- if include.grid -%}col{%- else -%}mb-4{%- endif %} {{ include.class }}">
                             {% include dynamic_card.html 
                                 doc = doc
                                 docBasename = docBasename
