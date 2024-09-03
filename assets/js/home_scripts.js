@@ -3,17 +3,17 @@
         get: (searchParams, prop) => searchParams.get(prop),
     });
 
-    var prevScrollpos = window.pageYOffset;
+    let prevScrollpos = window.pageYOffset;
 
-    var deleyed_attentions = document.getElementsByClassName('deleyed-attention');
+    const deleyed_attentions = document.getElementsByClassName('deleyed-attention');
 
-    var prevScroll_direction = '';
+    let prevScroll_direction = '';
     const scroll_direction_up = 'up';
     const scroll_direction_down = 'down';
 
     window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-        var scroll_direction = '';
+        let currentScrollPos = window.pageYOffset;
+        let scroll_direction = '';
 
         if (prevScrollpos > currentScrollPos) {
             scroll_direction = scroll_direction_up;
@@ -70,7 +70,7 @@
 
 
     // selected feature -----------------------------------
-    var featuresButtons = document.querySelectorAll('.features-group .btn');
+    let featuresButtons = document.querySelectorAll('.features-group .btn');
     //
     let selectedFeatureBtn;
     {
