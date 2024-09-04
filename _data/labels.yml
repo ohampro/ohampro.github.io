@@ -1,5 +1,5 @@
 defaultColor: btn-outline-secondary
-activeColor: btn-secondary
+activeColor: btn-outline-primary
 
 yearsColor:
   - # btn-outline-secondary
