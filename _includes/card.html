@@ -59,7 +59,14 @@
             {% endif %}
 
             {% if include.muted %}
-                <p class="text-muted">{{ include.muted }}</p>
+                {% if hasContent == 'true' %}
+                <a class="link-underline link-body-emphasis link-underline-opacity-0-hover link-offset-3-hover link-underline-opacity-0"
+                    href="{{ include.url }}">
+                    <p class="text-muted">{{ include.muted }}</p>
+                </a>
+                {% else %}
+                    <p class="text-muted">{{ include.muted }}</p>
+                {% endif %}
             {% endif %}
 
             <p class="card-text overflow-y-auto">
