@@ -7,11 +7,12 @@ workType:
 skills: Java, JFC, GWT, Oracle Database, JBPM, JIDE components, JFC Charts, Jasper Report, BI, KPI, Swing, JSP, Hibernate, GWT, JDBC, SVN, Apache Tomcat
 excerpt: Contributed to the development of ERP systems, particularly in Business Intelligence and Workflow subsystems.
 achievements:
-  - Created a Report Generator tool, enhancing development speed by 90% for four developer teams.
-  - Developed a Release Management System, reducing deployment time by 40% and minimizing errors.
-  - Designed and developed a WYSIWYG Cheque Designer, increasing efficiency by 80% for numerous accountants using Douran ERP nationwide.
-  - Implemented a dynamic Hierarchical Approval workflow, eliminating the need for updates due to role changes, benefiting over 30 clients.
-  - Developed a customized mail server, enabling over 200 ERP users to remotely access their Cartable via any mail client in the first month.
+  - Crafted a Report Generator tool that boosted productivity by 90% in 4 teams.
+  - Increased operational efficiency by 80% by designing a WYSIWYG Cheque Designer.
+  -	Designed an advanced analytic query builder, boosting BI report performance by 35%.
+  - Developed a streamlined Release Management System, reducing deployment time by 40% and minimizing errors.
+  - Enhanced JBPM with a dynamic hierarchical approval feature, eliminating the need for updates due to role changes, benefiting over 30 clients.
+  - Developed a customized mail server, enabling over 200 ERP users to remotely access their Cartable via any mail client.
   - Mentored over 15 developers in advanced workflow and BI concepts, boosting team performance and productivity by 25%.
 about: DOURAN GROUP Co specializes in comprehensive ERP solutions, delivering high-quality software across various industries.
 contributions:
