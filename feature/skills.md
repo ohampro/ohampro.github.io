@@ -27,9 +27,10 @@ Participated in the entire software development lifecycle, including scoping, de
 {% assign backend1 = backend[1] %}
 
 - **Back-end Development**
-    - {% include card_labels.html btnClass="btn-lg mt-1" btnColor="btn-outline-dark" labels=backend0 %}
+{% include card_labels.html class="ms-5" btnClass="btn-lg mt-1" btnColor="btn-outline-dark" labels=backend0 %}
 
-    - {% include card_labels.html btnClass="btn-lg mt-1" btnColor="btn-outline-dark" labels=backend1 %}
+- **Database**
+{% include card_labels.html class="ms-5" btnClass="btn-lg mt-1" btnColor="btn-outline-dark" labels=backend1 %}
 
 <br>
 {% assign frontend = technical['Front-end Development'][0] %}

@@ -12,10 +12,10 @@ about:
 skills:
   'Technical Skills':
     'Programming Languages':
-      - 'Java, Dart, JavaScript, C++, C, C#, VB.NET, PL/SQL, SQL, Python, Go'
+      - 'Java, Dart, JavaScript, C++, C, C#, VB.NET, Python, Go'
     'Back-end Development': 
       - 'Enterprise Java Development, JSP, Spring Framework, Node.js, Express.js, RESTful, SOAP, Hibernate, Entity Framework, OAuth, Cryptography, RSA, AES, WebSocket, Netty, TCP/IP, UDP, FTP, RTSP'
-      - 'Oracle Database, Microsoft SQL Server, NoSQL, MongoDB, SQLite, Hive, ObjectBox, Data Modeling'
+      - 'Oracle Database, Microsoft SQL Server, PL/SQL, SQL, NoSQL, MongoDB, SQLite, Hive, ObjectBox, Data Modeling'
     'Front-end Development':
       - 'React.js, Node.js, Bootstrap, Thymeleaf, HTML5, CSS, SASS, UI/UX Design, JQuery, Swing, AWT, Liquid, Jekyll, ASP.NET, AJAX'
     'Mobile Application Development':
