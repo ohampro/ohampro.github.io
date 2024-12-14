@@ -65,6 +65,19 @@ Participated in the entire software development lifecycle, including scoping, de
 - **System Architecture & Design**
 {% include card_labels.html class="ms-5" btnClass="btn-lg mt-1" btnColor="btn-outline-dark" labels=design %}
 
+<br>
+{% assign cloud = technical['Cloud & AI'] %}
+{% assign cloud0 = cloud[0] %}
+{% assign cloud1 = cloud[1] %}
+{% assign cloud2 = cloud[2] %}
+
+- **Cloud & AI**
+    - {% include card_labels.html btnClass="btn-lg mt-1" btnColor="btn-outline-dark" labels=cloud0 %}
+ 
+    - {% include card_labels.html btnClass="btn-lg mt-1" btnColor="btn-outline-dark" labels=cloud1 %}
+      
+    - {% include card_labels.html btnClass="btn-lg mt-1" btnColor="btn-outline-dark" labels=cloud2 %}      
+
 {% assign softSkills = site.data.oham.skills['Soft Skills'][0] %}
 
 <br>
